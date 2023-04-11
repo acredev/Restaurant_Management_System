@@ -36,8 +36,8 @@ try
 	psmt.setString(7, memStatus);
 	
 	psmt.executeUpdate();
-	
 	response.sendRedirect("login.jsp");
+	
 }
 
 catch (Exception ex)
