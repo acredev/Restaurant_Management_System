@@ -29,11 +29,11 @@ try
 		String sent_id = result.getString("id");
 		String sent_pwd = result.getString("pwd");
 		
-		if (user_id.equals(sent_id) && user_pwd.equals(sent_pwd))
+		if (user_id == sent_id)
 		{%>
 			<head>
 				<script type="text/javascript">
-					location.href = "test(login_ok).jsp";
+					location.href = "index.html";
 				</script>
 			</head>
 		<%
@@ -42,7 +42,7 @@ try
 		{%>
 			<head>
 				<script type="text/javascript">
-					alert("로그인 정보가 일치하지 않습니다. 아이디와 비밀번호를 확인 후, 다시 로그인 바랍니다.");
+					alert("로그인 정보가 일치하지 않습니다. 아이디와 비밀번호 확인 후 재 로그인 바랍니다.");
 					location.href = "login.jsp"
 				</script>
 			</head>
@@ -54,7 +54,7 @@ try
 	%>
 		<head>
 			<script type="text/javascript">
-				alert("로그인 정보가 일치하지 않습니다. 비회원의 경우, 회원가입 후 이용 바랍니다.");
+				alert("로그인 정보를 올바르게 입력하지 않으셨거나, 회원 정보가 존재하지 않습니다. 회원가입 후 이용 바랍니다.");
 				location.href = "login.jsp"
 			</script>
 		</head>
