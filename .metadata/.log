@@ -1614,3 +1614,39 @@ java.io.IOException: Unable to start language server: Angular Language Server: P
 
 !ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:11:14.180
 !MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:25:05.609
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:25:05.611
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:25:05.613
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:27:12.999
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:27:13.001
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:27:13.003
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:27:20.221
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:27:20.223
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:27:20.226
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:27:23.638
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:27:23.640
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-12 11:27:23.642
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT

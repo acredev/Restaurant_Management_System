@@ -23,10 +23,28 @@
                 <input type="password" placeholder=" *비밀번호" id="pwd" class="account" name="pwd">
                 <p> 비밀번호는 16자까지 작성가능.</p>
                 <input type="password" placeholder=" *비밀번호 확인" id="pwdcheck" class="account" name="pwdcheck">
+                <p id="pwdresult">tt </p>
                 <input type="text" placeholder=" *이름" id="name" class="account" name="name">
                 <input type="text" placeholder=" *학번" id="stdid" class="account" name="stdnum">
                 <input type="text" placeholder=" *전화번호" id="tel" class="account" name="tel">
                 <input type="text" placeholder="  이메일(선택)" id="email" class="account" name="email">
+                <script type="text/javascript">
+                	function check_pwd()
+                	{
+                		var pwd = document.getElementById('pwdcheck').value;
+                		
+                		if(document.getElementById('pwd').value == document.getElementById('pwdcheck').value)
+                		{
+                			document.getElementById('pwdresult').innerHTML='비밀번호 일치'
+                			document.getElementById('pwdresult').style.color='blue';
+                		}
+                		else
+                		{
+                			document.getElementById('pwdresult').innerHTML='비밀번호 불일치'
+                			document.getElementById('pwdresult').style.color='red';
+                		}
+                	}
+                </script>
             <button type="submit" id="login" class="account">회원가입</button>
             <p id="alert" class="account"> </p> 
            </div>
