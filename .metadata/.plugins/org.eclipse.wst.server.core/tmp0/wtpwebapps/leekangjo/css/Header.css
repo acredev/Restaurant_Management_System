@@ -3,15 +3,17 @@
     margin: 0;
 }
 header {
+    background-color: #fff;
     height: 75px;
     padding: 1rem;
-    background-color: beige;
+    border: 3px solid #000;
     align-items: center;
     position: fixed;
     top:0;
     left: 0;
     right: 0;
     float: left;  
+    z-index: 1;
 }
 .Logoimg{
     height: 75px;
@@ -31,7 +33,4 @@ h1:hover{
     width: 100%;
     text-align: center;
     padding-top: 120px;
-}
-button:hover{
-    color: red;
 }

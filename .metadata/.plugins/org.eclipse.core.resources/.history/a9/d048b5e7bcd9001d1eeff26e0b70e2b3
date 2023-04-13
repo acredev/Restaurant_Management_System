@@ -1,0 +1,35 @@
+html,body{
+    height: 100%;
+}
+#Loginmain{
+    height: 100%;
+    display: flex;
+    justify-content:center; 
+    align-items : center;
+}
+.box{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.logo{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+#login {
+    margin-top: 4%;
+    width: 80%;
+    background-color: lightgreen;
+    border-color: transparent;
+    font-family: 
+    
+}
+p{
+    font-size: 11px;
+    color: gray;
+}

@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
-        <title>Yummy Yummy</title>
+        <title>로그인</title>
         <link href="css/Header.css" rel="stylesheet" type="text/css">
         <link href="css/LoginMain.css" rel="stylesheet" type="text/css">
     </head>
@@ -14,15 +14,19 @@
     	<form name="login" action="login_send.jsp" method="post">
         	<header>
             	<img src="img/Logo4.png" class="Logoimg" onclick ="location.href='index.html'">
-            	<h1>Login</h1>
+            	<h1 onclick="location.href='login.jsp'">Login</h1>
         	</header>
         	<div id="Loginmain">
             	<div class="box">
                 	<h1 class="logo">LEEKANGJO</h1>
                 	<input type="text" placeholder=" 아이디" id="id" class="account" name="id">
                 	<input type="password" placeholder=" 비밀번호" id="password" class="account" name="pwd">
-           			<button type="submit" id="login" class="account">로그인</button>
-                	<a onclick ="location.href='signup.jsp'">회원가입</a>
+           			<button type="submit" id="login" class="btn_login">로그인</button>
+           			<p id="alert" class="account"></p>
+           			<p class=login_menu>
+           				<a onclick="location.href='find_id.jsp'">ID찾기</a>
+           				<a onclick="location.href='find_pwd.jsp'">PW찾기</a>
+                		<a onclick="location.href='signup.jsp'">회원가입</a>
             	</div>
         	</div>
         </form>
