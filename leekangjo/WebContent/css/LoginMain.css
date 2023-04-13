@@ -1,6 +1,7 @@
-html,body{
+html,body, form{
     height: 100%;
 }
+
 #Loginmain{
     height: 100%;
     display: flex;
@@ -22,7 +23,7 @@ html,body{
     margin-top: 5%;
     margin-bottom: 10%;
 }
-#login {
+#Blogin {
     margin-top: 10%;
     width: 80%;
     background: #4EB2FF;

@@ -1,4 +1,4 @@
-html,body{
+html,body, form{
     height: 100%;
 }
 #Loginmain{
@@ -24,7 +24,7 @@ html,body{
 #login {
     margin-top: 6%;
     width: 80%;
-    height: 5%;
+    height: 30%;
     background-color: lightgreen;
     border-color: transparent;
     font-family: 

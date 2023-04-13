@@ -21,7 +21,7 @@
                 	<h1 class="logo">LEEKANGJO</h1>
                 	<input type="text" placeholder=" 아이디" id="id" class="account" name="id">
                 	<input type="password" placeholder=" 비밀번호" id="password" class="account" name="pwd">
-           			<button type="submit" id="login" class="btn_login">로그인</button>
+           			<button type="submit" id="Blogin" class="btn_login">로그인</button>
            			<p id="alert" class="account"></p>
            			<p class=login_menu>
            				<a onclick="location.href='find_id.jsp'">ID찾기</a>
