@@ -1,0 +1,78 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>아이디 중복 체크</title>
+	<style type="text/css">
+		#wrap
+		{
+			width: 490px;
+			text-align: center;
+			margin: 0 auto 0 auto;
+		}
+		#chk
+		{
+			text-align: center;
+		}
+		#cancelBtn
+		{
+			visibility: visible;
+		}
+		#useBtn
+		{
+			visibility: hidden;
+		}
+	</style>
+	<script type="text/javascript">
+		var httpRequest = null'
+		
+		function getXMLHttpRequest()
+		{
+			var httpRequest = null;
+			if(window.ActiveXObject)
+			{
+				try
+				{
+					httpRequest = new ActiveXObject("Msxml2.XMLHTTP");
+				}
+				catch(ex)
+				{
+					try
+					{
+						httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+					}
+					catch(ex2)
+					{
+						httpRequest = null;
+					}
+				}
+			}
+			else if (window.XMLHttpRequest)
+			{
+				httpRequest = new window.XMLHttpRequest();
+			}
+			return httpRequest;
+		}
+		
+		function pValue()
+		{
+			document.getElementById("id").value = opener.document.signup.id.value;
+		}
+		function idCheck()
+		{
+			var id = document.getElementById("id").value;
+			if(!id)
+			{
+				alert("아이디를 입력하지 않았습니다.");
+				return false;
+			}
+			else if((id<"0" || id>"9") && (id<"A") || id>"Z"))
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
