@@ -1,3 +1,7 @@
+<!-- 
+MySQL과 JSP간 연결 테스트를 위한 페이지입니다.
+ -->
+
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
 <%@page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>

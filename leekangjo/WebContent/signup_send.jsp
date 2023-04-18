@@ -1,3 +1,7 @@
+<!-- 
+사용자가 입력한 신규 회원가입 정보를 DB로 전송하기 위한 페이지입니다.
+ -->
+
 <%@page import="java.sql.*" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -17,7 +21,6 @@ try
 	request.setCharacterEncoding("UTF-8");
 	
 	// 파라미터를 통해 넘어온 회원가입 회원정보값 수령하여 문자열 변수에 저장
-	
 	String id = request.getParameter("id");
 	String pwd = request.getParameter("pwd");
 	String name= request.getParameter("name");

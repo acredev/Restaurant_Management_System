@@ -1,3 +1,8 @@
+<!-- 
+사용자가 입력한 로그인 정보 (아이디와 비밀번호 값) 를 검증하여
+JSP 를 통해 DB 와 검증하기 위한 페이지입니다.
+ -->
+
 <%@page import="java.sql.*" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"

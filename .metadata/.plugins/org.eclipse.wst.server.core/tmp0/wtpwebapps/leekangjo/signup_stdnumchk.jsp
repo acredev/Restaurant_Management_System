@@ -1,3 +1,7 @@
+<!-- 
+학번 중복체크를 위한 페이지입니다.
+ -->
+
 <%@page import="leekangjo.signup" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -15,15 +19,20 @@
 	<body>
 		<h2>학번 중복체크</h2>
 		<%
+			// 문자열의 인코딩 방식 설정
 			request.setCharacterEncoding("UTF-8");
+			// 파라미터를 통해 받아온 값을 변수에 저장
 			String stdnum = request.getParameter("stdnum");
 	
+			// 클래스에 지정한 함수를 사용하기 위한 객체 선언
 			signup signup_stdnumchk = new signup();
 	
+			// 클래스에 지정한 함수를 실행시킨 결과값을 변수에 저장
 			int result = signup_stdnumchk.stdnumchk(stdnum);
 			if (result == 1)
 			{
 				out.print("사용 가능한 학번입니다.");%>
+				<!-- 학번이 사용 가능하다면, '학번 사용하기' 버튼이 활성화됨 -->
 				<input type="button" value="학번 사용하기" onclick="result();"><%
 			}
 			else if (result == 0)

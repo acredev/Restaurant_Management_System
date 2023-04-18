@@ -39,3 +39,5 @@
 4월 18, 2023 15:27:52.260 [19224:34748:0418/152752.259:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
 4월 18, 2023 15:30:40.946 [19224:34748:0418/153040.945:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
 4월 18, 2023 15:30:40.946 [19224:34748:0418/153040.945:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+4월 18, 2023 15:54:27.157 [19224:26180:0418/155427.156:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+4월 18, 2023 15:54:27.157     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?awv2=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)

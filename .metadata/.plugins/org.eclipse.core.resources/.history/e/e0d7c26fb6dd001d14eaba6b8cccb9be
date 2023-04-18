@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
+        <title>경민대밥집</title>
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <link href="css/Header.css" rel="stylesheet" type="text/css">
+        <link href="css/buttonST.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <img src="img/MainLogo.png" class="Logoimg" onclick ="location.href='index.html'">
+            <h1 onclick ="location.href='login.jsp'">Login</h1>
+        </header>
+        <div id="tagbar">
+            <button class="tagbarBT">영업중</button>
+            <button class="tagbarBT">예약</button>
+        </div>
+        <div id="wrapper">
+            <div id="columns">
+                <div class="card">
+                    <img src="img/Logo1.png">
+                    <p>test1</p>
+                </div>
+                <div class="card">
+                    <img src="img/Logo2.png">
+                    <p>Colorful italian cuisine ingredients</p>
+                </div>
+                <div class="card">
+                    <img src="img/Logo3.png">
+                    <p>Beef steaks</p>
+                </div>
+                <div class="card">
+                    <img src="img/Logo4.png">
+                    <p>Beef buger takeaway</p>
+                </div>
+                <div class="card">
+                    <img src="img/Logo5.png">
+                    <p>Funny quail egg breakfast</p>
+                </div>
+                <div class="card">
+                    <img src="img/Logo6.png">
+                    <p>Fresh oranges</p>
+                </div>
+                <div class="card">
+                    <img src="img/Logo7.png">
+                    <p>Pumkin soup</p>
+                </div>
+                <div class="card">
+                    <img src="img/Logo8.png">
+                    <p>Homemade chicken broth with vegetables</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

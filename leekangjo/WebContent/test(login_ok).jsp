@@ -1,3 +1,7 @@
+<!-- 
+로그인 성공 시, 출력할 테스트 페이지입니다.
+ -->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>

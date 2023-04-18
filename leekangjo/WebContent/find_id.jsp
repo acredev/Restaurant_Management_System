@@ -1,3 +1,7 @@
+<!-- 
+아이디 찾기 화면입니다.
+ -->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
@@ -7,6 +11,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
 		<title>아이디 찾기</title>
+		<!-- 페이지 디자인을 위한 CSS 선언 -->
 		<link href="css/Header.css" rel="stylesheet" type="text/css">
 		<link href="css/LoginMain.css" rel="stylesheet" type="text/css">
 		<link href="css/buttonST.css" rel="stylesheet" type="text/css">
