@@ -97,7 +97,7 @@ catch (Exception ex)
 				{
 					window.open("signup_stdnumchk.jsp?stdnum=" + document.signup.stdnum.value, "", "width=500, height=300");
 				}
-				//window.open("signup_stdnumchk.jsp?stdnum=" + document.signup.stdnum.value, "", "width=500, height=300");
+				window.open("signup_stdnumchk.jsp?stdnum=" + document.signup.stdnum.value, "", "width=500, height=300");
 			}
 		</script>
     </head>
@@ -131,7 +131,7 @@ catch (Exception ex)
 				</div>
 				<div>
 					<h3>학번</h3>
-					<input type="text" placeholder=" *학번" id="stdnum" class="account" maxlength="8" name="stdnum">
+					<input type="text" placeholder=" *학번" id="stdid" class="account" maxlength="8" name="stdnum">
 					<input type="button" class="btn_id_check" onclick="stdnumchk()" value="학번확인">
 				</div>
 				<div>

@@ -86,19 +86,6 @@ catch (Exception ex)
 				// 아이디가 없으면 알림창이 뜨며 진행되지 않음
 				window.open("signup_idchk.jsp?userid=" + document.signup.id.value, "", "width=500, height=300");
 			}
-			function stdnumchk()
-			{
-				if (document.signup.stdnum.value == "" || document.signup.stdnum.length < 0)
-				{
-					alert("학번 입력 후 다시 시도해 주세요.");
-					document.signup.stdnum.focus();
-				}
-				else
-				{
-					window.open("signup_stdnumchk.jsp?stdnum=" + document.signup.stdnum.value, "", "width=500, height=300");
-				}
-				//window.open("signup_stdnumchk.jsp?stdnum=" + document.signup.stdnum.value, "", "width=500, height=300");
-			}
 		</script>
     </head>
     <body>
@@ -131,8 +118,8 @@ catch (Exception ex)
 				</div>
 				<div>
 					<h3>학번</h3>
-					<input type="text" placeholder=" *학번" id="stdnum" class="account" maxlength="8" name="stdnum">
-					<input type="button" class="btn_id_check" onclick="stdnumchk()" value="학번확인">
+					<input type="text" placeholder=" *학번" id="stdid" class="account" maxlength="8" name="stdnum">
+					<button type="button" class="btn_id_check" id="btnSend"><span class="">학번 확인</span></button>
 				</div>
 				<div>
 					<h3>전화번호</h3>

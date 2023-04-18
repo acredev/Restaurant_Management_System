@@ -57,7 +57,7 @@ public class signup
 			
 			String insertQuery = "SELECT id from member where stdid = ?";
 			PreparedStatement psmt = connection.prepareStatement(insertQuery);
-			psmt.setString(1, stdnum);
+			psmt.setint(1, stdnum);
 			
 			ResultSet rs = psmt.executeQuery();
 			
@@ -69,7 +69,7 @@ public class signup
 			{
 				result = 1;
 			}
-			System.out.println("학번 중복체크 결과 : " + result);
+			System.out.println("아이디 중복체크 결과 : " + result);
 		}
 		catch (Exception ex)
 		{

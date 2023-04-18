@@ -11,3 +11,31 @@
 4월 18, 2023 12:17:27.776     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?awv2=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
 4월 18, 2023 12:17:35.933 [19224:26180:0418/121735.932:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
 4월 18, 2023 12:17:35.933     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/account?amf=1&sea=1&sev=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=account&pid=1&spid=243&hl=ko&dm= (0)
+4월 18, 2023 12:42:16.486 [19224:34748:0418/124216.485:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+4월 18, 2023 12:42:16.487 [19224:34748:0418/124216.487:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+4월 18, 2023 15:05:11.843 [19224:34748:0418/150511.843:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 18, 2023 15:05:11.845 [19224:34748:0418/150511.843:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 18, 2023 15:05:11.878 [19224:37536:0418/150511.878:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+4월 18, 2023 15:19:05.847 [19224:26180:0418/151905.847:ERROR:device_event_log_impl.cc(222)] [15:19:05.846] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 18, 2023 15:19:06.638 [19224:34748:0418/151906.638:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+4월 18, 2023 15:19:06.639 [19224:34748:0418/151906.639:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+4월 18, 2023 15:19:06.640 [19224:23908:0418/151906.640:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+4월 18, 2023 15:19:08.195 [19224:34748:0418/151908.195:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 18, 2023 15:19:08.196 [19224:34748:0418/151908.195:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 18, 2023 15:19:08.196 [19224:37328:0418/151908.195:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+4월 18, 2023 15:19:11.278 [19224:34748:0418/151911.277:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 18, 2023 15:19:11.278 [19224:34748:0418/151911.277:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 18, 2023 15:19:11.279 [19224:33924:0418/151911.278:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+4월 18, 2023 15:19:14.773 [19224:34748:0418/151914.772:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 18, 2023 15:19:14.774 [19224:34748:0418/151914.772:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 18, 2023 15:19:14.775 [19224:37328:0418/151914.773:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+4월 18, 2023 15:19:22.411 [19224:34748:0418/151922.411:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 18, 2023 15:19:22.412 [19224:34748:0418/151922.411:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 18, 2023 15:19:22.412 [19224:33924:0418/151922.411:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+4월 18, 2023 15:19:28.761 [19224:34748:0418/151928.760:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 18, 2023 15:19:28.762 [19224:33924:0418/151928.761:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+4월 18, 2023 15:19:28.762 [19224:34748:0418/151928.761:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+4월 18, 2023 15:27:52.259 [19224:34748:0418/152752.259:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+4월 18, 2023 15:27:52.260 [19224:34748:0418/152752.259:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+4월 18, 2023 15:30:40.946 [19224:34748:0418/153040.945:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
+4월 18, 2023 15:30:40.946 [19224:34748:0418/153040.945:ERROR:connection_factory_impl.cc(473)] ConnectionHandler failed with net error: -2
