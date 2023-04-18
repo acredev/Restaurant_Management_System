@@ -46,7 +46,7 @@
 			%>
 		<fieldset>
 			<form action="signup_stdnumchk.jsp" method="post" name="form_stdnumchk">
-				ID : <input type="text" name="stdnum" maxlength="10" value="<%=stdnum %>">
+				학번 : <input type="text" name="stdnum" maxlength="10" value="<%=stdnum %>">
 				<input type="submit" value="중복 확인">
 			</form>
 		</fieldset>

@@ -103,6 +103,19 @@ catch (Exception ex)
 				}
 				//window.open("signup_stdnumchk.jsp?stdnum=" + document.signup.stdnum.value, "", "width=500, height=300");
 			}
+			function telchk()
+			{
+				if (document.signup.tel.value == "" || document.signup.tel.length < 0)
+				{
+					alert("전화번호 입력 후 다시 시도해 주세요.");
+					document.signup.tel.focus();
+				}
+				else
+				{
+					window.open("signup_telchk.jsp?tel=" + document.signup.tel.value, "", "width=500, height=300");
+				}
+				//window.open("signup_telchk.jsp?tel=" + document.signup.tel.value, "", "width=500, height=300");
+			}
 		</script>
     </head>
     <body>
@@ -141,7 +154,7 @@ catch (Exception ex)
 				<div>
 					<h3>전화번호</h3>
 					<input type="text" placeholder=" *전화번호 ( - 없이 기입하세요.)" id="tel" class="account" maxlength="11" name="tel">
-					<button type="button" class="tel_check" id="btnSend"><span class="">SMS 인증</span></button>
+					<input type="button" class="tel_check" onclick="telchk()" value="본인인증">
 				</div>
 				<div>
 					<h3>이메일 주소</h3>

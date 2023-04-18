@@ -1,6 +1,0 @@
-package leekangjo;
-
-public int signup(String id)
-{
-	
-}
