@@ -1,0 +1,8 @@
+package leekangjo;
+
+
+
+public int idchk(String id)
+{
+	
+}

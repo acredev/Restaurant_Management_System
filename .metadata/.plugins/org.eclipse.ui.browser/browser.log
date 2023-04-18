@@ -1,0 +1,13 @@
+
+4월 18, 2023 10:51:06.22 NEW SESSION
+4월 18, 2023 10:51:06.22 [19708:30028:0418/105106.019:ERROR:device_event_log_impl.cc(222)] [10:51:06.018] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 10:51:06.605 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 18, 2023 12:12:23.354 NEW SESSION
+4월 18, 2023 12:12:23.355 [19224:26180:0418/121223.352:ERROR:device_event_log_impl.cc(222)] [12:12:23.352] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 18, 2023 12:12:23.761 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 18, 2023 12:17:23.384 [19224:23908:0418/121723.384:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 15
+4월 18, 2023 12:17:27.775 [19224:26180:0418/121727.774:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+4월 18, 2023 12:17:27.776     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?awv2=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
+4월 18, 2023 12:17:35.933 [19224:26180:0418/121735.932:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+4월 18, 2023 12:17:35.933     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/account?amf=1&sea=1&sev=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=account&pid=1&spid=243&hl=ko&dm= (0)

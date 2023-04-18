@@ -17,6 +17,7 @@ try
 	request.setCharacterEncoding("UTF-8");
 	
 	// 파라미터를 통해 넘어온 회원가입 회원정보값 수령하여 문자열 변수에 저장
+	
 	String id = request.getParameter("id");
 	String pwd = request.getParameter("pwd");
 	String name= request.getParameter("name");

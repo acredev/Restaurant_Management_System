@@ -191,3 +191,14 @@
 0:0:0:0:0:0:0:1 - - [14/Apr/2023:11:14:33 +0900] "GET /leekangjo/idTest.jsp HTTP/1.1" 200 650
 0:0:0:0:0:0:0:1 - - [14/Apr/2023:11:15:50 +0900] "GET /leekangjo/signup2.jsp HTTP/1.1" 200 5257
 0:0:0:0:0:0:0:1 - - [14/Apr/2023:11:24:34 +0900] "GET /leekangjo/signup.jsp HTTP/1.1" 200 4732
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:11:38:30 +0900] "GET /leekangjo/signup.jsp HTTP/1.1" 200 5193
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:11:40:21 +0900] "GET /leekangjo/signup.jsp HTTP/1.1" 200 5418
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:11:40:47 +0900] "GET /leekangjo/signup.jsp HTTP/1.1" 200 5393
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:11:46:59 +0900] "GET /leekangjo/signup.jsp HTTP/1.1" 500 3184
+127.0.0.1 - - [14/Apr/2023:12:06:50 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:12:06:52 +0900] "GET /leekangjo/signup.jsp HTTP/1.1" 500 3845
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:12:18:32 +0900] "GET /leekangjo/signup2.jsp HTTP/1.1" 200 4802
+127.0.0.1 - - [14/Apr/2023:12:19:13 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:12:19:15 +0900] "GET /leekangjo/signup2.jsp HTTP/1.1" 200 4469
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:12:24:18 +0900] "GET /leekangjo/signup2.jsp HTTP/1.1" 200 4469
+0:0:0:0:0:0:0:1 - - [14/Apr/2023:12:24:19 +0900] "POST /leekangjo/signup_send.jsp HTTP/1.1" 200 224

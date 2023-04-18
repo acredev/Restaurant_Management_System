@@ -7,8 +7,8 @@
 try
 {
 	// JDBC 드라이버 연결
-	Class.forName("com.mysql.jdvc.Driver");
-	String db_address = "jdbc.mysql://127.0.0.1:3306/kyungmin_store";
+	Class.forName("com.mysql.jdbc.Driver");
+	String db_address = "jdbc:mysql://127.0.0.1:3306/kyungmin_store";
 	String db_username = "root";
 	String db_pwd = "root";
 	Connection connection = DriverManager.getConnection(db_address, db_username, db_pwd);
@@ -71,13 +71,20 @@ catch (Exception ex)
 					return false;
 				}
 			}
-			function openIdChk()
+			function idchk()
 			{
-				window.open('idCheck.jsp', 'idCheckForm', 'width=500, height=700, scrollbars=yes, resizable=no')
-			}
-			function inputIdChk()
-			{
-				document.signup.idDuplication.value="idUncheck";
+				if (document.signup.id.value == "" || document.signup.id.value.length < 0)
+				{
+					alert("아이디 입력 후 시도해 주세요.");
+					document.singup.id.focus();
+				}
+				else
+				{
+					window.open("signup_idchk.jsp?userid=" + document.signup.id.value, "", "width=500, height=300");
+				}
+				// 새 창을 열어 새 페이지를 열고, 회원 아이디 정보를 가지고 중복체크 함
+				// 아이디가 없으면 알림창이 뜨며 진행되지 않음
+				window.open("signup_idchk.jsp?userid=" + document.signup.id.value, "", "width=500, height=300");
 			}
 		</script>
     </head>
@@ -92,22 +99,8 @@ catch (Exception ex)
 		   		<h1 class="logo">LEEKANGJO</h1>
 				<div>
 					<h3>아이디</h3>
-					<input type="text" placeholder=" *아이디" id="id" class="account" maxlength="10" onkeydown="inputIdChk()" name="id">
-					<script type="text/javascript">
-						function idChk()
-						{
-							var idchk = document.getElementById('id');
-							if (idchk.value == "")
-							{
-								alert(idchk.value + "아이디를 입력해주세요.");
-							}
-							else if (idchk.value != null)
-							{
-								alert(idchk.value);
-							}
-						}
-					</script>
-					<input type="button" class="btn_id_check" onclick="idChk()" value="중복확인">
+					<input type="text" placeholder=" *아이디" id="id" class="account" maxlength="10" name="id">						
+					<input type="button" class="btn_id_check" onclick="idchk()" value="중복확인">
 				</div>
 					<p>※아이디는 10자까지 작성가능.</p>
 				<div>

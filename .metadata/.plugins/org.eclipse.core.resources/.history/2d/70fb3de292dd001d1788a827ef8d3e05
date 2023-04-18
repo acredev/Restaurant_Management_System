@@ -1,0 +1,9 @@
+package leekangjo;
+
+public class signup
+{
+	int idchk (String id)
+	{
+		
+	}
+}
