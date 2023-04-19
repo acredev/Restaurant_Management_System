@@ -39,7 +39,7 @@
 	<form name="find_id" action="find_id_result.jsp" method="post">
 		<header>
 			<img src="img/Logo4.png" class="Logoimg" onclick="location.href='index.html'">
-			<h1 onclick="location.href='login.html'">Login</h1>
+			<h1 onclick="location.href='login.jsp'">Login</h1>
 		</header>
 		<div id="Loginmain">
 			<div class="box">
