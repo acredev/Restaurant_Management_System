@@ -161,11 +161,11 @@ catch (Exception ex)
 					<input type="text" placeholder="  이메일(선택)" id="email" class="account" maxlength="30" name="email">
 				</div>
 				<div>
-				<label><input type="checkbox" name="agree" value=""> *개인정보 활용 및 회원가입 동의 (필수)</label>
-				<button type="submit" id="login" class="account">회원가입</button>
-				<p id="alert" class="account"> </p> 
+					<label><input type="checkbox" name="agree" value=""> *개인정보 활용 및 회원가입 동의 (필수)</label>
+					<button type="submit" id="login" class="account">회원가입</button>
+					<p id="alert" class="account"> </p> 
 				</div>
-           </div>
+          	 </div>
            </div>
         </form>
     </body>

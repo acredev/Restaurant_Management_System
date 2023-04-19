@@ -15,9 +15,28 @@
 		<link href="css/Header.css" rel="stylesheet" type="text/css">
 		<link href="css/LoginMain.css" rel="stylesheet" type="text/css">
 		<link href="css/buttonST.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+			function telchk()
+			{
+				if (document.find_id.tel.value == "" || document.find_id.tel.length < 0)
+				{
+					alert("전화번호 입력 후 다시 시도해 주세요.");
+					document.find_id.tel.focus();
+				}
+				else
+				{
+					window.open("find_id_telchk.jsp?tel=" + document.find_id.tel.value, "", "width=500, height=300");
+				}
+				//window.open("find_id_telchk.jsp?tel=" + document.find_id.tel.value, "", "width=500, height=300");
+			}
+			function findid()
+			{
+				window.open("find_id_result.jsp?stdnum=" + document.find_id.stdnum.value, "", "width=500. height=300");
+			}
+		</script>
 	</head>
 <body>
-	<form>
+	<form name="find_id" action="find_id_result.jsp" method="post">
 		<header>
 			<img src="img/Logo4.png" class="Logoimg" onclick="location.href='index.html'">
 			<h1 onclick="location.href='login.html'">Login</h1>
@@ -30,13 +49,11 @@
 					<h3>이름</h3>
 					<input type="text" placeholder=" *이름" id="name" class="account" maxlength="5">
 					<h3>학번</h3>
-					<input type="text" placeholder=" *학번" id="std_id" class="account" maxlength="8">
+					<input type="text" placeholder=" *학번" id="stdnum" class="account" maxlength="8">
 					<h3>본인인증</h3>
 					<input type="text" placeholder=" *전화번호" id="tel" class="account" maxlength="11">
-					<input type="button" id="telchk" class="account" value="본인인증">
-					<button class="tagbarBT" id="btnSend">
-						<span class="">ID 확인</span>
-					</button>
+					<input type="button" id="tel_check" onclick="telchk()" class="account" value="본인인증">
+					<input type="button" onclick="findid()" class="tagbarBT" id="btnSend" value="ID 찾기">
 				</div>
 				<p class=login_menu>
 					<a onclick="location.href='find_pw.jsp'">PW찾기</a>
@@ -44,7 +61,6 @@
 				</p>
 			</div>
 		</div>
-		<script src="login.js"></script>
 	</form>
 </body>
 </html>

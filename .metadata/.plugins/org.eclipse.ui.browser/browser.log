@@ -49,3 +49,7 @@
 4월 18, 2023 19:29:56.87 [19224:26180:0418/192956.086:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
 4월 18, 2023 19:29:56.88     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?awv2=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
 4월 18, 2023 21:57:17.39 [19224:26180:0418/215717.038:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+4월 19, 2023 16:15:17.845 NEW SESSION
+4월 19, 2023 16:15:17.846 [40476:37592:0419/161517.842:ERROR:device_event_log_impl.cc(222)] [16:15:17.841] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 19, 2023 16:15:18.12 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
