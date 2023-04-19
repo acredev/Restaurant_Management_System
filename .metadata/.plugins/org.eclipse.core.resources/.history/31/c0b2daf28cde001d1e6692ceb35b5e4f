@@ -106,8 +106,8 @@ public class signup
 	}
 	public int telchk (String tel)
 	{
-		String api_key = "API키";
-		String api_secret = "API시크릿키";
+		String api_key = "NCSBHTA1YLN39PCS";
+		String api_secret = "ENMU9EKP3YK5PEY39KO2DLAPTRPVNORX";
 		Message coolsms = new Message(api_key, api_secret);
 		
 		int chknum = (int)(Math.random() * 100000);
