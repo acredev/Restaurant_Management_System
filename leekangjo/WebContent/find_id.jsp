@@ -31,6 +31,9 @@
 					<input type="text" placeholder=" *이름" id="name" class="account" maxlength="5">
 					<h3>학번</h3>
 					<input type="text" placeholder=" *학번" id="std_id" class="account" maxlength="8">
+					<h3>본인인증</h3>
+					<input type="text" placeholder=" *전화번호" id="tel" class="account" maxlength="11">
+					<input type="button" id="telchk" class="account" value="본인인증">
 					<button class="tagbarBT" id="btnSend">
 						<span class="">ID 확인</span>
 					</button>

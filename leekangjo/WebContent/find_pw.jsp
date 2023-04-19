@@ -32,6 +32,7 @@
 					<input type="text" placeholder=" *이름" id="name" class="account" maxlength="5">
 					<h3>전화번호</h3>
 					<input type="text" placeholder=" *전화번호" id="tel" class="account" maxlength="11">
+					<input type="button" id="telchk" class="account" value="본인인증">
 					<button class="btn_find_id" id="btnSend">
 						<span class="">PW 초기화</span>
 					</button>

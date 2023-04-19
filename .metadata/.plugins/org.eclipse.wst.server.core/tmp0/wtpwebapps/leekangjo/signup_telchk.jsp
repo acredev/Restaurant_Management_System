@@ -52,6 +52,8 @@
 					{
 						alert("전화번호 본인인증이 완료되었습니다.");
 						opener.document.signup.tel.readOnly = true;
+						opener.document.signup.tel.style.color = "grey";
+						opener.document.signup.tel.style.onfocus="this.blur();";
 						window.close();
 					}
 					else

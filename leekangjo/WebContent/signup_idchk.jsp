@@ -56,6 +56,8 @@
 			{
 				opener.document.signup.id.value = document.form_idchk.userid.value;
 				opener.document.signup.id.readOnly = true;
+				opener.document.signup.id.style.color = "grey";
+				opener.document.signup.id.style.onfocus="this.blur();";
 				window.close();
 			}
 		</script>
