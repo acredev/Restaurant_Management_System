@@ -135,3 +135,20 @@
 4월 21, 2023 01:28:45.920 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 4월 21, 2023 01:33:09.526 [43588:16852:0421/013309.526:ERROR:device_event_log_impl.cc(222)] [01:33:09.526] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 4월 21, 2023 01:33:09.767 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 01:55:51.290 [42284:41960:0421/015551.290:ERROR:device_event_log_impl.cc(222)] [01:55:51.290] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 01:55:51.546 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 02:09:17.718 [24176:38788:0421/020917.717:ERROR:device_event_log_impl.cc(222)] [02:09:17.717] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 02:09:17.919 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 02:10:43.588 [32556:34744:0421/021043.588:ERROR:device_event_log_impl.cc(222)] [02:10:43.588] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 02:10:43.910 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 02:20:36.842 [27848:41108:0421/022036.841:ERROR:device_event_log_impl.cc(222)] [02:20:36.841] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 02:20:37.08 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 02:21:36.16 [27848:41108:0421/022136.016:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 21, 2023 02:25:51.842 [29472:13504:0421/022551.842:ERROR:device_event_log_impl.cc(222)] [02:25:51.842] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 02:25:52.15 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 02:35:03.958 [38744:4524:0421/023503.957:ERROR:device_event_log_impl.cc(222)] [02:35:03.958] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 02:35:04.141 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 02:41:37.358 [44528:34472:0421/024137.358:ERROR:device_event_log_impl.cc(222)] [02:41:37.358] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 02:41:37.541 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 02:42:57.516 [11620:28156:0421/024257.515:ERROR:device_event_log_impl.cc(222)] [02:42:57.516] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 02:42:57.689 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.

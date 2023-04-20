@@ -22,7 +22,7 @@
     			</div>
     			<button type="submit" class="tagbarBT">다음</button>
     			<div class="IPSBOX">
-			        <a onclick="location.href='../find_id/find_id.jsp'">ID찾기 </a>
+			        <a onclick="location.href='../find_id/find_id_first.jsp'">ID찾기 </a>
         			<a>|</a>
         			<a onclick="location.href='../signup/signup.jsp'">회원가입</a>
     			</div>

@@ -74,5 +74,5 @@
 		out.println("오류가 발생했습니다. 오류 메시지 : " + ex.getMessage());
     }%>
 	</body>
-	<script src="js/LoginJS.js"></script>
+	<script src="../../js/LoginJS.js"></script>
 </html>
