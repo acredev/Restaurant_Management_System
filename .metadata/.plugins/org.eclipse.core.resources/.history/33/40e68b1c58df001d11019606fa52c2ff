@@ -1,0 +1,34 @@
+<!-- 
+로그인 성공 시, 출력할 테스트 페이지입니다.
+ -->
+<%@page import="java.sql.*" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<h1>로그인 성공 !!!!!</h1>
+	</body>
+	<%
+	try
+	{
+		//JDBC 드라이버 연결
+		Class.forName("com.mysql.jdbc.Driver");
+		String db_address = "jdbc:mysql://127.0.0.1:3306/kyungmin_store";
+		String db_username = "root";
+		String db_pwd = "root";
+		Connection connection = DriverManager.getConnection(db_address, db_username, db_pwd);
+		        			
+		// 문자열의 인코딩 방식 설정
+		request.setCharacterEncoding("UTF-8");
+	}
+	catch (Exception Ex)
+	{
+		
+	}
+	%>
+</html>

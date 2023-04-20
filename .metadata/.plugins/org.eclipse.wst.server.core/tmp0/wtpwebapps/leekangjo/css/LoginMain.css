@@ -1,53 +1,21 @@
-html,body, form{
-    height: 100%;
+.outBox {margin:50px auto; padding:20px; max-width:320px; border:1px solid #999; border-radius:6px;}
+.outBox .inputBox {position:relative; height:50px;}
+.outBox .inputBox input[type="text"] {padding:0 10px; width:100%; height:50px; font-size:14px; box-sizing:border-box; border:1px solid #999; outline:none;}
+.outBox .inputBox label {position:absolute; left:0; bottom:0; padding:0 6px; color:#999; font-size:14px; font-weight:normal; background:#fff; transform:scale(1) translate(4px, -18px); transition:all .15s; pointer-events:none;}
+.outBox .inputBox input[type="text"]:focus,
+.outBox.existence .inputBox input[type="text"] {border:2px solid red;}
+.outBox .inputBox input[type="text"]:focus + label,
+.outBox.existence .inputBox label {color:red; transform:scale(.85) translate(-10px, -48px);}
+.boxtitle{
+    text-align: center;
 }
 
-#Loginmain{
-    height: 100%;
-    display: flex;
-    justify-content:center; 
-    align-items : center;
-}
-.box{
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    background-color: ;
-}
-.logo{
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
-#Blogin {
+.IPSBOX{
     margin-top: 10%;
-    width: 80%;
-    background: #4EB2FF;
-    border-color: transparent;
-    font-family: 
-    
+    text-align: center;
 }
-p {
-    font: inherit;
-    margin-block-start: 1px;
-    margin-block-end: 1em;
-    margin-inline-start: 3px;
-    margin-inline-end: 3px;
-    color: ;
-}
-h2{
-    font-size: 25px;
-    margin-bottom: 7%;    
-}
-.btn_login{
-    font-size: 15px;
-    font-weight: bold;
-    
-}
-.input_box{
-    margin-bottom: 3%;
+
+.tagbarBT{
+    margin-top: 5%;
+    width: 100%;
 }

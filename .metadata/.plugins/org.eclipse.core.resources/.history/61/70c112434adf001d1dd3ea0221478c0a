@@ -1,0 +1,18 @@
+var loginBox = document.querySelector('.outBox');
+var loginInputBox = document.querySelector('#id');
+var loginInputBox2 = document.querySelector('#password');
+loginInputBox.addEventListener('keyup',function (){
+    if(!loginInputBox.value == ''){
+        loginBox.classList.add('existence');
+    }else{
+        loginBox.classList.remove('existence');
+    }
+});
+
+loginInputBox2.addEventListener('keyup',function (){
+    if(!loginInputBox.value == ''){
+        loginBox.classList.add('existence');
+    }else{
+        loginBox.classList.remove('existence');
+    }
+});

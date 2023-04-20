@@ -53,3 +53,73 @@
 4월 19, 2023 16:15:17.845 NEW SESSION
 4월 19, 2023 16:15:17.846 [40476:37592:0419/161517.842:ERROR:device_event_log_impl.cc(222)] [16:15:17.841] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 4월 19, 2023 16:15:18.12 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 19, 2023 19:38:05.875 NEW SESSION
+4월 19, 2023 19:38:05.875 [41572:43452:0419/193805.872:ERROR:device_event_log_impl.cc(222)] [19:38:05.873] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 19, 2023 19:38:06.304 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 19, 2023 22:19:58.262 NEW SESSION
+4월 19, 2023 22:19:58.262 [44116:42212:0419/221958.260:ERROR:device_event_log_impl.cc(222)] [22:19:58.260] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 19, 2023 22:19:58.477 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 19, 2023 22:27:56.300 [40236:37228:0419/222756.300:ERROR:device_event_log_impl.cc(222)] [22:27:56.300] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 19, 2023 22:27:56.547 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 19, 2023 22:51:33.413 [40236:11516:0419/225133.412:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 20, 2023 10:04:42.485 [40236:11516:0420/100442.484:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 20, 2023 10:04:43.148 [40236:11516:0420/100443.147:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 10:04:43.271 [40236:37084:0420/100443.270:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+4월 20, 2023 15:45:51.147 [40236:37228:0420/154551.146:ERROR:device_event_log_impl.cc(222)] [15:45:51.146] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 20, 2023 15:45:52.197 [40236:11516:0420/154552.196:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:45:52.198 [40236:11516:0420/154552.197:ERROR:checkin_request.cc(243)] Check-in request got net error: -105
+4월 20, 2023 15:45:52.200 [40236:15656:0420/154552.199:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+4월 20, 2023 15:45:52.330 [40236:11516:0420/154552.330:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:45:57.94 [40236:11516:0420/154557.093:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:46:03.75 [40236:11516:0420/154603.075:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:46:17.562 [40236:11516:0420/154617.562:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:46:17.563 [40236:11516:0420/154617.562:ERROR:checkin_request.cc(243)] Check-in request got net error: -105
+4월 20, 2023 15:46:24.14 [40236:11516:0420/154624.013:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:46:29.819 [40236:37228:0420/154629.818:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Connection failed (-105).
+4월 20, 2023 15:47:02.533 [40236:11516:0420/154702.532:ERROR:checkin_request.cc(243)] Check-in request got net error: -105
+4월 20, 2023 15:47:51.92 [40236:11516:0420/154751.091:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:48:48.172 [40236:11516:0420/154848.172:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:48:54.555 [40236:11516:0420/154854.554:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:48:57.388 [40236:11516:0420/154857.388:ERROR:checkin_request.cc(243)] Check-in request got net error: -105
+4월 20, 2023 15:49:12.699 [40236:11516:0420/154912.699:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:49:28.84 [40236:11516:0420/154928.083:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:52:50.963 [40236:11516:0420/155250.963:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 20, 2023 15:52:53.32 [40236:11516:0420/155253.032:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:52:59.530 [40236:11516:0420/155259.529:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:53:50.653 [40236:11516:0420/155350.653:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:54:04.37 [40236:11516:0420/155404.036:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:54:10.853 [40236:11516:0420/155410.852:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:54:16.978 [40236:11516:0420/155416.978:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 15:54:36.695 [40236:11516:0420/155436.694:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 16:10:06.676 [17484:27664:0420/161006.675:ERROR:device_event_log_impl.cc(222)] [16:10:06.675] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 20, 2023 16:10:06.931 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 20, 2023 17:23:06.192 NEW SESSION
+4월 20, 2023 17:23:06.192 [33760:35300:0420/172306.188:ERROR:device_event_log_impl.cc(222)] [17:23:06.188] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 20, 2023 17:23:06.449 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 20, 2023 17:27:48.725 [33760:35300:0420/172748.724:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+4월 20, 2023 17:27:48.726     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?awv2=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
+4월 20, 2023 17:37:06.835 [33760:18296:0420/173706.835:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 20, 2023 17:37:08.965 [33760:18296:0420/173708.965:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 17:37:09.506 [33760:18296:0420/173709.505:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 17:37:15.420 [33760:18296:0420/173715.420:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 17:37:30.905 [33760:18296:0420/173730.904:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 20, 2023 17:58:47.343 [33760:35300:0420/175847.342:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+4월 20, 2023 17:58:47.344     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?awv2=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
+4월 20, 2023 18:02:10.317 [2192:39316:0420/180210.317:ERROR:device_event_log_impl.cc(222)] [18:02:10.316] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 20, 2023 18:02:10.530 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 20, 2023 18:03:16.852 [12768:20832:0420/180316.851:ERROR:device_event_log_impl.cc(222)] [18:03:16.852] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 20, 2023 18:03:17.98 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 20, 2023 18:03:24.181 [12768:23236:0420/180324.180:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+4월 20, 2023 18:03:40.146 [42568:8904:0420/180340.145:ERROR:device_event_log_impl.cc(222)] [18:03:40.146] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 20, 2023 18:03:40.435 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 20, 2023 18:07:13.877 [36308:11288:0420/180713.876:ERROR:device_event_log_impl.cc(222)] [18:07:13.876] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 20, 2023 18:07:14.101 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 20, 2023 18:13:28.171 [27876:39996:0420/181328.171:ERROR:device_event_log_impl.cc(222)] [18:13:28.171] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 20, 2023 18:13:28.359 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 20, 2023 18:15:24.415 [43876:27672:0420/181524.415:ERROR:device_event_log_impl.cc(222)] [18:15:24.415] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 20, 2023 18:15:24.677 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 20, 2023 18:15:31.249 [43876:38224:0420/181531.248:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 20, 2023 18:16:06.319 [43876:27672:0420/181606.319:ERROR:device_event_log_impl.cc(222)] [18:16:06.318] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)

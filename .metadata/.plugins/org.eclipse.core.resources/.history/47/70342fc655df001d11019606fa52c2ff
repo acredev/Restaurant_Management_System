@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>로그인페이지</title>
+	    <link href="css/LoginMain.css" rel="stylesheet">
+	    <link href="css/buttonST.css" rel="stylesheet">
+	</head>
+	<body>
+	    <div class="outBox">
+		    <div class="boxtitle">
+        		<img src="img/Logo4.png" alt="" class="loginImg" onclick="location.href='index.html'">
+        		<h1>로그인</h1>
+    		</div>
+    		<div class="inputBox">
+	        	<input type="text" id="sampleId" name="">
+        		<label for="sampleId">패스워드</label>
+    		</div>
+    		<button class="tagbarBT">다음</button>
+    		<div class="IPSBOX">
+	        	<a onclick="location.href='find_pwd.jsp'">PW찾기</a>
+    		</div>
+		</div>
+	</body>
+	<script src="js/LoginJS.js"></script>
+</html>
