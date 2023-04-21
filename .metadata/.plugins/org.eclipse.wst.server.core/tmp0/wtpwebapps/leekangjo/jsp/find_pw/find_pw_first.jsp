@@ -12,7 +12,7 @@
 <html>
 	<head>
 	    <meta charset="utf-8">
-	    <title>비밀번호 재설정 페이지</title>
+	    <title>LEEKANGJO - 비밀번호 재설정</title>
 	    <link href="../../css/LoginMain.css" rel="stylesheet">
 	    <link href="../../css/buttonST.css" rel="stylesheet">
 	</head>

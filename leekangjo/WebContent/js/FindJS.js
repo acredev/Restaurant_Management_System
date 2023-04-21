@@ -20,8 +20,8 @@ function find_id_first_check()
 	
 	if (tell.value == "")
 	{
-		alert("전화번호 입력 후 다시 시도해 주세요.");
-		pwd.focus();
+		alert("전화번호 입력 후 다시 시도해 주세요. 전화번호는 숫자만 입력 가능합니다.");
+		tell.focus();
 		return false;
 	}
 	else

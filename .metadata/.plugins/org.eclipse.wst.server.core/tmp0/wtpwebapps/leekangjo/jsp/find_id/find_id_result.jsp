@@ -12,7 +12,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
-		<title>아이디 찾기</title>
+		<title>LEEKANGJO - 아이디 찾기</title>
 		<link href="../../css/LoginMain.css" rel="stylesheet">
 	    <link href="../../css/buttonST.css" rel="stylesheet">
 	</head>

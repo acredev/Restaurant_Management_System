@@ -11,7 +11,7 @@
 <html>
 	<head>
 	    <meta charset="utf-8">
-	    <title>로그인페이지</title>
+	    <title>LEEKANGJO - 로그인</title>
 	    <link href="../../css/LoginMain.css" rel="stylesheet">
 	    <link href="../../css/buttonST.css" rel="stylesheet">
 	</head>
@@ -54,11 +54,11 @@
     			<div class="inputBox">
     				<input type="hidden" id="id" name="id" value="<%=result.getString("id") %>">
 	        		<input type="text" id="tell" name="pwd">
-        			<label for="sampleId">패스워드</label>
+        			<label for="sampleId">비밀번호</label>
     			</div>
     			<button type="button" onclick="login_second_check()" class="tagbarBT">다음</button>
     			<div class="IPSBOX">
-	    	  	  	<a onclick="location.href='../find_pw/find_pw_first.jsp?userid=' + document.login_second.id.value">PW재설정</a>
+	    	  	  	<a onclick="location.href='../find_pw/find_pw_first.jsp?userid=' + document.login_second.id.value">비밀번호 재설정</a>
     			</div>
 			</div>
 		</form>

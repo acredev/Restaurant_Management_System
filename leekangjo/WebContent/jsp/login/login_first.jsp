@@ -9,7 +9,7 @@
 <html>
 	<head>
 	    <meta charset="utf-8">
-	    <title>로그인 페이지</title>
+	    <title>LEEKANGJO - 로그인</title>
 	    <link href="../../css/LoginMain.css" rel="stylesheet">
 	    <link href="../../css/buttonST.css" rel="stylesheet">
 	</head>
@@ -26,7 +26,7 @@
     			</div>
     			<button type="button" onclick="login_first_check()" class="tagbarBT">다음</button>
     			<div class="IPSBOX">
-			        <a onclick="location.href='../find_id/find_id_first.jsp'">ID찾기 </a>
+			        <a onclick="location.href='../find_id/find_id_first.jsp'">아이디 찾기 </a>
         			<a>|</a>
         			<a onclick="location.href='../signup/signup.jsp'">회원가입</a>
     			</div>

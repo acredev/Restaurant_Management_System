@@ -12,7 +12,7 @@
 <html>
 	<head>
 	    <meta charset="utf-8">
-	    <title>인증번호 인증 페이지</title>
+	    <title>LEEKANGJO - 아이디 찾기</title>
 	    <link href="../../css/LoginMain.css" rel="stylesheet">
 	    <link href="../../css/buttonST.css" rel="stylesheet">
 	</head>
