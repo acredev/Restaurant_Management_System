@@ -5,7 +5,7 @@
 <html>
 	<head>
 	    <meta charset="utf-8">
-	    <title>로그인페이지</title>
+	    <title>로그인 페이지</title>
 	    <link href="../../css/LoginMain.css" rel="stylesheet">
 	    <link href="../../css/buttonST.css" rel="stylesheet">
 	</head>
@@ -26,7 +26,7 @@
         			<a>|</a>
         			<a onclick="location.href='../signup/signup.jsp'">회원가입</a>
     			</div>
-			</div>5
+			</div>
 		</form>
 	</body>
 	<script src="../../js/LoginJS.js"></script>

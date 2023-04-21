@@ -158,3 +158,14 @@
 4월 21, 2023 09:14:27.287 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 4월 21, 2023 09:18:36.493 [23900:42356:0421/091836.493:ERROR:device_event_log_impl.cc(222)] [09:18:36.493] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 4월 21, 2023 09:18:36.740 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 11:24:24.954 [26340:4208:0421/112424.954:ERROR:device_event_log_impl.cc(222)] [11:24:24.954] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 11:24:25.156 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 11:24:56.630 [26340:4208:0421/112456.629:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+4월 21, 2023 11:31:46.908 [34912:35336:0421/113146.907:ERROR:device_event_log_impl.cc(222)] [11:31:46.907] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 11:31:47.136 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 11:33:48.980 [31968:42380:0421/113348.979:ERROR:device_event_log_impl.cc(222)] [11:33:48.978] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 11:33:49.176 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 11:36:19.336 [38576:26892:0421/113619.335:ERROR:device_event_log_impl.cc(222)] [11:36:19.335] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 11:36:19.503 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 11:53:43.70 [44544:18316:0421/115343.069:ERROR:device_event_log_impl.cc(222)] [11:53:43.069] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 11:53:43.240 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.

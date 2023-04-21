@@ -1,0 +1,16 @@
+package leekangjo;
+
+public class randomPwd
+{
+	public static String randomStr(int size)
+	{
+		if(size > 0)
+		{
+			char[] tmp = new char[size];
+			for (int i=0; i<tmp.length; i++)
+			{
+				
+			}
+		}
+	}
+}

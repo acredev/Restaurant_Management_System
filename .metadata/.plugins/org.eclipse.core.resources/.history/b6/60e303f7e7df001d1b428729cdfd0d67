@@ -1,0 +1,12 @@
+package leekangjo;
+
+public class randomPwd
+{
+	public static String randomStr(int size)
+	{
+		if(size > 0)
+		{
+			
+		}
+	}
+}

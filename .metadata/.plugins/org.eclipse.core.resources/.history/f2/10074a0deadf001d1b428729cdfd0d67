@@ -1,0 +1,27 @@
+package leekangjo;
+
+public class randomPwd
+{
+	public String randomStr(int size)
+	{
+		size = 8;
+		if(size > 0)
+		{
+			char[] tmp = new char[size];
+			for (int i=0; i<tmp.length; i++)
+			{
+				int div = (int) Math.floor(Math.random() * 2);
+				if(div == 0)
+				{
+					tmp[i] = (char) (Math.random() * 10 + '0');
+				}
+				else
+				{
+					tmp[i] = (char) (Math.random() * 26 + 'A');
+				}
+			}
+			return new String(tmp);
+		}
+		return "ERROR : Size is required.";
+	}
+}

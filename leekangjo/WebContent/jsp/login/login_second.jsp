@@ -54,7 +54,7 @@
     			</div>
     			<button type="submit" class="tagbarBT">다음</button>
     			<div class="IPSBOX">
-	    	  	  	<a onclick="location.href='../find_pw/find_pw.jsp'">PW찾기</a>
+	    	  	  	<a onclick="location.href='../find_pw/find_pw_first.jsp?userid=' + document.login_second.id.value">PW재설정</a>
     			</div>
 			</div>
 		</form>

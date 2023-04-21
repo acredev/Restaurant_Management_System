@@ -43,7 +43,7 @@
 			
 			while (result.next())
 			{%>
-			<form name="find_id_second" action="find_id_result.jsp" method="post">
+			<form name="find_id_result" action="find_id_result.jsp" method="post">
 				<div class="outBox">
 	    			<div class="boxtitle">
         				<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">

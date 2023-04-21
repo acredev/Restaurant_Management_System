@@ -50,7 +50,7 @@
         			<h1>인증번호</h1>
     			</div>
 				<div class="inputBox">
-    	    		<input type="number" id="verify" name="telchk" oninput="maxLengthCheck(this)" maxlength="5">
+    	    		<input type="number" id="verify" class="auto_verify" name="telchk" oninput="maxLengthCheck(this)" maxlength="5">
     	    		<input type="hidden" id="tel" name="tel" value=<%=user_tel %>>
         			<label for="verify">인증번호 확인</label>
 		    	</div>
@@ -73,11 +73,11 @@
 					{
 						if (<%=chknum%> == document.find_id_second.telchk.value)
 						{
-							alert("전화번호 본인인증이 완료되었습니다.")
+							alert("전화번호 본인인증이 완료되었습니다.");
 						}
 						else
 						{
-							alert("전화번호 본인인증이 실패했습니다. 처음부터 다시 시도해 주세요.")
+							alert("전화번호 본인인증이 실패했습니다. 처음부터 다시 시도해 주세요.");
 							setTimeout(function(){ window.location.href="find_id_first.jsp"}, 100);
 						}
 					}
