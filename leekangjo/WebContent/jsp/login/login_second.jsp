@@ -1,3 +1,7 @@
+<!-- 
+로그인 (비밀번호) 화면입니다.
+ -->
+
 <%@page import="java.sql.*" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -49,10 +53,10 @@
     			</div>
     			<div class="inputBox">
     				<input type="hidden" id="id" name="id" value="<%=result.getString("id") %>">
-	        		<input type="text" id="pwd" name="pwd">
+	        		<input type="text" id="tell" name="pwd">
         			<label for="sampleId">패스워드</label>
     			</div>
-    			<button type="submit" class="tagbarBT">다음</button>
+    			<button type="button" onclick="login_second_check()" class="tagbarBT">다음</button>
     			<div class="IPSBOX">
 	    	  	  	<a onclick="location.href='../find_pw/find_pw_first.jsp?userid=' + document.login_second.id.value">PW재설정</a>
     			</div>

@@ -1,3 +1,7 @@
+<!-- 
+로그인 (아이디) 화면입니다.
+ -->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
@@ -10,7 +14,7 @@
 	    <link href="../../css/buttonST.css" rel="stylesheet">
 	</head>
 	<body>
-		<form name="login_first" action="login_second.jsp" method="post">
+		<form name="login_first" class="login_first" action="login_second.jsp" method="post">
 	    	<div class="outBox">
 		    	<div class="boxtitle">
 	        		<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
@@ -20,7 +24,7 @@
 		        	<input type="text" id="tell" name="id">
         			<label for="sampleId">아이디</label>
     			</div>
-    			<button type="submit" class="tagbarBT">다음</button>
+    			<button type="button" onclick="login_first_check()" class="tagbarBT">다음</button>
     			<div class="IPSBOX">
 			        <a onclick="location.href='../find_id/find_id_first.jsp'">ID찾기 </a>
         			<a>|</a>

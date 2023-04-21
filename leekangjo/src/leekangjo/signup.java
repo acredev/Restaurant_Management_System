@@ -106,12 +106,15 @@ public class signup
 	}
 	public int telchk (String tel)
 	{
-		String api_key = "api키";
-		String api_secret = "api시크릿키";
+		// coolSMS 연결 API키
+		String api_key = "키";
+		String api_secret = "키";
 		Message coolsms = new Message(api_key, api_secret);
 		
+		// 인증번호 난수 발생
 		int chknum = (int)(Math.random() * 100000);
 		
+		// 문자 보낼 내용 결정
 		HashMap<String, String> params = new HashMap<String, String>();
 		params.put("to", tel);
 		params.put("from", "01084295741");
@@ -133,6 +136,7 @@ public class signup
 		{
 			
 		}
+		// 난수값 반환
 		return chknum;
 	}
 }

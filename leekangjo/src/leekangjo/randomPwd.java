@@ -1,3 +1,12 @@
+/*
+ * 랜덤 패스워드를 생성하여 비밀번호 재설정을 도와주는 자바 클래스 파일입니다.
+ * - 구현기능
+ *    1. randomStr() : 랜덤 문자열 발생
+ *        - size : 발생할 문자열의 길이를 지정합니다.
+ *    2. sendSMS() : 문자 발송
+ *        - 생성된 랜덤 문자열을 사용자의 휴대폰 번호로 전송합니다.
+ */
+
 package leekangjo;
 
 import java.util.HashMap;
@@ -32,13 +41,16 @@ public class randomPwd
 	}
 	public String sendSMS (String tel)
 	{
+		// 랜덤 문자열 생성, 8자리
 		randomPwd randomPwd = new randomPwd();
 		String randomPwd_create = randomPwd.randomStr(8);
 		
-		String api_key = "api키";
-		String api_secret = "api시크릿키";
+		// coolSMS 연결 API키
+		String api_key = "키";
+		String api_secret = "키";
 		Message coolsms = new Message(api_key, api_secret);
 		
+		// 문자 보낼 내용 결정
 		HashMap<String, String> params = new HashMap<String, String>();
 		params.put("to", tel);
 		params.put("from", "01084295741");
@@ -60,6 +72,7 @@ public class randomPwd
 		{
 			
 		}
+		// 랜덤 문자열값 반환
 		return randomPwd_create;
 	}
 }

@@ -1,0 +1,25 @@
+var loginBox = document.querySelector('.outBox');
+var loginInputBox = document.querySelector('#tell');
+    loginInputBox.addEventListener('keyup', function(){
+        if(!loginInputBox.value == ''){
+            loginBox.classList.add('existence');   
+        }else{
+            loginBox.classList.remove('existence');   
+        }
+    });
+
+function maxLengthCheck(object){
+    if (object.value.length > object.maxLength){
+      object.value = object.value.slice(0, object.maxLength);
+    }    
+  }
+
+$('login_first').on('submit', ()=>{
+	let idval = $('#tell').val()
+	let idvalchk = /^[a-z0-9]+$/
+	if (@idvalchk.test(idval)) || idval.length<6){
+		alert('아이디는 영소문자 / 숫자로만 입력 바랍니다.')
+		$('#tell').focus()
+		return false
+	}
+})

@@ -1,3 +1,7 @@
+<!-- 
+비밀번호 재설정 중간과정 (본인인증) 화면입니다.
+ -->
+
 <%@page import="java.sql.*"%>
 <%@page import="leekangjo.signup" %>
 

@@ -1,3 +1,7 @@
+<!-- 
+아이디 찾기 중간 진행과정 (사용자 인증) 화면입니다.
+ -->
+
 <%@page import="java.sql.*"%>
 <%@page import="leekangjo.signup" %>
 
@@ -50,11 +54,11 @@
         			<h1>인증번호</h1>
     			</div>
 				<div class="inputBox">
-    	    		<input type="number" id="verify" class="auto_verify" name="telchk" oninput="maxLengthCheck(this)" maxlength="5">
+    	    		<input type="number" id="tell" class="auto_verify" name="telchk" oninput="maxLengthCheck(this)" maxlength="5">
     	    		<input type="hidden" id="tel" name="tel" value=<%=user_tel %>>
         			<label for="verify">인증번호 확인</label>
 		    	</div>
-    			<button type="submit" class="tagbarBT" onclick="result();">확인</button>
+    			<button type="button" class="tagbarBT" onclick="result()">확인</button>
 			</div>
 			<%
 			signup signup_telchk = new signup();
@@ -74,6 +78,7 @@
 						if (<%=chknum%> == document.find_id_second.telchk.value)
 						{
 							alert("전화번호 본인인증이 완료되었습니다.");
+							document.find_id_second.submit();
 						}
 						else
 						{
@@ -101,5 +106,5 @@
 	}
 	%>
 	</body>
-	<script src="../../js/verifyJS.js"></script>
+	<script src="../../js/FindJS.js"></script>
 </html>

@@ -26,9 +26,9 @@
 	        		<input type="number" id="tell" name="tel" oninput="maxLengthCheck(this)" maxlength="11">
         			<label for="tell"> 전화번호</label>
     			</div>
-    			<button type="submit" class="tagbarBT">인증번호 전송</button>
+    			<button type="button" onclick="find_id_first_check()" class="tagbarBT">인증번호 전송</button>
 			</div>
 		</form>
 	</body>
-	<script src="../../js/LoginJS.js"></script>
+	<script src="../../js/FindJS.js"></script>
 </html>

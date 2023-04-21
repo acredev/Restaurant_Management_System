@@ -1,3 +1,7 @@
+<!-- 
+아이디 찾기 결과 화면입니다.
+ -->
+
 <%@page import="java.sql.*" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
