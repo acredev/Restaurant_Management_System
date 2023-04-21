@@ -1,3 +1,7 @@
+<!-- 
+회원가입 페이지입니다.
+ -->
+
 <%@ page import="java.sql.*" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -8,7 +12,7 @@ try
 {
 	// JDBC 드라이버 연결
 	Class.forName("com.mysql.jdbc.Driver");
-	String db_address = "jdbc.mysql://127.0.0.1:3306/kyungmin_store";
+	String db_address = "jdbc:mysql://127.0.0.1:3306/kyungmin_store";
 	String db_username = "root";
 	String db_pwd = "root";
 	Connection connection = DriverManager.getConnection(db_address, db_username, db_pwd);
@@ -27,8 +31,8 @@ catch (Exception ex)
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
         <title>이강조 회원가입</title>
-        <link href="css/Header.css" rel="stylesheet" type="text/css">
-        <link href="css/signup_style.css" rel="stylesheet" type="text/css">
+        <link href="../../css/Header.css" rel="stylesheet" type="text/css">
+        <link href="../../css/signup_style.css" rel="stylesheet" type="text/css">
         <script type="text/javascript">
 			function checkValue()
 			{
@@ -71,78 +75,62 @@ catch (Exception ex)
 					return false;
 				}
 			}
-			function inputIdChk()
+			function idchk()
 			{
-				document.signup.idDuplication.value="idUncheck";
+				if (document.signup.id.value == "" || document.signup.id.value.length < 0)
+				{
+					alert("아이디 입력 후 시도해 주세요.");
+					document.singup.id.focus();
+				}
+				else
+				{
+					window.open("signup_idchk.jsp?userid=" + document.signup.id.value, "", "width=500, height=300");
+				}
+				// 새 창을 열어 새 페이지를 열고, 회원 아이디 정보를 가지고 중복체크 함
+				// 아이디가 없으면 알림창이 뜨며 진행되지 않음
+				window.open("signup_idchk.jsp?userid=" + document.signup.id.value, "", "width=500, height=300");
+			}
+			function stdnumchk()
+			{
+				if (document.signup.stdnum.value == "" || document.signup.stdnum.length < 0)
+				{
+					alert("학번 입력 후 다시 시도해 주세요.");
+					document.signup.stdnum.focus();
+				}
+				else
+				{
+					window.open("signup_stdnumchk.jsp?stdnum=" + document.signup.stdnum.value, "", "width=500, height=300");
+				}
+				//window.open("signup_stdnumchk.jsp?stdnum=" + document.signup.stdnum.value, "", "width=500, height=300");
+			}
+			function telchk()
+			{
+				if (document.signup.tel.value == "" || document.signup.tel.length < 0)
+				{
+					alert("전화번호 입력 후 다시 시도해 주세요.");
+					document.signup.tel.focus();
+				}
+				else
+				{
+					window.open("signup_telchk.jsp?tel=" + document.signup.tel.value, "", "width=500, height=300");
+				}
+				//window.open("signup_telchk.jsp?tel=" + document.signup.tel.value, "", "width=500, height=300");
 			}
 		</script>
     </head>
     <body>
     	<form name="signup" action="signup_send.jsp" method="post">
  	       <header>
- 	           <img src="img/Logo4.png" class="Logoimg" onclick ="location.href='index.html'">
-	           <h1 onclick ="location.href='Login.html'">Login</h1>
+ 	           <img src="img/Logo4.png" class="Logoimg" onclick ="location.href='../../index.html'">
+	           <h1 onclick ="location.href='../login/login_first.jsp'">Login</h1>
    		   </header>
    		   <div id="Loginmain">
    		   <div class="box">
 		   		<h1 class="logo">LEEKANGJO</h1>
 				<div>
 					<h3>아이디</h3>
-					<input type="text" placeholder=" *아이디" id="id" class="account" maxlength="10" onkeydown="inputIdChk()" name="id">
-					<script type="text/javascript">
-						function idChk()
-						{
-							var idchk = document.getElementById('id');
-							if (idchk.value == "")
-							{
-								alert(idchk.value + "아이디를 입력해주세요.");
-							}
-							else if (idchk.value != null)
-							{
-								<%
-								try
-								{
-									// JDBC 드라이버 연결
-									Class.forName("com.mysql.jdbc.Driver");
-									String db_address = "jdbc.mysql://127.0.0.1:3306/kyungmin_store";
-									String db_username = "root";
-									String db_pwd = "root";
-									Connection connection = DriverManager.getConnection(db_address, db_username, db_pwd);
-									
-									// 문자열의 인코딩 방식 설정
-									request.setCharacterEncoding("UTF-8");
-									
-									String idChkQuery = "SELECT id, COUNT(*) as cnt FROM kyungmin_store.member WHERE id='"%>idchk.value<%"';";
-									PreparedStatement psmt = connection.prepareStatement(idChkQuery);
-									ResultSet result = psmt.executeQuery(idChkQuery);
-									while (result.next())
-									{
-										String cnt = result.getString("cnt");
-										if (cnt == "0")
-										{
-											%>
-											alert(idchk.value + "아이디는 사용 가능한 아이디입니다.");
-											<%
-										}
-										else
-										{
-											%>
-											alert("중복된 아이디입니다. 다른 아이디를 사용해 주세요.");
-											<%
-										}
-									}
-								}
-								catch (Exception ex)
-								{
-									%>
-									alert("오류가 발생했습니다. 오류 메시지 : " + ex.getMessage() + "불편을 드려 죄송합니다.");
-									<%
-								}
-								%>
-							}
-						}
-					</script>
-					<input type="button" class="btn_id_check" onclick="idChk()" value="중복확인">
+					<input type="text" placeholder=" *아이디" id="id" class="account" maxlength="10" name="id">						
+					<input type="button" class="btn_id_check" onclick="idchk()" value="중복확인">
 				</div>
 					<p>※아이디는 10자까지 작성가능.</p>
 				<div>
@@ -160,24 +148,24 @@ catch (Exception ex)
 				</div>
 				<div>
 					<h3>학번</h3>
-					<input type="text" placeholder=" *학번" id="stdid" class="account" maxlength="8" name="stdnum">
-					<button type="button" class="btn_id_check" id="btnSend"><span class="">학번 확인</span></button>
+					<input type="text" placeholder=" *학번" id="stdnum" class="account" maxlength="8" name="stdnum">
+					<input type="button" class="btn_id_check" onclick="stdnumchk()" value="학번확인">
 				</div>
 				<div>
 					<h3>전화번호</h3>
 					<input type="text" placeholder=" *전화번호 ( - 없이 기입하세요.)" id="tel" class="account" maxlength="11" name="tel">
-					<button type="button" class="tel_check" id="btnSend"><span class="">SMS 인증</span></button>
+					<input type="button" class="tel_check" onclick="telchk()" value="본인인증">
 				</div>
 				<div>
 					<h3>이메일 주소</h3>
 					<input type="text" placeholder="  이메일(선택)" id="email" class="account" maxlength="30" name="email">
 				</div>
 				<div>
-				<label><input type="checkbox" name="agree" value=""> *개인정보 활용 및 회원가입 동의 (필수)</label>
-				<button type="submit" id="login" class="account">회원가입</button>
-				<p id="alert" class="account"> </p> 
+					<label><input type="checkbox" name="agree" value=""> *개인정보 활용 및 회원가입 동의 (필수)</label>
+					<button type="submit" id="login" class="account">회원가입</button>
+					<p id="alert" class="account"> </p> 
 				</div>
-           </div>
+          	 </div>
            </div>
         </form>
     </body>
