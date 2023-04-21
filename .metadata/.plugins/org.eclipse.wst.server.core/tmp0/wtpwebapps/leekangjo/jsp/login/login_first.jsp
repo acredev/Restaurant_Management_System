@@ -17,7 +17,7 @@
     	    		<h1>로그인</h1>
 	    		</div>
     			<div class="inputBox">
-		        	<input type="text" id="id" name="id">
+		        	<input type="text" id="tell" name="id">
         			<label for="sampleId">아이디</label>
     			</div>
     			<button type="submit" class="tagbarBT">다음</button>
@@ -26,8 +26,8 @@
         			<a>|</a>
         			<a onclick="location.href='../signup/signup.jsp'">회원가입</a>
     			</div>
-			</div>
+			</div>5
 		</form>
 	</body>
-	<script src="js/LoginJS.js"></script>
+	<script src="../../js/LoginJS.js"></script>
 </html>
