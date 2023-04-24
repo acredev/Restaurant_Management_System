@@ -107,8 +107,8 @@ public class signup
 	public int telchk (String tel)
 	{
 		// coolSMS 연결 API키
-		String api_key = "key";
-		String api_secret = "key";
+		String api_key = "NCSGHDORDYG4IS7H";
+		String api_secret = "UWPNZS2Q6HSVTMUNRZQU3QCLHMHUEDYF";
 		Message coolsms = new Message(api_key, api_secret);
 		
 		// 인증번호 난수 발생

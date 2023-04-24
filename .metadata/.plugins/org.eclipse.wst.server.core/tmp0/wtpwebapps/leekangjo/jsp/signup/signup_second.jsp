@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>이강조 회원가입</title>
+        <title>LEEKANGJO - 회원가입</title>
         <link href="../../css/signup_second.css" rel="stylesheet">
         <link href="../../css/buttonST.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/fd1cbb6da4.js" crossorigin="anonymous"></script>

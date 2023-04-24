@@ -48,8 +48,8 @@
 			{
 				if (document.find_pw_second.telchk.value == "" || document.find_pw_second.telchk.length < 0)
 				{
-					alert ("인증번호 입력 후 다시 시도해 주세요.");
-					document.find_pw_second.telchk.focus();
+					alert ("인증번호가 입력되지 않았습니다. 처음부터 다시 시도해 주세요.");
+					setTimeout(function() { window.location.href="login_first.jsp"}, 100);
 				}
 				else
 				{
@@ -60,11 +60,10 @@
 					else
 					{
 						alert("전화번호 본인인증이 실패했습니다. 처음부터 다시 시도해 주세요.");
-						setTimeout(function() { window.location.href="login_first.jsp"}, 100);
+						setTimeout(function() { window.location.href="../login/login_first.jsp"}, 100);
 					}
 				}
 			}
 		</script>
 	</body>
-	<script src="../../js/verifyJS.js"></script>
 </html>

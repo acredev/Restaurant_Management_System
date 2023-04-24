@@ -1,0 +1,24 @@
+function maxLengthCheck1(object){
+    if (object.value.length > object.maxLength){
+      object.value = object.value.slice(0, object.maxLength);
+    }    
+  }
+
+function maxLengthCheck2(object){
+    if (object.value.length > object.maxLength){
+      object.value = object.value.slice(0, object.maxLength);
+    }    
+  }
+
+function idchk()
+{
+	if (document.signup_first.tel.value == "" || document.signup_first.tel.length < 0)
+	{
+		alert("전화번호 입력 후 다시 시도해 주세요.");
+		document.signtup_first.tel.focus();
+	}
+	else
+	{
+		alert("test");
+	}
+}

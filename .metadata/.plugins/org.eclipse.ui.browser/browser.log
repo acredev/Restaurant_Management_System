@@ -189,3 +189,45 @@
 4월 21, 2023 18:21:53.950 NEW SESSION
 4월 21, 2023 18:21:53.950 [25860:41300:0421/182153.949:ERROR:device_event_log_impl.cc(222)] [18:21:53.949] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 4월 21, 2023 18:21:54.104 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 21, 2023 21:32:59.130 NEW SESSION
+4월 21, 2023 21:32:59.130 [23592:40360:0421/213259.126:ERROR:device_event_log_impl.cc(222)] [21:32:59.126] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 21:32:59.382 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 22:06:44.837 [23592:40360:0421/220644.836:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 21, 2023 22:12:39.31 [32728:35616:0421/221239.031:ERROR:device_event_log_impl.cc(222)] [22:12:39.031] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 22:12:39.248 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 22:13:37.389 [32596:38032:0421/221337.388:ERROR:device_event_log_impl.cc(222)] [22:13:37.388] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 21, 2023 22:13:37.577 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 21, 2023 22:19:57.657 [32596:22064:0421/221957.656:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 22, 2023 10:56:41.157 [32596:22064:0422/105641.156:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 22, 2023 10:56:41.447 [32596:38032:0422/105641.446:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Invalid credentials (credentials rejected by server).
+4월 22, 2023 10:56:41.974 [32596:22064:0422/105641.973:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 23, 2023 24:04:49.494 [32596:38032:0423/000449.493:ERROR:device_event_log_impl.cc(222)] [00:04:49.464] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 23, 2023 24:04:49.902 [32596:22064:0423/000449.902:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 23, 2023 24:04:50.828 [32596:22064:0423/000450.827:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 23, 2023 24:04:58.518 [32596:22064:0423/000458.518:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 23, 2023 24:04:59.541 [32596:22064:0423/000459.541:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 23, 2023 24:05:02.938 [32596:38032:0423/000502.937:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 23, 2023 24:05:09.272 [32596:22064:0423/000509.271:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 23, 2023 24:05:09.272 [32596:22064:0423/000509.271:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 23, 2023 24:05:18.859 [32596:38032:0423/000518.858:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 23, 2023 24:06:21.30 [32596:38032:0423/000621.030:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 23, 2023 24:08:09.472 [32596:38032:0423/000809.472:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 23, 2023 24:13:01.531 [32596:38032:0423/001301.530:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 23, 2023 24:39:19.680 [16188:7524:0423/003919.679:ERROR:device_event_log_impl.cc(222)] [00:39:19.679] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 23, 2023 24:39:19.925 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 23, 2023 01:41:35.855 [22932:17220:0423/014135.855:ERROR:device_event_log_impl.cc(222)] [01:41:35.855] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 23, 2023 01:41:36.163 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 24, 2023 21:50:10.398 [2672:21276:0424/215010.398:ERROR:device_event_log_impl.cc(222)] [21:50:10.399] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 24, 2023 21:50:10.694 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 24, 2023 21:53:44.655 NEW SESSION
+4월 24, 2023 21:53:44.655 [31324:28180:0424/215344.653:ERROR:device_event_log_impl.cc(222)] [21:53:44.654] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 24, 2023 21:53:44.892 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 24, 2023 21:54:57.310 [3036:16212:0424/215457.309:ERROR:device_event_log_impl.cc(222)] [21:54:57.310] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 24, 2023 21:54:57.467 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 24, 2023 21:56:10.455 [35508:40148:0424/215610.455:ERROR:device_event_log_impl.cc(222)] [21:56:10.455] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 24, 2023 21:56:10.615 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 24, 2023 22:12:19.732 [35508:40148:0424/221219.731:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 24, 2023 22:24:58.293 [35508:40148:0424/222458.292:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 24, 2023 22:27:53.790 [35508:40148:0424/222753.789:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
