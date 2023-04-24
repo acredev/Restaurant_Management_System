@@ -38,7 +38,7 @@
 			}
 			else if (result == 0)
 			{
-				out.print("중복된 아이디로, 사용이 불가능합니다.");
+				out.print("중복된 학번으로, 사용이 불가능합니다.");
 			}
 			else
 			{

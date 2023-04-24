@@ -13,28 +13,25 @@ function maxLengthCheck2(object){
 function signup_first_idchk()
 {
 	var id = document.getElementById("id");
+	var id_chk = /^[a-z]+[a-z0-9]{5,19}$/;
 	if (id.value == "")
 	{
 		alert("아이디 입력 후 다시 시도해 주세요.");
 		id.focus();
-		return false;
 	}
-	else if (id.value != /^[a-z]+[a-z0-9]{5,19}$/g)
+	else if (!id_chk.test(id.value))
 	{
-		alert("아이디에는 한글 또는 특수문자가 들어갈 수 없습니다. 영문자 또는 숫자 조합으로 입력 바랍니다.");
+		alert("아이디에는 영문자, 숫자 조합 5자리 이상 10자리 이하만 입력 가능합니다. 다시 시도해 주세요.");
 		id.focus();
-		return false;
 	}
 	else if (id.value.length <= 4)
 	{
 		alert("아이디는 5자리 이상, 10자리 이하로 입력 바랍니다.");
 		id.focus();
-		return false;
 	}
 	else
 	{
 		window.open("../signup/signup_idchk.jsp?id=" + document.signup_first.id.value, "", "width=500, height=300");
-		return true;
 	}
 }
 
@@ -55,18 +52,15 @@ function signup_first_stdnumchk()
 	{
 		alert("학번 입력 후 다시 시도해 주세요.");
 		stdnum.focus();
-		return false;
 	}
 	else if (stdnum.value.length <= 7)
 	{
 		alert("경민대학교 학번은 8자리입니다. 올바르게 입력 후 다시 시도해 주세요.");
 		stdnum.focus();
-		return false;
 	}
 	else
 	{
 		window.open("../signup/signup_stdnumchk.jsp?stdnum=" + document.signup_first.stdnum.value, "", "width=500, height=300");
-		return true;
 	}
 }
 
@@ -96,58 +90,109 @@ function signup_first_telchk()
 	}
 	else
 	{
-		//window.open("signup_telchk.jsp?tel=" + tel.value, "", "width=500, height=300");
-		alert("ok");
+		window.open("signup_telchk.jsp?tel=" + tel.value, "", "width=500, height=300");
 	}
 }
 
 function signup_first_nextBT()
 {
-	var id = document.getElementById("id");
-	var stdnum = document.getElementById("stdnum");
-	var tel = document.getElementById("tel");
 	var idchk = document.getElementById("idchk");
 	var stdnumchk = document.getElementById("stdnumchk");
 	var telchk = document.getElementById("telchk");
 	
-	if (idchk.value == "id_chkno" || stdnumchk.value == "stdnum_chkno" || telchk.value == "tel_chkno")
+	if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkno")
 	{
-		alert("인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
-		return false;
+		alert("모든 인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
 	}
-	else if (idchk.value == "id_chkyes" || stdnumchk.value == "stdnum_chkno" || telchk.value == "tel_chkno")
+	else if (idchk.value == "id_chkyes" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkno")
 	{
 		alert("학번 인증과 휴대폰 번호 본인인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
-		return false;
 	}
-	else if (idchk.value == "id_chkno" || stdnumchk.value == "stdnum_chkyes" || telchk.value == "tel_chkno")
+	else if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkyes" && telchk.value == "tel_chkno")
 	{
 		alert("아이디 중복확인과 휴대폰 번호 본인인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
-		return false;
 	}
-	else if (idchk.value == "id_chkno" || stdnumchk.value == "stdnum_chkno" || telchk.value == "tel_chkyes")
+	else if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkyes")
 	{
 		alert("아이디 중복확인과 학번 인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
-		return false;
 	}
-	else if (idchk.value == "id_chkyes" || stdnumchk.value == "stdnum_chkyes" || telchk.value == "tel_chkno")
+	else if (idchk.value == "id_chkyes" && stdnumchk.value == "stdnum_chkyes" && telchk.value == "tel_chkno")
 	{
 		alert("휴대폰 번호 본인인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
-		return false;
 	}
-	else if (idchk.value == "id_chkyes" || stdnumchk.value == "stdnum_chkno" || telchk.value == "tel_chkyes")
+	else if (idchk.value == "id_chkyes" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkyes")
 	{
 		alert("학번 인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
-		return false;
 	}
-	else if (idchk.value == "id_chkno" || stdnumchk.value == "stdnum_chkyes" || telchk.value == "tel_chkyes")
+	else if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkyes" && telchk.value == "tel_chkyes")
 	{
 		alert("아이디 중복확인이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
-		return false;
+	}
+	else if (idchk.value == "id_chkno" || stdnumchk.value == "stdnum_chkno" || telchk.value == "tel_chkno")
+	{
+		alert("하나 이상의 인증과정이 정상 수행되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
 	}
 	else
 	{
 		document.signup_first.submit();
-		return true;
+	}
+}
+
+function signup_second_pwdchk()
+{
+	var pwd = document.signup_second.pwd.value;
+	var pwdsame = document.signup_second.pwdsame.value;
+	var pwd_chk = /^[a-zA-Z0-9]{6,16}$/;
+	
+	if (!pwd_chk.test(pwd))
+	{
+		window.alert("비밀번호는 6글자 이상, 16글자 이하로만 사용 가능합니다.")
+		pwd.focus();
+	}
+	else
+	{
+		if (pwd != "" && pwdsame != "")
+		{
+			if (pwd == pwdsame)
+			{
+				document.getElementById("pwdsame_result").innerHTML = "비밀번호가 일치합니다.";
+				document.getElementById("pwdsame_result").style.color = "blue";
+				document.getElementById("isPwdSame").value = "yes";
+			}
+			else
+			{
+				document.getElementById("pwdsame_result").innerHTML = "비밀번호가 일치하지 않습니다.";
+				document.getElementById("pwdsame_result").style.color = "red";
+				document.getElementById("isPwdSame").value = "no";
+			}
+		}
+	}
+}
+
+function signup_second_sendBT()
+{
+	var name = document.getElementById("name");
+	var isPwdSame = document.getElementById("isPwdSame");
+	
+	if (name.value == "" && isPwdSame.value == "no")
+	{
+		alert("이름이 입력되지 않았으며, 비밀번호가 서로 일치하지 않습니다. 확인 후 다시 시도해 주세요.");
+	}
+	else if (name.value != "" && isPwdSame.value == "no")
+	{
+		alert("비밀번호가 서로 일치하지 않습니다. 확인 후 다시 시도해 주세요.");
+	}
+	else if (name.value == "" && isPwdSame.value != "no")
+	{
+		alert("이름이 입력되지 않았습니다. 확인 후 다시 시도해 주세요.");
+	}
+	else if (name.value == "" || isPwdSame.value == "no")
+	{
+		alert("하나 이상의 항목이 정상적으로 입력되지 않았습니다. 확인 후 다시 시도해 주세요.");
+	}
+	else
+	{
+		alert("회원가입이 완료되었습니다. 로그인 후 이용해 주세요.");
+		document.signup_second.submit();
 	}
 }

@@ -13,28 +13,60 @@
         <script src="../../js/pwE.js"></script>
     </head>	
     <body>
-        <div id="box">
-            <div class="boxtitle">
-                <img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
-                <h1>회원가입</h1>
+    	<form name="signup_second" action="signup_send.jsp" method="post">
+    	<%
+    	request.setCharacterEncoding("UTF-8");
+    	
+    	String id = request.getParameter("id");
+    	String stdnum = request.getParameter("stdnum");
+    	String tel = request.getParameter("tel");
+    	String idchk = request.getParameter("idchk");
+    	String stdnumchk = request.getParameter("stdnumchk");
+    	String telchk = request.getParameter("telchk");
+    	
+    	if (idchk.equals("id_chkyes") && stdnumchk.equals("stdnum_chkyes") && telchk.equals("tel_chkyes"))
+    	{%>
+    		<div id="box">
+    			<div class="boxtitle">
+    				<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
+    				<h1>회원가입</h1>
+            	</div>
+            	<div class="form-item">
+               		<input type="text" id="name" name="name" placeholder="* 이름">
+            	</div>
+            	<div class="form-item" id="EyeBox">
+               		<input type="password" id="pwd" name="pwd" placeholder="* 비밀번호" onchange="signup_second_pwdchk()">
+                	<i class="fa-solid fa-eye"></i>
+            	</div>
+            	<div class="form-item" id="EyeBox">
+               		<input type="password" id="pwdsame" name="pwdsame" placeholder="* 비밀번호 확인" onchange="signup_second_pwdchk()">
+               		<i class="fa-solid fa-eye"></i>
+            	</div>
+            	<div class="form-item">
+               		<input type="text" id="inpName" placeholder="이메일 (선택)">
+               		<span id="pwdsame_result"></span>
+            	</div>
+            	<div class="block">
+					<button type="button" class="tagbarBT" id="nextBT" onclick="signup_second_sendBT();">다음</button>
+            	</div>
+        	</div>
+        	<input type="hidden" id="id" name="id" value="<%=id %>">
+        	<input type="hidden" id="stdnum" name="stdnum" value="<%=stdnum %>">
+        	<input type="hidden" id="tel" name="tel" value="<%=tel %>">
+        	
+        	<input type="hidden" id="isPwdSame" name="isPwdSame" value="no">
+    		<%
+    	}
+    	else
+    	{%>
+    		<div id="box">
+    			<div class="boxtitle">
+    				<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
+    				<h1>잘못된 접근입니다.</h1>
+            	</div>
             </div>
-            <div class="form-item">
-               <input type="text" id="inpName" placeholder="* 이름">
-            </div>
-            <div class="form-item">
-               <input type="text" id="inpName" placeholder="* 이메일">
-            </div>
-            <div class="form-item" id="EyeBox">
-               <input type="password" id="inpName" placeholder="* 비밀번호">
-                <i class="fa-solid fa-eye"></i>
-            </div>
-            <div class="form-item" id="EyeBox">
-               <input type="password" id="inpName" placeholder="* 비밀번호 확인">
-                <i class="fa-solid fa-eye"></i>
-            </div>
-            <div class="block">
-            <button class="tagbarBT" id="nextBT" onclick="location.href='login_first.jsp'">다음</button>
-            </div>
-        </div>
+    		<%
+    	}%>
+    	</form>
     </body>
 </html>

@@ -21,16 +21,16 @@
 	            </div>
             	<div class="form-item">
                		<input type="text" id="id" name="id" placeholder="* 아이디" maxlength="10">
-					<button type="button" class="tagbarBT" onclick="signup_first_idchk()">중복확인</button>
+					<button type="button" class="tagbarBT" onclick="signup_first_idchk();">중복확인</button>
             	</div>
             	<div class="form-item">
 					<input type="number" id="stdnum" name="stdnum" placeholder="* 학번" oninput="maxLengthCheck1(this)" maxlength="8">
-               		<button type="button" class="tagbarBT" onclick="signup_first_stdnumchk()">학번확인</button>
+               		<button type="button" class="tagbarBT" onclick="signup_first_stdnumchk();">학번확인</button>
             	</div>
 	            <div class="form-item">
                		<input type="number" id="tel" name="tel" placeholder="* 휴대폰 번호 (- 없이 입력하세요.)" oninput="maxLengthCheck2(this)" maxlength="11">
                		<button type="button" class="tagbarBT" onclick="signup_first_telchk()">본인인증</button>
-               		<div class="block"><button type="button" class="tagbarBT" id="nextBT" onclick="signup_first_nextBT()">다음</button></div>
+               		<div class="block"><button type="button" class="tagbarBT" id="nextBT" onclick="signup_first_nextBT();">다음</button></div>
 	            </div>
 	            <input type="hidden" id="idchk" name="idchk" value="id_chkno">
 	            <input type="hidden" id="stdnumchk" name="stdnumchk" value="stdnum_chkno">
