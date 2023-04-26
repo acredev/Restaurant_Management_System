@@ -808,3 +808,56 @@
 4월 25, 2023 02:35:16.647 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 4월 25, 2023 02:39:32.393 [10840:19268:0425/023932.393:ERROR:device_event_log_impl.cc(222)] [02:39:32.393] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
 4월 25, 2023 02:39:32.577 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+4월 26, 2023 13:55:45.580 NEW SESSION
+4월 26, 2023 13:55:45.580 [8328:37108:0426/135545.578:ERROR:device_event_log_impl.cc(222)] [13:55:45.578] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 26, 2023 13:55:45.810 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 26, 2023 14:31:47.303 [37340:17320:0426/143147.303:ERROR:device_event_log_impl.cc(222)] [14:31:47.302] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 26, 2023 14:31:47.439 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 26, 2023 14:32:02.569 [31456:21156:0426/143202.568:ERROR:device_event_log_impl.cc(222)] [14:32:02.568] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 26, 2023 14:32:02.690 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 26, 2023 14:35:02.509 [6600:22984:0426/143502.509:ERROR:device_event_log_impl.cc(222)] [14:35:02.509] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 26, 2023 14:35:02.678 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 26, 2023 14:54:32.745 [13384:23860:0426/145432.744:ERROR:device_event_log_impl.cc(222)] [14:54:32.744] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 26, 2023 14:54:32.935 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 26, 2023 14:57:13.110 [13384:23860:0426/145713.110:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+4월 26, 2023 14:57:13.111     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?awv2=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
+4월 26, 2023 15:06:02.938 [13384:23860:0426/150602.938:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+4월 26, 2023 15:06:02.939     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?awv2=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
+4월 26, 2023 15:46:25.875 [13384:23860:0426/154625.875:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+4월 26, 2023 15:46:25.876     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?awv2=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
+4월 26, 2023 16:03:08.600 [13384:27920:0426/160308.599:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 26, 2023 16:03:19.182 [13384:23860:0426/160319.181:ERROR:device_event_log_impl.cc(222)] [16:03:19.177] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 26, 2023 16:18:15.736 [13384:23860:0426/161815.736:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 26, 2023 16:18:15.738 [13384:23860:0426/161815.736:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 26, 2023 16:18:15.739 [13384:23860:0426/161815.736:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 26, 2023 16:18:15.740 [13384:23860:0426/161815.736:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 26, 2023 16:18:15.740 [13384:23860:0426/161815.736:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 26, 2023 16:21:27.170 [39588:12452:0426/162127.169:ERROR:device_event_log_impl.cc(222)] [16:21:27.169] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 26, 2023 16:21:27.415 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 26, 2023 16:35:33.119 [39588:7748:0426/163533.118:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 26, 2023 20:20:22.809 [39588:7748:0426/202022.808:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 26, 2023 20:20:23.439 [39588:7748:0426/202023.438:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 26, 2023 20:20:23.983 [39588:8400:0426/202023.982:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+4월 26, 2023 20:26:40.228 [39588:12452:0426/202640.228:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 26, 2023 20:38:17.742 [39588:12452:0426/203817.741:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+4월 26, 2023 20:44:27.207 NEW SESSION
+4월 26, 2023 20:44:27.207 [21272:44088:0426/204427.205:ERROR:device_event_log_impl.cc(222)] [20:44:27.206] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 26, 2023 20:44:27.418 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 26, 2023 20:49:43.306 [21272:44088:0426/204943.306:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 26, 2023 20:53:51.748 [21272:44088:0426/205351.747:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+4월 26, 2023 20:54:35.02 [21272:44088:0426/205435.001:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:54:35.121 [21272:44088:0426/205435.121:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:54:35.349 [21272:44088:0426/205435.349:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:54:35.464 [21272:44088:0426/205435.464:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:54:35.589 [21272:44088:0426/205435.588:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:54:35.702 [21272:44088:0426/205435.702:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:54:35.819 [21272:44088:0426/205435.819:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:54:35.985 [21272:44088:0426/205435.985:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:54:40.276 [21272:44088:0426/205440.275:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:54:40.383 [21272:44088:0426/205440.383:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:54:43.386 [21272:44088:0426/205443.386:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:54:58.736 [21272:44088:0426/205458.735:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:54:58.844 [21272:44088:0426/205458.843:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s
+4월 26, 2023 20:55:04.610 [21272:44088:0426/205504.610:ERROR:page_load_metrics_update_dispatcher.cc(178)] Invalid first_paint 0.6 s for first_image_paint 0.585 s

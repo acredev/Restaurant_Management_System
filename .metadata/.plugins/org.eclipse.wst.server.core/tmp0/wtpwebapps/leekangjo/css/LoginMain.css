@@ -31,6 +31,14 @@
     margin-bottom: 5%;
 }
 
+.findidB:hover{
+	cursor: pointer;
+}
+
+.signupB:hover{
+	cursor: pointer;
+}
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

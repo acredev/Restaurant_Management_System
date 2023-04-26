@@ -20,11 +20,9 @@
     	String id = request.getParameter("id");
     	String stdnum = request.getParameter("stdnum");
     	String tel = request.getParameter("tel");
-    	String idchk = request.getParameter("idchk");
-    	String stdnumchk = request.getParameter("stdnumchk");
     	String telchk = request.getParameter("telchk");
     	
-    	if (idchk.equals("id_chkyes") && stdnumchk.equals("stdnum_chkyes") && telchk.equals("tel_chkyes"))
+    	if (telchk.equals("tel_chkyes"))
     	{%>
     		<div id="box">
     			<div class="boxtitle">
@@ -53,7 +51,6 @@
         	<input type="hidden" id="id" name="id" value="<%=id %>">
         	<input type="hidden" id="stdnum" name="stdnum" value="<%=stdnum %>">
         	<input type="hidden" id="tel" name="tel" value="<%=tel %>">
-        	
         	<input type="hidden" id="isPwdSame" name="isPwdSame" value="no">
     		<%
     	}

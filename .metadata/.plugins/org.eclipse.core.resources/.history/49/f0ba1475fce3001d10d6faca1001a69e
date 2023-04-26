@@ -1,0 +1,49 @@
+<!-- 
+아이디 중복확인을 위한 페이지입니다.
+ -->
+
+<%@page import="leekangjo.signup" %>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
+		<title>LEEKANGJO - 아이디 중복확인</title>
+		<link href="../../css/Header.css" rel="stylesheet" type="text/css">
+        <link href="../../css/signup_style.css" rel="stylesheet" type="text/css">
+        <script src="../../js/signup.js"></script>
+	</head>
+	<body>
+		<%
+			// 받아올 문자열의 인코딩방식 설정
+			request.setCharacterEncoding("UTF-8");
+			// 파라미터를 통해 받아온 정보값을 변수에 저장
+			String id = request.getParameter("id");
+			
+			// 클래스에 지정한 함수를 사용하기 위한 객체 선언
+			signup signup_idchk = new signup();
+	
+			// 클래스에서 지정한 함수를 실행시킨 값을 불러오기 위한 변수 선언
+			int result = signup_idchk.idchk(id);
+			if (result == 1)
+			{%>
+			<a style="color:blue">*사용가능한 아이디입니다.</a>
+			<%
+			}
+			else if (result == 0)
+			{%>
+			<a style="color:red; font-size:1000px">*사용 불가능한 아이디입니다.</a>
+			
+				<%
+			}
+			else
+			{
+				out.print("오류가 발생했습니다. (-1)");
+			}
+			%>
+	</body>
+</html>

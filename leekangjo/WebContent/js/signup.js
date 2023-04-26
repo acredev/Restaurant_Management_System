@@ -1,11 +1,15 @@
-function maxLengthCheck1(object){
-    if (object.value.length > object.maxLength){
+function maxLengthCheck1(object)
+{
+    if (object.value.length > object.maxLength)
+{
       object.value = object.value.slice(0, object.maxLength);
     }    
   }
 
-function maxLengthCheck2(object){
-    if (object.value.length > object.maxLength){
+function maxLengthCheck2(object)
+{
+    if (object.value.length > object.maxLength)
+{
       object.value = object.value.slice(0, object.maxLength);
     }    
   }
@@ -31,7 +35,7 @@ function signup_first_idchk()
 	}
 	else
 	{
-		window.open("../signup/signup_idchk.jsp?id=" + document.signup_first.id.value, "", "width=500, height=300");
+		hiddenframe.location.href="../signup/signup_idchk.jsp?id=" + document.signup_first.id.value;
 	}
 }
 
@@ -60,7 +64,7 @@ function signup_first_stdnumchk()
 	}
 	else
 	{
-		window.open("../signup/signup_stdnumchk.jsp?stdnum=" + document.signup_first.stdnum.value, "", "width=500, height=300");
+		hiddenframe2.location.href="../signup/signup_stdnumchk.jsp?stdnum=" + document.signup_first.stdnum.value;
 	}
 }
 
@@ -96,8 +100,8 @@ function signup_first_telchk()
 
 function signup_first_nextBT()
 {
-	var idchk = document.getElementById("idchk");
-	var stdnumchk = document.getElementById("stdnumchk");
+	var idchk = document.getElementById('hiddenframe').contentWindow.document.getElementById("idchk_result");
+	var stdnumchk = document.getElementById('hiddenframe2').contentWindow.document.getElementById("stdnumchk_result");
 	var telchk = document.getElementById("telchk");
 	
 	if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkno")

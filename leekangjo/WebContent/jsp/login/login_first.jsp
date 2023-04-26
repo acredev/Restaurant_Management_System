@@ -26,9 +26,9 @@
     			</div>
     			<button type="button" onclick="login_first_check()" class="tagbarBT">다음</button>
     			<div class="IPSBOX">
-			        <a onclick="location.href='../find_id/find_id_first.jsp'">아이디 찾기 </a>
+			        <a onclick="location.href='../find_id/find_id_first.jsp'" class="findidB">아이디 찾기 </a>
         			<a>|</a>
-        			<a onclick="location.href='../signup/signup.jsp'">회원가입</a>
+        			<a onclick="location.href='../signup/signup_first.jsp'" class="signupB">회원가입</a>
     			</div>
 			</div>
 		</form>
