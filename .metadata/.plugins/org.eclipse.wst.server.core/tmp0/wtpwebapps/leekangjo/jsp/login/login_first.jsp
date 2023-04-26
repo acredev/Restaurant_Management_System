@@ -12,6 +12,8 @@
 	    <title>LEEKANGJO - 로그인</title>
 	    <link href="../../css/LoginMain.css" rel="stylesheet">
 	    <link href="../../css/buttonST.css" rel="stylesheet">
+	    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
+	    <script src="../../js/LoginJS.js"></script>
 	</head>
 	<body>
 		<form name="login_first" class="login_first" action="login_second.jsp" method="post">
@@ -33,5 +35,4 @@
 			</div>
 		</form>
 	</body>
-	<script src="../../js/LoginJS.js"></script>
 </html>

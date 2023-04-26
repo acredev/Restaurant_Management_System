@@ -15,6 +15,7 @@
 		<title>LEEKANGJO - 아이디 찾기</title>
 		<link href="../../css/LoginMain.css" rel="stylesheet">
 	    <link href="../../css/buttonST.css" rel="stylesheet">
+	    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
 	</head>
 	<body>
 		<%

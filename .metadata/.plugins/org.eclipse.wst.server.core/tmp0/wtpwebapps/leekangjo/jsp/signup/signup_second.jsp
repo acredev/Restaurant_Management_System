@@ -7,6 +7,7 @@
         <title>LEEKANGJO - 회원가입</title>
         <link href="../../css/signup_second.css" rel="stylesheet">
         <link href="../../css/buttonST.css" rel="stylesheet">
+        <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
         <script src="https://kit.fontawesome.com/fd1cbb6da4.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src="../../js/signup.js"></script>

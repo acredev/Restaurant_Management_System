@@ -14,6 +14,8 @@
 		<!-- 페이지 디자인을 위한 CSS 선언 -->
 		<link href="../../css/LoginMain.css" rel="stylesheet" type="text/css">
 		<link href="../../css/buttonST.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
+		<script src="../../js/FindJS.js"></script>
 	</head>
 	<body>
 		<form name="find_id_first" action="find_id_second.jsp" method="post">
@@ -30,5 +32,4 @@
 			</div>
 		</form>
 	</body>
-	<script src="../../js/FindJS.js"></script>
 </html>

@@ -15,6 +15,7 @@
 		<title>LEEKANGJO - 아이디 중복확인</title>
 		<link href="../../css/Header.css" rel="stylesheet" type="text/css">
         <link href="../../css/signup_style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
         <script src="../../js/signup.js"></script>
 	</head>
 	<body>
