@@ -1,0 +1,48 @@
+<!-- 
+메인 화면입니다.
+ -->
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
+        <title>경민대밥집</title>
+        <!-- 페이지 디자인을 위한 CSS 선언 -->
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <link href="css/Header.css" rel="stylesheet" type="text/css">
+        <link href="css/buttonST.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="./img/favicon1.png">
+    </head>
+    <body>
+        <header>
+            <img src="img/MainLogo.png" class="Logoimg" onclick ="location.href='index.html'">
+            <h1 onclick ="location.href='/login/login_first.jsp'">Login</h1>
+        </header>
+        <div id="tagbar">
+            <button class="tagbarBT">영업중</button>
+            <button class="tagbarBT">예약</button>
+        </div>
+        <div id="wrapper">
+            <div id="columns">
+                <div class="card" onclick ="location.href='store1_detail.html'">
+                    <img src="img/foodimg.jpg">
+                    <p>이모네</p>
+                    <a>예약 가능 | 포장 가능 | 소요시간 10~15분</a>
+                    <span>대기상황 : 2</span>
+                </div>
+                <div class="card" onclick="alert('영업 준비중입니다.')">
+                    <img src="img/foodimg2.jpg">
+                    <p>진국</p>
+                    <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
+                    <span> -브레이크 타임-</span>
+                </div>
+                <div class="card">
+                    <img src="img/foodimg3.jpg">
+                    <p>카로꼬</p>
+                    <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
