@@ -22,7 +22,7 @@
 	            </div>
             	<div class="form-item">
                		<input type="text" id="id" name="id" placeholder="* 아이디" maxlength="10">
-               		<iframe id="hiddenframe" name="hiddenframe" src="signup_idchk.jsp" scrolling="no"></iframe>
+               		<iframe id="hiddenframe" name="hiddenframe" src="signup_idchk.jsp" scroliling="yes"></iframe>
 					<button type="button" class="tagbarBT" onclick="signup_first_idchk();">중복확인</button>
             	</div>
             	<div class="form-item">

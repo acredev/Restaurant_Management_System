@@ -58,6 +58,7 @@
 						document.getElementById("stdnumchk_result").value = "stdnum_chkno";
 						document.getElementById("result_txt").innerText = "사용이 불가능한 학번입니다.";
 						document.getElementById("result_txt").style = "color:red";
+						document.getElementById("result_txt").style = "font-size:8px";
 					</script>
 				<%
 				}

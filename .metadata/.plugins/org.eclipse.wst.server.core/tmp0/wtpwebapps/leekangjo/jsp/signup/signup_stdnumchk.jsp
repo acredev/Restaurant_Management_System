@@ -47,7 +47,6 @@
 				{%>
 					<script type="text/javascript">
 						document.getElementById("stdnumchk_result").value = "stdnum_chkyes";
-						document.signup_first.getElementById("stdnumchk").value = "stdnum_chkyes";
 						document.getElementById("result_txt").innerText = "사용 가능한 학번입니다."
 						document.getElementById("result_txt").style = "color:blue";
 					</script>
@@ -56,8 +55,7 @@
 				else if (result == 0)
 				{%>
 					<script type="text/javascript">
-						document.getElementById("idchk_result").value = "stdnum_chkno";
-						document.signup_first.getElementById("stdnumchk").value = "stdnum_chkyes";
+						document.getElementById("stdnumchk_result").value = "stdnum_chkno";
 						document.getElementById("result_txt").innerText = "사용이 불가능한 학번입니다.";
 						document.getElementById("result_txt").style = "color:red";
 					</script>
