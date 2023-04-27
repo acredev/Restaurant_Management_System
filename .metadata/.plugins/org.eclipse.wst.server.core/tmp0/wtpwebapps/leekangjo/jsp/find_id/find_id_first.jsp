@@ -12,10 +12,10 @@
 		<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
 		<title>LEEKANGJO - 아이디 찾기</title>
 		<!-- 페이지 디자인을 위한 CSS 선언 -->
+		<script src="../../js/FindJS.js"></script>
 		<link href="../../css/LoginMain.css" rel="stylesheet" type="text/css">
 		<link href="../../css/buttonST.css" rel="stylesheet" type="text/css">
 		<link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
-		<script src="../../js/FindJS.js"></script>
 	</head>
 	<body>
 		<form name="find_id_first" action="find_id_second.jsp" method="post">
@@ -25,8 +25,7 @@
         			<h1>ID 찾기</h1>
     			</div>
         		<div class="inputBox">
-	        		<input type="number" id="tell" name="tel" oninput="maxLengthCheck(this)" maxlength="11">
-        			<label for="tell"> 전화번호 (숫자만 입력가능)</label>
+	        		<input type="number" id="tell" name="tel" oninput="maxLengthCheck(this)" maxlength="11" placeholder="* 휴대폰 번호 (- 없이 입력하세요.)">
     			</div>
     			<button type="button" onclick="find_id_first_check()" class="tagbarBT">인증번호 전송</button>
 			</div>

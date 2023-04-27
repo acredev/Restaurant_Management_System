@@ -24,7 +24,7 @@ function find_id_first_check()
 		alert("전화번호 입력 후 다시 시도해 주세요. 전화번호는 숫자만 입력 가능합니다.");
 		tell.focus();
 	}
-	else if (!tel_nuk_chk.test(tel.value))
+	else if (!tel_num_chk.test(tel.value))
 	{
 		alert("휴대폰 번호 형식에 맞지 않습니다. 휴대폰 번호 입력 시, 하이픈 (-) 제거 후 숫자만 입력 바랍니다.");
 		tel.focus();

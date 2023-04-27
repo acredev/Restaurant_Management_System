@@ -57,7 +57,6 @@
     	    			<div class="inputBox">
 	    	    			<input readOnly type="number" id="tell" name="tel" oninput="maxLengthCheck(this)" maxlength="11" value="<%=result.getString("tel")%>">
 	    	    			<input type="hidden" id="id" name="id" value=<%=user_id %>>
-        					<label for="tell"> 전화번호</label>
     					</div>
 	    				<button type="submit" class="tagbarBT" onclick="location.href='find_pw_second.html'">인증번호 전송</button>
 					</div>

@@ -11,7 +11,6 @@
         <link href="../../css/signup_first.css" rel="stylesheet">
         <link href="../../css/buttonST.css" rel="stylesheet">
         <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
-        <script src="../../js/signup.js"></script>
     </head>
     <body>
     	<form name="signup_first" action="signup_second.jsp" method="post">
@@ -32,11 +31,12 @@
             	</div>
 	            <div class="form-item">
                		<input type="number" id="tel" name="tel" placeholder="* 휴대폰 번호 (- 없이 입력하세요.)" oninput="maxLengthCheck2(this)" maxlength="11">
-               		<button type="button" class="tagbarBT" onclick="signup_first_telchk()">본인인증</button>
+               		<button type="button" class="tagbarBT" onclick="signup_first_telchk();">본인인증</button>
                		<div class="block"><button type="button" class="tagbarBT" id="nextBT" onclick="signup_first_nextBT();">다음</button></div>
 	            </div>
 	            <input type="hidden" id="telchk" name="telchk" value="tel_chkno">
         	</div>
         </form>
     </body>
+    <script src="../../js/signup.js"></script>
 </html>

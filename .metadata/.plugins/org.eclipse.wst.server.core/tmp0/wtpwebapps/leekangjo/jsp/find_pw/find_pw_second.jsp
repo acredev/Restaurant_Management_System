@@ -31,10 +31,9 @@
 		        	<h1>인증번호</h1>
     			</div>
 	    		<div class="inputBox">
-		        	<input type="number" id="verify" name="telchk" oninput="maxLengthCheck(this)" maxlength="5">
+		        	<input type="number" id="verify" name="telchk" oninput="maxLengthCheck(this)" maxlength="5" placeholder="인증번호" value="">
 		        	<input type="hidden" id="id" name="id" value=<%=user_id %>>
 		        	<input type="hidden" id="tel" name="tel" value=<%=user_tel %>>
-        			<label for="verify">인증번호 확인</label>
     			</div>
     			<button type="submit" class="tagbarBT" onclick="result();">확인</button>
 			</div>

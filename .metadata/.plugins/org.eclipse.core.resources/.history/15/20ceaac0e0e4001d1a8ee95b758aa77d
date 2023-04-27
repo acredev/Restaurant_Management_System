@@ -1,0 +1,59 @@
+.outBox {margin:50px auto; padding:20px; max-width:320px; border:1px solid #999; border-radius:6px;}
+.outBox .inputBox {position:relative; height:50px;}
+.outBox .inputBox input[type="text"] {padding:0 10px; width:100%; height:50px; font-size:14px; box-sizing:border-box; border:1px solid #999; outline:none; }
+
+.outBox .inputBox input[type="number"] {padding:0 10px; width:100%; height:50px; font-size:14px; box-sizing:border-box; border:1px solid #999; outline:none;}
+
+.inputBox{
+	margin-bottom:2.8%;
+}
+
+.outBox .inputBox input[type="text"]:focus,
+.outBox.existence .inputBox input[type="text"] {border:1px solid blue;}
+.outBox .inputBox input[type="text"]:focus + label,
+.outBox.existence .inputBox label {color:blue; transform:scale(.85) translate(-10px, -48px);}
+
+#box fieldset form input[type="text"]:focus,
+#box fieldset form input[type="text"] {border:1px solid blue;}
+#box fieldset form input[type="text"]:focus + label,
+#box fieldset form input{color:blue; transform:scale(.85) translate(-10px, -48px);}
+
+.outBox .inputBox input[type="password"]:focus,
+.outBox.existence .inputBox input[type="password"] {border:1px solid blue;}
+.outBox .inputBox input[type="password"]:focus + label,
+.outBox.existence .inputBox label {color:blue; transform:scale(.85) translate(-10px, -48px);}
+
+.outBox .inputBox input[type="number"]:focus,
+.outBox.existence .inputBox input[type="number"] {border:1px solid blue;}
+.outBox .inputBox input[type="number"]:focus + label,
+.outBox.existence .inputBox label {color:blue; transform:scale(.85) translate(-10px, -48px);}
+
+.boxtitle{
+    text-align: center;
+}
+
+.IPSBOX{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.tagbarBT{
+    margin-top: 5%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.findidB:hover{
+	cursor: pointer;
+}
+
+.signupB:hover{
+	cursor: pointer;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

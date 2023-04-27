@@ -1,0 +1,58 @@
+html,body, form{
+    height: 100%;
+}
+#Loginmain{
+    height: 100%;
+    display: flex;
+    justify-content:center; 
+    align-items : center;
+}
+.box{
+    width: 400px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+.logo{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+#login {
+    margin-top: 6%;
+    width: 80%;
+    height: 30%;
+    background-color: lightgreen;
+    border-color: transparent;
+    font-family: 
+    
+}
+p{
+    font-size: 11px;
+    color: gray;
+}
+h3{
+    font-size: 15px;
+}
+fieldset{
+    text-align: center;
+    border: none;
+}
+.telchk {
+    width: 92%;
+    padding: 12px;
+    font-size: 14px;
+    color: #111111;
+    border: 0;
+    border: 1px #cccccc solid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#box fieldset .formD input[type="text"] {border:1px solid #999; outline:none; }
+
+#box fieldset .formD input[type="text"]:focus,
+#box fieldset .formD input[type="text"] {border:1px solid black;}

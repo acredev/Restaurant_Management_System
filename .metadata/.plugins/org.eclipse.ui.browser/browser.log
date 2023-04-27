@@ -1334,3 +1334,122 @@
 4월 27, 2023 15:39:21.427 [18036:41452:0427/153921.410:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
 4월 27, 2023 15:39:21.428 [18036:41452:0427/153921.411:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
 4월 27, 2023 15:39:21.429 [18036:41452:0427/153921.411:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 15:47:58.506 [18036:36044:0427/154758.506:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 27, 2023 15:52:48.472 [18036:41452:0427/155248.471:ERROR:device_event_log_impl.cc(222)] [15:52:48.435] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 27, 2023 15:52:51.139 [18036:36044:0427/155251.138:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 27, 2023 15:52:53.635 [18036:36044:0427/155253.635:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 27, 2023 15:53:42.300 [18036:36044:0427/155342.299:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 27, 2023 16:07:25.30 [18036:36044:0427/160725.030:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 27, 2023 16:10:33.575 [18036:36044:0427/161033.574:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 27, 2023 16:20:15.427 [18036:36044:0427/162015.426:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 27, 2023 16:20:15.634 [18036:36044:0427/162015.633:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 27, 2023 16:20:18.933 [18036:36044:0427/162018.932:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 27, 2023 16:22:36.466 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+4월 27, 2023 16:24:20.288 [18036:36044:0427/162420.287:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 27, 2023 16:24:22.449 [18036:36044:0427/162422.449:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 27, 2023 16:24:29.661 [18036:36044:0427/162429.661:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+
+4월 27, 2023 16:48:30.216 NEW SESSION
+4월 27, 2023 16:48:30.216 [34988:23536:0427/164830.214:ERROR:device_event_log_impl.cc(222)] [16:48:30.215] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 16:48:30.402 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 16:59:58.728 [29760:21304:0427/165958.727:ERROR:device_event_log_impl.cc(222)] [16:59:58.728] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 16:59:58.858 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 17:00:15.225 [39580:21620:0427/170015.225:ERROR:device_event_log_impl.cc(222)] [17:00:15.224] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 17:00:15.352 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 17:11:07.963 [19920:22548:0427/171107.963:ERROR:device_event_log_impl.cc(222)] [17:11:07.962] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 17:11:08.95 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 17:26:31.994 [30556:43872:0427/172631.994:ERROR:device_event_log_impl.cc(222)] [17:26:31.993] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 17:26:32.124 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 17:42:06.898 [30556:43872:0427/174206.898:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+4월 27, 2023 17:42:06.899     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?awv2=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
+4월 27, 2023 17:44:28.574 [14916:37252:0427/174428.574:ERROR:device_event_log_impl.cc(222)] [17:44:28.573] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 17:44:28.695 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 17:55:34.847 [14916:37252:0427/175534.846:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.848 [14916:37252:0427/175534.846:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.848 [14916:37252:0427/175534.846:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.848 [14916:37252:0427/175534.846:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.849 [14916:37252:0427/175534.846:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.849 [14916:37252:0427/175534.846:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.850 [14916:37252:0427/175534.846:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.850 [14916:37252:0427/175534.846:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.850 [14916:37252:0427/175534.846:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.850 [14916:37252:0427/175534.846:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.851 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.851 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.852 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.852 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.852 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.853 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.853 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.853 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.853 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.854 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.854 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.854 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.854 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.855 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.855 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.855 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.855 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.855 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.856 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.856 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:34.856 [14916:37252:0427/175534.847:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.480 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.480 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.481 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.481 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.481 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.481 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.481 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.482 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.482 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.482 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.482 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.482 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.483 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.483 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.483 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.483 [14916:37252:0427/175538.479:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.483 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.484 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.484 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.484 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.484 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.485 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.485 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.485 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.485 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.485 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.486 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.486 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.486 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.486 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 17:55:38.486 [14916:37252:0427/175538.480:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+4월 27, 2023 18:45:27.468 [14916:17936:0427/184527.467:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 27, 2023 19:23:36.44 [14916:37252:0427/192336.044:ERROR:device_event_log_impl.cc(222)] [19:23:36.043] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 27, 2023 19:23:36.148 [14916:37252:0427/192336.147:ERROR:device_event_log_impl.cc(222)] [19:23:36.146] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+4월 27, 2023 19:27:06.334 [14916:17936:0427/192706.334:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+4월 27, 2023 19:29:43.979 [14916:17936:0427/192943.978:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 27, 2023 19:29:44.89 [14916:37252:0427/192944.088:ERROR:device_event_log_impl.cc(222)] [19:29:43.674] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+4월 27, 2023 19:29:46.578 [14916:17936:0427/192946.578:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 27, 2023 19:30:05.946 [27016:20908:0427/193005.945:ERROR:device_event_log_impl.cc(222)] [19:30:05.945] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 19:30:05.981 [27016:44752:0427/193005.981:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 27, 2023 19:30:06.313 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 19:30:33.302 [27016:44752:0427/193033.301:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 27, 2023 19:30:51.359 [27016:44752:0427/193051.358:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -105
+4월 27, 2023 19:35:09.380 [44140:39640:0427/193509.380:ERROR:device_event_log_impl.cc(222)] [19:35:09.380] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 19:35:09.618 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 19:35:32.48 [27716:45868:0427/193532.047:ERROR:device_event_log_impl.cc(222)] [19:35:32.047] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 19:35:32.236 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 19:37:41.529 [24312:11216:0427/193741.528:ERROR:device_event_log_impl.cc(222)] [19:37:41.529] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 19:37:41.680 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 19:37:48.496 [43832:45124:0427/193748.496:ERROR:device_event_log_impl.cc(222)] [19:37:48.496] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 19:37:48.656 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 20:29:43.873 [10468:15816:0427/202943.872:ERROR:device_event_log_impl.cc(222)] [20:29:43.872] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 20:29:44.100 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 21:34:06.269 [41820:40232:0427/213406.269:ERROR:device_event_log_impl.cc(222)] [21:34:06.268] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 21:34:06.493 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 21:34:15.632 [32960:38136:0427/213415.632:ERROR:device_event_log_impl.cc(222)] [21:34:15.631] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+4월 27, 2023 21:34:15.782 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+4월 27, 2023 21:56:35.295 [32960:38136:0427/215635.295:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost

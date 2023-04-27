@@ -14,8 +14,15 @@
 	    <title>LEEKANGJO - 로그인</title>
 	    <link href="../../css/LoginMain.css" rel="stylesheet">
 	    <link href="../../css/buttonST.css" rel="stylesheet">
+	    <link href="../../css/iconST.css" rel="stylesheet">
+	    <link href="../../css/signup_second.css" rel="stylesheet">
 	    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
-	    <script src="../../js/LoginJS.js"></script>
+	    <script src="https://kit.fontawesome.com/fd1cbb6da4.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="../../js/pwE_login.js"></script>
+        <script src="../../js/LoginJS.js"></script>
+        
+        
 	</head>
 	<body>
 	<%
@@ -53,14 +60,14 @@
         			<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
         			<h1>로그인</h1>
     			</div>
-    			<div class="inputBox">
+    			<div class="form-item" id="EyeBox">
     				<input type="hidden" id="id" name="id" value="<%=result.getString("id") %>">
-	        		<input type="text" id="tell" name="pwd">
-        			<label for="sampleId">비밀번호</label>
-    			</div>
+               		<input type="password" id="pwd" name="pwd" placeholder="* 비밀번호" onchange="signup_second_pwdchk()">
+                	<i class="fa-solid fa-eye"></i>
+            	</div>
     			<button type="button" onclick="login_second_check()" class="tagbarBT">다음</button>
     			<div class="IPSBOX">
-	    	  	  	<a onclick="location.href='../find_pw/find_pw_first.jsp?userid=' + document.login_second.id.value">비밀번호 재설정</a>
+	    	  	  	<a onclick="location.href='../find_pw/find_pw_first.jsp?userid=' + document.login_second.id.value" class="aST">비밀번호 재설정</a>
     			</div>
 			</div>
 		</form>

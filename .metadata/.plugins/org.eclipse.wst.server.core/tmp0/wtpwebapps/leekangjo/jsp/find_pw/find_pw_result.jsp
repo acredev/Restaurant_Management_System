@@ -1,7 +1,3 @@
-<!-- 
-비밀번호 재설정 결과 화면입니다.
- -->
-
 <%@page import="java.sql.*" %>
 <%@page import="leekangjo.signup" %>
 <%@page import="leekangjo.randomPwd" %>
@@ -14,10 +10,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
-		<title>LEEKANGJO - 비밀번호 재설정</title>
+		<title>비밀번호 찾기</title>
 		<link href="../../css/LoginMain.css" rel="stylesheet">
 	    <link href="../../css/buttonST.css" rel="stylesheet">
-	    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
 	</head>
 	<body>
 		<%
@@ -36,22 +31,28 @@
 			// 파라미터를 통해 받아온 값을 변수에 저장
 			String user_id = request.getParameter("id");
 			String user_tel = request.getParameter("tel");
+			// String user_id = "test";
 
 			randomPwd randomPwd = new randomPwd();
 			
 			String randomPwd_create = randomPwd.sendSMS(user_tel);
-			System.out.print(user_tel);
+			// String randomPwd_create = "jspTest222";
 			
 			// MySQL로 전송하기 위한 문자열 insertQuery 변수 선언
-			String insertQuery = "UPDATE kyungmin_store.member SET pwd='" + randomPwd_create + "' WHERE id='" + user_id + "';";
+			String insertQuery = "UPDATE kyungmin_store.member SET pwd='" + randomPwd_create + "' WHERE id = '" + user_id + "';";
 			
 			// SQL 쿼리문을 실행 (MySQL로 전송)하기 위한 객체 선언
 			PreparedStatement psmt = connection.prepareStatement(insertQuery);
 			
 			// 쿼리문을 전송해 받아온 정보를 result 객체에 저장
 			int result = psmt.executeUpdate(insertQuery);
-			System.out.print(result);
-			if (result == 2)
+			
+			System.out.println("=============================");
+			System.out.println("회원아이디 : " + user_id);
+			System.out.println("회원전번 : " + user_tel);
+			System.out.println("임시비번 : " + randomPwd_create);
+			System.out.println("결과값 : " + result);
+			if (result == 1)
 			{
 				%>
 				<form name="find_pw_result" action="find_pw_result.jsp" method="post">
@@ -71,11 +72,11 @@
 			else
 			{%>
 				<script type="text/javascript">
-				function()
+				(function()
 				{
-					alert("오류가 발생했습니다. 다시 시도해 주세요.");
-					setTimeout(function() { window.loaction.href="login_first.jsp"}, 100);
-				}
+					alert("오류가 발생했습니다. 처음부터 다시 시도해 주세요.");
+					setTimeout(function() { window.loaction.href="../login/login_first.jsp"}, 100)();
+				})();
 				</script>
 			<%
 			}

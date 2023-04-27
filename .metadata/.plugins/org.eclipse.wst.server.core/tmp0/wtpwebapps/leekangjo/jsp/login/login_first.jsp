@@ -23,8 +23,7 @@
     	    		<h1>로그인</h1>
 	    		</div>
     			<div class="inputBox">
-		        	<input type="text" id="tell" name="id">
-        			<label for="sampleId">아이디</label>
+		        	<input type="text" id="tell" name="id" placeholder="* 아이디">
     			</div>
     			<button type="button" onclick="login_first_check()" class="tagbarBT">다음</button>
     			<div class="IPSBOX">

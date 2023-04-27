@@ -94,7 +94,11 @@ function signup_first_telchk()
 	}
 	else
 	{
-		window.open("signup_telchk.jsp?tel=" + tel.value, "", "width=500, height=300");
+		popupWindow = window.open("signup_telchk.jsp?tel=" + tel.value, "_blank","resizeable","toolbar=no");
+		popupWindow.resizeTo(500,600);
+		popupWindow.onresize=(_=>{
+			popupWindow.resizeTo(500,600);
+		})		
 	}
 }
 

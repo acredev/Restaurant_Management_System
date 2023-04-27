@@ -12,6 +12,7 @@
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src="../../js/signup.js"></script>
         <script src="../../js/pwE.js"></script>
+        <script src="../../js/LoginJS.js"></script>
     </head>	
     <body>
     	<form name="signup_second" action="signup_send.jsp" method="post">

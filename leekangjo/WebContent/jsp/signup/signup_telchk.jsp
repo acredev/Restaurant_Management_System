@@ -1,4 +1,4 @@
-<%@page import="leekangjo.signup" %>
+ <%@page import="leekangjo.signup" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -11,12 +11,13 @@
 	<title>LEEKANGJO - 휴대폰 번호 본인 인증</title>
 	<link href="../../css/Header.css" rel="stylesheet" type="text/css">
     <link href="../../css/signup_style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
+    <link href="../../css/signup_first.css" rel="stylesheet">
+    <link href="../../css/buttonST.css" rel="stylesheet">
+    
     <script src="../../js/signup.js"></script>
 </head>
-<body>
-	<h2>휴대폰 번호 본인 인증</h2>
-	<%
+<body style="overflow-x:hidden;overflow-y:hidden">
+<%
 	// 문자열의 인코딩 방식 설정
 	request.setCharacterEncoding("UTF-8");
 	// 파라미터를 통해 받아온 값을 변수에 저장
@@ -54,11 +55,15 @@
 			}
 		}
 	</script>
+    <div id="box">
 	<fieldset>
-		<form action="signup_telchk.jsp" method="post" name="form_telchk">
-			인증번호 : <input type="text" name="telchk" maxlength="5">
-			<input type="button" value="본인인증" onclick="signup_first_telchk_result()">
+            <img src="../../img/Logo4.png" alt="" class="loginImg">
+            <h2>SMS인증</h2>
+		<form action="signup_telchk.jsp" method="post" name="form_telchk" class="formD">
+			<input type="text" class="telchk" name="telchk" maxlength="5" placeholder="* 인증번호" >
+            <button type="button" class="tagbarBT" onclick="signup_first_telchk_result()">본인인증</button>
 		</form>
-	</fieldset>	
+	</fieldset>
+    </div>
 </body>
 </html>

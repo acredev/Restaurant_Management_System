@@ -16,7 +16,6 @@
 	    <link href="../../css/LoginMain.css" rel="stylesheet">
 	    <link href="../../css/buttonST.css" rel="stylesheet">
 	    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
-	    <script src="../../js/FindJS.js"></script>
 	</head>
 	<body>
 	<%
@@ -56,9 +55,8 @@
         			<h1>인증번호</h1>
     			</div>
 				<div class="inputBox">
-    	    		<input type="number" id="tell" class="auto_verify" name="telchk" oninput="maxLengthCheck(this)" maxlength="5">
+    	    		<input type="number" id="tell" name="telchk" oninput="maxLengthCheck(this)" maxlength="5" placeholder="인증번호">
     	    		<input type="hidden" id="tel" name="tel" value=<%=user_tel %>>
-        			<label for="verify">인증번호 확인</label>
 		    	</div>
     			<button type="button" class="tagbarBT" onclick="result()">확인</button>
 			</div>
@@ -108,4 +106,5 @@
 	}
 	%>
 	</body>
+	<script src="../../js/FindJS.js"></script>
 </html>
