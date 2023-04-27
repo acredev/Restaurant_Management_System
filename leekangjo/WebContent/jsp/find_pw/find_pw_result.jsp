@@ -10,16 +10,17 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
-		<title>비밀번호 찾기</title>
+		<title>LEEKANGJO - 비밀번호 재설정</title>
 		<link href="../../css/LoginMain.css" rel="stylesheet">
 	    <link href="../../css/buttonST.css" rel="stylesheet">
+	    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
 	</head>
 	<body>
 		<%
 		try
 		{
 			//JDBC 드라이버 연결
-			Class.forName("com.mysql.jdbc.Driver");
+				Class.forName("com.mysql.jdbc.Driver");
 			String db_address = "jdbc:mysql://127.0.0.1:3306/kyungmin_store";
 			String db_username = "root";
 			String db_pwd = "root";
@@ -61,7 +62,7 @@
         					<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
         					<h1>비밀번호 재설정 결과</h1>
     					</div>
-						<div class="inputBox">
+						<div id="prBox" class="inputBox">
 							<h3>임시 비밀번호 발급이 완료되어 문자 메시지로 발송이 완료되었습니다.</h3>
         					<h4>임시 비밀번호로 로그인 후, 마이 페이지에서 비밀번호 변경 바랍니다.</h4>
 		    			</div>

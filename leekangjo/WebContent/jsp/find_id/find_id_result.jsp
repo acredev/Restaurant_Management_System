@@ -54,9 +54,9 @@
         				<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
         				<h1>아이디 찾기 결과</h1>
     				</div>
-					<div class="inputBox">
+					<div id="LrBOX" class="inputBox">
 						<h3>요청하신 아이디는 아래와 같습니다.</h3>
-        				<h5><%=result.getString("id") %></h5>
+        				<h4><%=result.getString("id") %></h4>
 		    		</div>
 				</div>
 			</form>
