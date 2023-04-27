@@ -6611,3 +6611,12 @@ java.io.IOException: Unable to start language server: ProcessStreamConnectionPro
 
 !ENTRY org.eclipse.wst.html.ui 1 1 2023-04-27 15:41:13.266
 !MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-27 15:45:17.621
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-27 15:45:17.623
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-04-27 15:45:17.625
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT

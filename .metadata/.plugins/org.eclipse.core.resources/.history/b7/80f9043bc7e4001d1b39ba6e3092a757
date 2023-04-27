@@ -10,7 +10,7 @@
         <title>LEEKANGJO - 회원가입</title>
         <link href="../../css/signup_first.css" rel="stylesheet">
         <link href="../../css/buttonST.css" rel="stylesheet">
-        <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
+        <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">2
         <script src="../../js/signup.js"></script>
     </head>
     <body>
@@ -32,6 +32,7 @@
             	</div>
 	            <div class="form-item">
                		<input type="number" id="tel" name="tel" placeholder="* 휴대폰 번호 (- 없이 입력하세요.)" oninput="maxLengthCheck2(this)" maxlength="11">
+               		<iframe id="hiddenframe3" name="hiddenframe3" src="signup_telchk.jsp" scrollin="no"></iframe>
                		<button type="button" class="tagbarBT" onclick="signup_first_telchk()">본인인증</button>
                		<div class="block"><button type="button" class="tagbarBT" id="nextBT" onclick="signup_first_nextBT();">다음</button></div>
 	            </div>

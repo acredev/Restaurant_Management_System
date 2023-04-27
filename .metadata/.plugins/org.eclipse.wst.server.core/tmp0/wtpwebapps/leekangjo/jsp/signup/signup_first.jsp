@@ -10,7 +10,7 @@
         <title>LEEKANGJO - 회원가입</title>
         <link href="../../css/signup_first.css" rel="stylesheet">
         <link href="../../css/buttonST.css" rel="stylesheet">
-        <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">2
+        <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
         <script src="../../js/signup.js"></script>
     </head>
     <body>
