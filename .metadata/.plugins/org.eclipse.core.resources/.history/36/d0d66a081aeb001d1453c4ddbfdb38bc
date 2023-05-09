@@ -1,0 +1,16 @@
+package leekangjo;
+
+import javax.mail.Authenticator;
+
+import javax.mail.PasswordAuthentication;
+
+public class emailAuthenticatior extends Authenticator
+{
+	protected static String userId = "praticecoding.h@gmail.com";
+	protected static String userPwd = "MMin5030@!";
+	
+	public emailAuthenticatior (String userId, String userPwd)
+	{
+		
+	}
+}

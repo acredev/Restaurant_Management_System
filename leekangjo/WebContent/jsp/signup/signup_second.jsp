@@ -23,8 +23,10 @@
     	String stdnum = request.getParameter("stdnum");
     	String tel = request.getParameter("tel");
     	String telchk = request.getParameter("telchk");
+    	String email = request.getParameter("email");
+    	String emailchk = request.getParameter("emailchk");
     	
-    	if (telchk.equals("tel_chkyes"))
+    	if (telchk.equals("tel_chkyes") && emailchk.equals("email_chkyes"))
     	{%>
     		<div id="box">
     			<div class="boxtitle">
@@ -41,10 +43,6 @@
             	<div class="form-item" id="EyeBox">
                		<input type="password" id="pwdsame" name="pwdsame" placeholder="* 비밀번호 확인" onchange="signup_second_pwdchk()">
                		<i class="fa-solid fa-eye"></i>
-            	</div>
-            	<div class="form-item">
-               		<input type="text" id="inpName" placeholder="이메일 (선택)">
-               		<span id="pwdsame_result"></span>
             	</div>
             	<div class="block">
 					<button type="button" class="tagbarBT" id="nextBT" onclick="signup_second_sendBT();">다음</button>

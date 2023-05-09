@@ -1,0 +1,5 @@
+127.0.0.1 - - [05/May/2023:17:11:45 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [05/May/2023:17:11:46 +0900] "GET /leekangjo/WEB-INF/classes/leekangjo/gmailSend.java HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [05/May/2023:17:11:46 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+127.0.0.1 - - [05/May/2023:17:12:20 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [05/May/2023:17:12:20 +0900] "GET /leekangjo/WEB-INF/classes/leekangjo/gmailSend.java HTTP/1.1" 404 721

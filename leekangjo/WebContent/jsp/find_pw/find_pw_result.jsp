@@ -65,6 +65,7 @@
 						<div id="prBox" class="inputBox">
 							<h3>임시 비밀번호 발급이 완료되어 문자 메시지로 발송이 완료되었습니다.</h3>
         					<h4>임시 비밀번호로 로그인 후, 마이 페이지에서 비밀번호 변경 바랍니다.</h4>
+        					<h5 onclick ="location.href='../login/login_first.jsp'">- 로그인페이지로 -</h5>
 		    			</div>
 					</div>
 				</form>

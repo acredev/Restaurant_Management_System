@@ -29,12 +29,17 @@
 					<iframe id="hiddenframe2" name="hiddenframe2" src="signup_stdnumchk.jsp" scrolling="no"></iframe>
                		<button type="button" class="tagbarBT" onclick="signup_first_stdnumchk();">학번확인</button>
             	</div>
+            	<div class="form-item">
+               		<input type="text" id="email" name="email" placeholder="* 이메일">
+               		<button type="button" class="tagbarBT" onclick="signup_first_emailchk();">본인인증</button>
+            	</div>
 	            <div class="form-item">
                		<input type="number" id="tel" name="tel" placeholder="* 휴대폰 번호 (- 없이 입력하세요.)" oninput="maxLengthCheck2(this)" maxlength="11">
                		<button type="button" class="tagbarBT" onclick="signup_first_telchk();">본인인증</button>
                		<div class="block"><button type="button" class="tagbarBT" id="nextBT" onclick="signup_first_nextBT();">다음</button></div>
 	            </div>
 	            <input type="hidden" id="telchk" name="telchk" value="tel_chkno">
+	            <input type="hidden" id="emailchk" name="emailchk" value="email_chkno">
         	</div>
         </form>
     </body>

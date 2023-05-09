@@ -57,6 +57,7 @@
 					<div id="LrBOX" class="inputBox">
 						<h3>요청하신 아이디는 아래와 같습니다.</h3>
         				<h4><%=result.getString("id") %></h4>
+        				<h5 onclick ="location.href='../login/login_first.jsp'">- 로그인페이지로 -</h5>
 		    		</div>
 				</div>
 			</form>

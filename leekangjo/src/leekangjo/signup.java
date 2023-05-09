@@ -1,5 +1,5 @@
 /*
- * 회원가입 기능을 구현하는 자바 class 파일입니다.
+ * 회원가입 기능 중, 아이디/학번 중복확인 및 전화번호 인증 기능을 구현하는 자바 class 파일입니다.
  * - 구현기능
  *    1. idchk() : 아이디 중복확인
  *        - 1 : 사용 가능한 아이디를 알립니다.
@@ -9,18 +9,20 @@
  *        - 1 : 사용 가능한 학번을 알립니다.
  *        - 0 : 사용 불가능한 학번을 알립니다. (DB에서의 중복)
  *        - -1 : 오류를 알립니다.
+ *    3. telchk() : 휴대폰 번호 본인인증
  */
 
 package leekangjo;
 
 import java.sql.*;
 import java.util.HashMap;
+
 import org.json.simple.JSONObject;
 import net.nurigo.java_sdk.api.Message;
 import net.nurigo.java_sdk.exceptions.CoolsmsException;
 
 public class signup
-{
+{	
 	public int idchk (String id)
 	{
 		// 아이디 중복체크 결과용 정수형 result 변수 선언
@@ -104,6 +106,7 @@ public class signup
 		}
 		return result;
 	}
+	
 	public int telchk (String tel)
 	{
 		// coolSMS 연결 API키
@@ -138,9 +141,5 @@ public class signup
 		}
 		// 난수값 반환
 		return chknum;
-	}
-	public int send (int result)
-	{
-		return result;
 	}
 }

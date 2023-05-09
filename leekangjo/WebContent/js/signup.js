@@ -78,6 +78,40 @@ function signup_first_stdnumchk_result()
 	window.close();
 }
 
+function signup_first_emailchk()
+{
+	var email = document.getElementById("email");
+	var email_chk = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+	if (email.value == "")
+	{
+		alert("이메일 입력 후 다시 시도해 주세요.");
+		email.focus();
+	}
+	else if (!email_chk.test(email.value))
+	{
+		alert("이메일 형식에 맞지 않습니다. 이메일을 올바르게 입력 후 다시 시도해 주세요.");
+		email.focus();
+	}
+	else
+	{
+		popupWindow = window.open("signup_emailchk.jsp?email=" + email.value, "_blank","resizeable","toolbar=no");
+		popupWindow.resizeTo(500,600);
+		popupWindow.onresize=(_=>{
+			popupWindow.resizeTo(500,600);
+		})	
+	}
+}
+
+function signup_first_emailchk_result()
+{
+	opener.document.signup_first.email.value = document.form_emailchk.email.value;
+	opener.document.signup_first.emailchk.value = "email_chkyes";
+	opener.document.signup_first.email.readOnly = true;
+	opener.document.signup_first.email.style.color = "blue";
+	opener.document.signup_first.email.style.onfocus = "this.blur();";
+	window.close();
+}
+
 function signup_first_telchk()
 {
 	var tel = document.getElementById("tel");
@@ -107,36 +141,45 @@ function signup_first_nextBT()
 	var idchk = document.getElementById('hiddenframe').contentWindow.document.getElementById("idchk_result");
 	var stdnumchk = document.getElementById('hiddenframe2').contentWindow.document.getElementById("stdnumchk_result");
 	var telchk = document.getElementById("telchk");
+	var emailchk = document.getElementById("emailchk");
 	
-	if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkno")
+	if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkno" && emailchk.value == "email_chkno")
 	{
 		alert("모든 인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
 	}
-	else if (idchk.value == "id_chkyes" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkno")
+	else if (idchk.value == "id_chkyes" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkno" && emailchk.value == "email_chkno")
 	{
-		alert("학번 인증과 휴대폰 번호 본인인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
+		alert("학번 인증과 휴대폰 번호, 이메일 본인인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
 	}
-	else if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkyes" && telchk.value == "tel_chkno")
+	else if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkyes" && telchk.value == "tel_chkno" && emailchk.value == "email_chkno")
 	{
-		alert("아이디 중복확인과 휴대폰 번호 본인인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
+		alert("아이디 중복확인과 휴대폰 번호, 이메일 본인인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
 	}
-	else if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkyes")
+	else if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkyes" && emailchk.value == "email_chkno")
 	{
-		alert("아이디 중복확인과 학번 인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
+		alert("아이디 중복확인과 학번 인증, 이메일 본인인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
 	}
-	else if (idchk.value == "id_chkyes" && stdnumchk.value == "stdnum_chkyes" && telchk.value == "tel_chkno")
+	else if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkno" && emailchk.value == "email_chkyes")
+	{
+		alert("아이디 중복확인과 학번 인증, 휴대폰 번호 본인인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
+	}
+	else if (idchk.value == "id_chkyes" && stdnumchk.value == "stdnum_chkyes" && telchk.value == "tel_chkyes" && emailchk.value == "email_chkno")
+	{
+		alert("이메일 본인인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
+	}
+	else if (idchk.value == "id_chkyes" && stdnumchk.value == "stdnum_chkyes" && telchk.value == "tel_chkno" && emailchk.value == "email_chkyes")
 	{
 		alert("휴대폰 번호 본인인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
 	}
-	else if (idchk.value == "id_chkyes" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkyes")
+	else if (idchk.value == "id_chkyes" && stdnumchk.value == "stdnum_chkno" && telchk.value == "tel_chkyes" && emailchk.value == "email_chkyes")
 	{
 		alert("학번 인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
 	}
-	else if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkyes" && telchk.value == "tel_chkyes")
+	else if (idchk.value == "id_chkno" && stdnumchk.value == "stdnum_chkyes" && telchk.value == "tel_chkyes" && emailchk.value == "email_chkyes")
 	{
 		alert("아이디 중복확인이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
 	}
-	else if (idchk.value == "id_chkno" || stdnumchk.value == "stdnum_chkno" || telchk.value == "tel_chkno")
+	else if (idchk.value == "id_chkno" || stdnumchk.value == "stdnum_chkno" || telchk.value == "tel_chkno" && emailchk.value == "email_chkno")
 	{
 		alert("하나 이상의 인증과정이 정상 수행되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
 	}

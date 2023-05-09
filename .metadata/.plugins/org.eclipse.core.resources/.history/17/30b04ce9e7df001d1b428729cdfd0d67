@@ -1,9 +1,0 @@
-package leekangjo;
-
-public class randomPwd
-{
-	public static void main(String[] args)
-	{
-		
-	}
-}

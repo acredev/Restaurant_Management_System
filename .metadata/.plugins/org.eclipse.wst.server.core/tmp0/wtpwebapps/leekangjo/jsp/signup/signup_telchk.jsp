@@ -13,7 +13,7 @@
     <link href="../../css/signup_style.css" rel="stylesheet" type="text/css">
     <link href="../../css/signup_first.css" rel="stylesheet">
     <link href="../../css/buttonST.css" rel="stylesheet">
-    
+    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
     <script src="../../js/signup.js"></script>
 </head>
 <body style="overflow-x:hidden;overflow-y:hidden">

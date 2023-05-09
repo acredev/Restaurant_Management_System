@@ -51,4 +51,13 @@ fieldset{
     margin-top: 5%;
     margin-bottom: 5%;
 }
-
+.emailchk {
+    width: 92%;
+    padding: 12px;
+    font-size: 14px;
+    color: #111111;
+    border: 0;
+    border: 1px #cccccc solid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

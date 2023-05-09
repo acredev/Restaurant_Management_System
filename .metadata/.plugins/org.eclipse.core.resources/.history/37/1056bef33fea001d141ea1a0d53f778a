@@ -1,0 +1,15 @@
+package leekangjo;
+
+import javax.mail.Authenticator;
+import javax.mail.PasswordAuthentication;
+
+public class email extends Authenticator
+{
+	PasswordAuthentication pa;
+	
+	public MailAccount()
+	{
+		String id = "praticecoding.h@gmail.com";
+		String pwd = "MMin5030@!";
+	}
+}
