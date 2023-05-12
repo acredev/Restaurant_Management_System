@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!-- 
 메인 화면입니다.
  -->
@@ -26,21 +28,51 @@
         <div id="wrapper">
             <div id="columns">
                 <div class="card" onclick ="location.href='store1_detail.html'">
-                    <img src="img/foodimg.jpg">
+                    <img src="img/aunt_2.png">
                     <p>이모네</p>
                     <a>예약 가능 | 포장 가능 | 소요시간 10~15분</a>
                     <span>대기상황 : 2</span>
                 </div>
                 <div class="card" onclick="alert('영업 준비중입니다.')">
-                    <img src="img/foodimg2.jpg">
+                    <img src="img/jingok.png">
                     <p>진국</p>
                     <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
                     <span> -브레이크 타임-</span>
                 </div>
                 <div class="card">
-                    <img src="img/foodimg3.jpg">
+                    <img src="img/japan.png">
                     <p>카로꼬</p>
                     <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
+                </div>
+                <div class="card">
+                    <img src="img/bobsway.png">
+                    <p>밥스웨이</p>
+                    <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
+                </div>
+                <div class="card">
+                    <img src="img/china.png">
+                    <p>면박사</p>
+                    <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
+                </div>
+                <div class="card">
+                    <img src="img/bonggousse.png">
+                    <p>봉구스밥버거 경민대점</p>
+                    <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
+                </div>
+                <div class="card">
+                    <img src="img/moms_touch.png">
+                    <p>맘스터치 의정부경민점</p>
+                    <a>예약 가능 | 포장 가능 | 소요시간 10~20분</a>     
+                </div>
+                <div class="card">
+                    <img src="img/tomato.png">
+                    <p>토마토도시락 경민대점</p>
+                    <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
+                </div>
+                <div class="card">
+                    <img src="img/bd.png">
+                    <p>뽕뜨락피자 경민대점</p>
+                    <a>예약 가능 | 포장 가능 | 소요시간 10~20분</a>
                 </div>
             </div>
         </div>

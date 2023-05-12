@@ -19,7 +19,7 @@
 		<form name="login_first" class="login_first" action="login_second.jsp" method="post">
 	    	<div class="outBox">
 		    	<div class="boxtitle">
-	        		<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
+	        		<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
     	    		<h1>로그인</h1>
 	    		</div>
     			<div class="inputBox">

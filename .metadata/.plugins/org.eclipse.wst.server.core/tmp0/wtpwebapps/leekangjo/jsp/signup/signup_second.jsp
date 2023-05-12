@@ -30,7 +30,7 @@
     	{%>
     		<div id="box">
     			<div class="boxtitle">
-    				<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
+    				<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
     				<h1>회원가입</h1>
             	</div>
             	<div class="form-item">
@@ -58,7 +58,7 @@
     	{%>
     		<div id="box">
     			<div class="boxtitle">
-    				<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
+    				<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
     				<h1>잘못된 접근입니다.</h1>
             	</div>
             </div>

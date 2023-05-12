@@ -51,7 +51,7 @@
 			<form name="find_id_result" action="find_id_result.jsp" method="post">
 				<div class="outBox">
 	    			<div class="boxtitle">
-        				<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
+        				<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
         				<h1>아이디 찾기 결과</h1>
     				</div>
 					<div id="LrBOX" class="inputBox">

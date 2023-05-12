@@ -51,14 +51,14 @@
 				<form name="find_pw_first" action="find_pw_second.jsp" method="post">
 					<div class="outBox">
 		    			<div class="boxtitle">
-	    	    			<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
+	    	    			<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
         					<h1>비밀번호 재설정</h1>
 	    				</div>
     	    			<div class="inputBox">
 	    	    			<input readOnly type="number" id="tell" name="tel" oninput="maxLengthCheck(this)" maxlength="11" value="<%=result.getString("tel")%>">
 	    	    			<input type="hidden" id="id" name="id" value=<%=user_id %>>
     					</div>
-	    				<button type="submit" class="tagbarBT" onclick="location.href='find_pw_second.html'">인증번호 전송</button>
+	    				<button type="submit" class="tagbarBT" onclick="location.href='find_pw_second.jsp'">인증번호 전송</button>
 					</div>
 				</form>
 			<%

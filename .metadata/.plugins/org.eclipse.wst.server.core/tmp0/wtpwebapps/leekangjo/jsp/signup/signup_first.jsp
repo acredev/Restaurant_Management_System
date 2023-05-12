@@ -16,7 +16,7 @@
     	<form name="signup_first" action="signup_second.jsp" method="post">
         	<div id="box">
     	        <div class="boxtitle">
-	                <img src="../../img/Logo4.png" alt="" class="loginImg" onclick="../../location.href='index.html'">
+	                <img src="../../img/Logo4.png" alt="" class="loginImg" onclick="../../location.href='index.jsp'">
                 	<h1>회원가입</h1>
 	            </div>
             	<div class="form-item">

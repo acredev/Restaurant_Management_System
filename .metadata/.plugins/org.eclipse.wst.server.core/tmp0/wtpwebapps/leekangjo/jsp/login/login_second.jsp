@@ -21,8 +21,6 @@
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src="../../js/pwE_login.js"></script>
         <script src="../../js/LoginJS.js"></script>
-        
-        
 	</head>
 	<body>
 	<%
@@ -54,10 +52,10 @@
         			
 		if (result.next() == true)
 		{%>
-			<form name="login_second" action="../test/test(login_ok).jsp" method="post">
+			<form name="login_second" action="../../index.jsp" method="post">
         		<div class="outBox">
 				<div class="boxtitle">
-        			<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
+        			<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
         			<h1>로그인</h1>
     			</div>
     			<div class="form-item" id="EyeBox">
