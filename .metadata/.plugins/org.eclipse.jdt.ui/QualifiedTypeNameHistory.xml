@@ -10,4 +10,15 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="leekangjo.randomPwd"/>
+<fullyQualifiedTypeName name="javax.mail.Authenticator"/>
+<fullyQualifiedTypeName name="leekangjo.emailAuthenticatior"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="javax.mail.Message"/>
+<fullyQualifiedTypeName name="javax.mail.Session"/>
+<fullyQualifiedTypeName name="javax.mail.PasswordAuthentication"/>
+<fullyQualifiedTypeName name="javax.mail.internet.MimeMessage"/>
+<fullyQualifiedTypeName name="javax.mail.internet.InternetAddress"/>
+<fullyQualifiedTypeName name="javax.mail.Transport"/>
+<fullyQualifiedTypeName name="javax.mail.internet.AddressException"/>
+<fullyQualifiedTypeName name="javax.mail.MessagingException"/>
 </qualifiedTypeNameHistroy>

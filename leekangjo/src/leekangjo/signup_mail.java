@@ -19,7 +19,7 @@ public class signup_mail
 {
 	public int mailSend (String email)
 	{
-        String google_id = "";
+        String google_id = "praticecoding.h@gmail.com";
         String google_pwd = "";
 
         // SMTP 서버 정보

@@ -14,7 +14,7 @@
 	<body>
 	<%
 	try
-	{
+	{		
 		//JDBC 드라이버 연결
 		Class.forName("com.mysql.jdbc.Driver");
 		String db_address = "jdbc:mysql://127.0.0.1:3306/kyungmin_store";
@@ -28,6 +28,9 @@
 		// 파라미터를 통해 받아온 값을 변수에 저장
 		String user_id = request.getParameter("id");
 		String user_pwd = request.getParameter("pwd");
+		
+		// 세션에 MEMBERID 객체를 저장 (user_id 정보를 가져옴)
+		session.setAttribute("MEMBERID", user_id);
 		
 		System.out.print(user_id);
 		System.out.print(user_pwd);
@@ -46,7 +49,8 @@
 		
 		// 만약... 받아온 정보값들이 존재한다면
 		if (result.next() == true)
-		{%>
+		{
+			%>
 			<h1>로그인 성공 !!!!!</h1>
 		<%
 		}
