@@ -2,6 +2,7 @@
 메인 화면입니다.
  -->
 
+<%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
@@ -32,12 +33,15 @@
     </head>
     <body>
         <header>
-            <img src="img/MainLogo.png" class="Logoimg" onclick ="location.href='index.jsp'">
+            <img src="img/MainLogo.png" class="Logoimg" onclick="detail_click()">
             <%
             	// 만약, 로그인 상태가 true라면
             	if (login)
             	{%>
-            		<h1 onclick ="location.href='jsp/login/login_first.jsp'">로그아웃 (로그인아이디 : <%=memberId %>)</h1>
+            		<img src="img/logout.png" class="logout" onclick ="location.href='./jsp/certification/sessionLogout.jsp'">
+            		<img src="img/myimg.png" class="myimg" onclick ="mypage_click()">
+            		<img src="img/find.png" class="find" onclick="alert('잠시 후 시도해주세요.')">
+            		<input type="hidden" id="user_id" name="user_id" value="<%=user_id %>">
             	<%
             	}
             	// 로그인 상태가 false라면
@@ -53,55 +57,45 @@
             <button class="tagbarBT">예약</button>
         </div>
         <div id="wrapper">
-            <div id="columns">
-                <div class="card" onclick ="location.href='store1_detail.html'">
-                    <img src="img/aunt_2.png">
-                    <p>이모네</p>
-                    <a>예약 가능 | 포장 가능 | 소요시간 10~15분</a>
-                    <span>대기상황 : 2</span>
-                </div>
-                <div class="card" onclick="alert('영업 준비중입니다.')">
-                    <img src="img/jingok.png">
-                    <p>진국</p>
-                    <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
-                    <span> -브레이크 타임-</span>
-                </div>
-                <div class="card">
-                    <img src="img/japan.png">
-                    <p>카로꼬</p>
-                    <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
-                </div>
-                <div class="card">
-                    <img src="img/bobsway.png">
-                    <p>밥스웨이</p>
-                    <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
-                </div>
-                <div class="card">
-                    <img src="img/china.png">
-                    <p>면박사</p>
-                    <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
-                </div>
-                <div class="card">
-                    <img src="img/bonggousse.png">
-                    <p>봉구스밥버거 경민대점</p>
-                    <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
-                </div>
-                <div class="card">
-                    <img src="img/moms_touch.png">
-                    <p>맘스터치 의정부경민점</p>
-                    <a>예약 가능 | 포장 가능 | 소요시간 10~20분</a>     
-                </div>
-                <div class="card">
-                    <img src="img/tomato.png">
-                    <p>토마토도시락 경민대점</p>
-                    <a>예약 가능 | 포장 가능 | 소요시간 5~10분</a>
-                </div>
-                <div class="card">
-                    <img src="img/bd.png">
-                    <p>뽕뜨락피자 경민대점</p>
-                    <a>예약 가능 | 포장 가능 | 소요시간 10~20분</a>
-                </div>
+     	   <div id="columns">
+        <%
+        try
+        {
+        	//JDBC 드라이버 연결
+    		Class.forName("com.mysql.jdbc.Driver");
+    		String db_address = "jdbc:mysql://127.0.0.1:3306/kyungmin_store";
+    		String db_username = "root";
+    		String db_pwd = "root";
+    		Connection connection = DriverManager.getConnection(db_address, db_username, db_pwd);
+            			
+            // 문자열의 인코딩 방식 설정
+            request.setCharacterEncoding("UTF-8");
+            
+            String insertQuery = "SELECT * FROM kyungmin_store.store_info";
+            
+            PreparedStatement psmt = connection.prepareStatement(insertQuery);
+            
+            ResultSet result = psmt.executeQuery();
+            
+            while (result.next())
+            {%>
+            	<div class="card" onclick="detail_click()">
+          	  		<img src="img/MainLogo.png">
+         	   		<p><%=result.getString("name") %></p>
+         	   		<input type="hidden" type="text" id="store_num" name="store_num" value="<%=result.getString("store_num") %>">
+         	   		<a>예약 가능 | 포장 가능 | 소요시간 10~15분</a>
+         	   		<span>대기상황 : 2</span>
+        		</div>
+        	<%
+            }
+        }
+        catch (Exception ex)
+        {
+        	out.print(ex);	
+        }
+        %>	
             </div>
         </div>
     </body>
+    <script src="./js/index.js"></script>
 </html>

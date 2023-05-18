@@ -1,0 +1,12 @@
+function ChnMenu(){
+	var store_num = document.getElementById("store_num");
+    document.getElementById("iframeSec").src = "./detail/menu.jsp?store_num=" + store_num;
+}
+
+function ChnInfo(){
+    document.getElementById("iframeSec").src = "./detail/info.jsp";
+}
+
+function ChnSeat(){
+    document.getElementById("iframeSec").src = "./detail/seat.jsp";
+}

@@ -1,0 +1,5 @@
+function myinfo_click()
+{
+	var user_id = document.getElementById("user_id");
+	window.open("./myinfo.jsp?user_id=" + user_id.value);
+}

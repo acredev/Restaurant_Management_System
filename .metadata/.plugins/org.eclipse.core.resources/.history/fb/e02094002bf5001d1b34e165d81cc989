@@ -1,0 +1,6 @@
+function detail_click()
+{
+	var store_num = document.getElementById("store_num");
+	window.open("./jsp/detail/store.jsp?store_num" + store_num.value);
+	alert(store_num.value);;
+}

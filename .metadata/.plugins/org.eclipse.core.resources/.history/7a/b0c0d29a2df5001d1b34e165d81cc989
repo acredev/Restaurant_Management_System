@@ -1,0 +1,40 @@
+<%@page import="java.sql.*"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>info</title>
+        <link rel="icon" href="./img/favicon1.png">
+    </head>
+    <body>
+    	<%
+    	try
+    	{
+    		//JDBC 드라이버 연결
+			Class.forName("com.mysql.jdbc.Driver");
+			String db_address = "jdbc:mysql://127.0.0.1:3306/kyungmin_store";
+			String db_username = "root";
+			String db_pwd = "root";
+			Connection connection = DriverManager.getConnection(db_address, db_username, db_pwd);
+            			
+			// 문자열의 인코딩 방식 설정
+			request.setCharacterEncoding("UTF-8");
+			
+			String store_num = request.getParameter("store_num");
+			
+    	}
+    	catch (Exception ex)
+    	{
+    		
+    	}
+    	%>
+        <a>전화번호 : <input type="text" value="010-1234-5678" style="border: none;background: transparent"></a><br>
+        <a>영업시간 : <input type="text" value="0:00 ~ 0:00"style="border: none;background: transparent"></a><br>
+        <a>주소 : <input type="text" value="경기 의정부시.."style="border: none;background: transparent"></a><br>
+        
+        <h2>공지사항</h2>
+        <input type="text" value="공지사항 입력칸" style="border: 1px solid #000;width: 99%;height: 150px;">
+    </body>
+</html>

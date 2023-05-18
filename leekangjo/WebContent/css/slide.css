@@ -1,0 +1,78 @@
+html,body{ 
+    margin:0;
+}
+#container{ 
+    width: 640px; margin: 0 auto;border: 2px solid #000;
+}
+h1{
+    text-align: center;
+}
+.imgAlbum{
+    height: 400px; width: 640px; overflow: hidden;
+}
+.images{ 
+    display: flex; height: 400px; width: 2560px;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+#image{
+    width: 640px; height: 400px;
+}
+
+button{
+    margin-top: 30px;
+    width: 100px; height: 30px; border:none;
+    color: white; background-color: black;
+}
+
+button:disabled{
+    background-color: lightgray;
+}
+
+#iframeSec{
+    border: none;
+    margin-top: 5%;
+    width: 100%;
+    height: 300px;
+}
+
+.tagbarBT{
+    padding-bottom: 30px;
+}
+#container .tagbarBT:nth-child(3){
+    float: left;
+}
+#container .tagbarBT:nth-child(4){
+    float: right;
+}
+
+#iframCon{
+    border: 2px solid #000;
+    margin: 0 auto;
+    width: 640px;
+    height: 450px;
+    background-color: beige;
+}
+
+#iframConBt1{
+    left: 10%;
+}
+#iframConBt2{
+    left: 10%;
+}
+#iframConBt3{
+    left: 10%;
+}
+
+#image:nth-child(1){
+    background-color: tomato;
+}
+#image:nth-child(2){
+    background-color: teal;
+}
+#image:nth-child(3){
+    background-color: orange;
+}
+#image:nth-child(4){
+    background-color: green;
+}
