@@ -1,11 +1,16 @@
 function myinfo_click()
 {
 	var user_id = document.getElementById("user_id");
-	popupWindow = window.open("myinfo_pwdchk.jsp?user_id=" + user_id.value, "_blank","resizeable","toolbar=no");
+	popupWindow = window.open("./myinfo/myinfo_pwdchk.jsp?user_id=" + user_id.value, "_blank","resizeable","toolbar=no");
 		popupWindow.resizeTo(500,600);
 		popupWindow.onresize=(_=>{
 			popupWindow.resizeTo(500,600);
 		})
+}
+
+function myinfo_pwdchk()
+{
+	document.myinfo_pwdchk.submit();
 }
 
 function myinfo_telchk()
@@ -24,7 +29,7 @@ function myinfo_telchk()
 	}
 	else
 	{
-		popupWindow = window.open("mypage_telchk.jsp?user_tel=" + user_tel.value, "_blank","resizeable","toolbar=no");
+		popupWindow = window.open("myinfo_telchk.jsp?user_tel=" + user_tel.value, "_blank","resizeable","toolbar=no");
 		popupWindow.resizeTo(500,600);
 		popupWindow.onresize=(_=>{
 			popupWindow.resizeTo(500,600);
@@ -48,7 +53,7 @@ function myinfo_emailchk()
 	}
 	else
 	{
-		popupWindow = window.open("mypage_emailchk.jsp?user_email=" + user_email.value, "_blank","resizeable","toolbar=no");
+		popupWindow = window.open("myinfo_emailchk.jsp?user_email=" + user_email.value, "_blank","resizeable","toolbar=no");
 		popupWindow.resizeTo(500,600);
 		popupWindow.onresize=(_=>{
 			popupWindow.resizeTo(500,600);

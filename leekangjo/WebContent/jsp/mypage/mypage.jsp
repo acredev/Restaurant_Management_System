@@ -67,8 +67,16 @@
             {%>
             	<form name="mypage" class="mypage" method="post">
     	    		<div class="outBox">
-    		    		<h1>비정상적인 접근입니다.</h1>
-    				</div>
+						<div class="boxtitle">
+						<a class="topid">오류</a>
+						<hr>
+							<div class="form-item">
+								<h1>잘못된 접근입니다.</h1>
+								<br>
+								<h2>회원정보가 존재하지 않습니다.</h2>
+							</div>
+						</div>
+					</div>
     			</form>
     		<%
             }
@@ -81,10 +89,18 @@
 	else
 	{%>
 		<form name="mypage" class="mypage" method="post">
-			<div class="outBox">
-	    		<h1>비정상적인 접근입니다.</h1>
+     		<div class="outBox">
+				<div class="boxtitle">
+					<a class="topid">오류</a>
+					<hr>
+					<div class="form-item">
+						<h1>잘못된 접근입니다.</h1>
+						<br>
+						<h2>비로그인 상태로 비정상적인 접근입니다.</h2>
+					</div>
+				</div>
 			</div>
-		</form>
+    	</form>
 	<%		
 	}%>	
 	</body>
