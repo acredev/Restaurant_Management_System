@@ -48,7 +48,7 @@
             
             if (result.next() == true)
             {%>
-            	<form name="myinfo" class="myinfo" method="post">
+            	<form name="myinfo" class="myinfo" action="myinfo_update_send.jsp" method="post">
     	    	<div class="outBox">
     		    	<div class="boxtitle">
         	    		<a class="topid">나의 정보</a>
@@ -63,7 +63,7 @@
                         	<a>이메일</a>
                         	<input type="text" id="user_email" name="user_email" value="<%=result.getString("email") %>" maxlength="30" >
                         	<input type="hidden" id="emailchk" name="emailchk" value="email_chknp">
-                        	<button type="button" id="email_change" class="tagbarBT" onclick="myinfo_emailchk()">이메일 변경</button>
+                        	<button type="button" id="email_change" class="tagbarBT" onclick="myinfo_emailchk()">이메일 변경 (이메일 인증)</button>
 	                        <a>전화번호</a>
                         	<input type="number" id="user_tel" name="user_tel" value="<%=result.getString("tel") %>" >
                         	<input type="hidden" id="telchk" name="telchk" value="tel_chkno">
@@ -72,7 +72,7 @@
     	    			</div>
                     <div class="btnbox">
         			<button type="button" id="myinfo_cancle" onclick="location.href='mypage.jsp'" class="tagbarBT">취소</button>
-        			<button type="button" id="myinfo_save" onclick="alert('민혁선배. 잠깐만 이리 와주세요.')" class="tagbarBT">저장</button>
+        			<button type="submit" id="myinfo_save" onclick="alert('민혁선배. 잠깐만 이리 와주세요.')" class="tagbarBT">저장</button>
                     </div>
     			</div>
                 </div>

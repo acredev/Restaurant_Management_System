@@ -1,7 +1,11 @@
 function myinfo_click()
 {
 	var user_id = document.getElementById("user_id");
-	window.open("./myinfo.jsp?user_id=" + user_id.value);
+	popupWindow = window.open("myinfo_pwdchk.jsp?user_id=" + user_id.value, "_blank","resizeable","toolbar=no");
+		popupWindow.resizeTo(500,600);
+		popupWindow.onresize=(_=>{
+			popupWindow.resizeTo(500,600);
+		})
 }
 
 function myinfo_telchk()
@@ -49,5 +53,32 @@ function myinfo_emailchk()
 		popupWindow.onresize=(_=>{
 			popupWindow.resizeTo(500,600);
 		})	
+	}
+}
+
+function myinfo_nextBT()
+{
+	var telchk = document.getElementById("telchk");
+	var emailchk = document.getElementById("emailchk");
+	
+	if (telchk.value == "tel_chkno" && emailchk.value == "email_chkno")
+	{
+		alert("회원정보 변경을 위한 모든 인증이 완료되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
+	}
+	else if (telchk.value == "tel_chkyes" && emailchk.value == "email_chkno")
+	{
+		alert("회원정보 변경을 위한 이메일 인증이 완료되지 않았습니다. 이메일 인증을 수행 후 다시 시도해 주세요.");
+	}
+	else if (telchk.value == "tel_chkno" && emailchk.value == "email_chkyes")
+	{
+		alert("회원정보 변경을 위한 휴대폰 번호 본인인증이 완료되지 않았습니다. 휴대폰 번호 본인인증을 수행 후 다시 시도해 주세요.");
+	}
+	else if (telchk.value != "tel_chkno" || emailchk.value == "email_chkno")
+	{
+		alert("회원정보 변경을 위한 하나 이상의 인증과정이 정상 수행되지 않았습니다. 모든 인증과정을 수행 후 다시 시도해 주세요.");
+	}
+	else
+	{
+		document.myinfo.submit();
 	}
 }

@@ -52,7 +52,7 @@
         			
 		if (result.next() == true)
 		{%>
-			<form name="login_second" action="../../index.jsp" method="post">
+			<form name="login_second" action="login_send.jsp" method="post">
         		<div class="outBox">
 				<div class="boxtitle">
         			<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
@@ -63,7 +63,7 @@
                		<input type="password" id="pwd" name="pwd" placeholder="* 비밀번호" onchange="signup_second_pwdchk()">
                 	<i class="fa-solid fa-eye"></i>
             	</div>
-    			<button type="button" onclick="login_second_check()" class="tagbarBT">다음</button>
+    			<button type="submit" onclick="login_second_check()" class="tagbarBT">다음</button>
     			<div class="IPSBOX">
 	    	  	  	<a onclick="location.href='../find_pw/find_pw_first.jsp?userid=' + document.login_second.id.value" class="aST">비밀번호 재설정</a>
     			</div>

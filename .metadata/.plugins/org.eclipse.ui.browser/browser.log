@@ -4474,3 +4474,20 @@
 5월 18, 2023 23:10:11.893 [29952:33100:0518/231011.893:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
 5월 18, 2023 23:44:38.475 [29952:41468:0518/234438.474:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
 5월 18, 2023 23:44:38.475     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
+5월 19, 2023 10:37:50.970 [2872:9976:0519/103750.968:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+5월 19, 2023 10:37:50.971     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
+5월 19, 2023 12:03:22.19 [2872:29836:0519/120322.018:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 19, 2023 12:03:22.150 [2872:29836:0519/120322.149:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 19, 2023 12:03:25.732 [2872:29836:0519/120325.731:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 19, 2023 12:03:34.811 [2872:29836:0519/120334.809:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 19, 2023 12:04:15.493 [2872:9976:0519/120415.493:ERROR:device_event_log_impl.cc(222)] [12:04:15.493] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 19, 2023 12:04:16.501 [2872:29836:0519/120416.501:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 19, 2023 12:23:48.325 [2872:29836:0519/122348.324:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 19, 2023 22:27:49.843 [2872:29836:0519/222749.842:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 19, 2023 22:27:50.400 [2872:29836:0519/222750.399:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 19, 2023 22:27:51.13 [2872:35892:0519/222751.013:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+5월 21, 2023 24:58:01.55 [2872:9976:0521/005801.055:ERROR:device_event_log_impl.cc(222)] [00:58:01.055] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 21, 2023 01:40:23.608 [33356:40796:0521/014023.607:ERROR:CONSOLE(1)] "Uncaught (in promise) RangeError: Invalid line number 7 in 1-line document", source: devtools://devtools/bundled/devtools-frontend/front_end/third_party/codemirror.next/chunk/codemirror.js (1)
+5월 21, 2023 01:42:16.135 [33356:40796:0521/014216.135:ERROR:CONSOLE(1)] "Uncaught (in promise) RangeError: Invalid line number 7 in 1-line document", source: devtools://devtools/bundled/devtools-frontend/front_end/third_party/codemirror.next/chunk/codemirror.js (1)
+5월 21, 2023 01:46:40.824 [33356:40796:0521/014640.824:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+5월 21, 2023 01:46:40.825     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)

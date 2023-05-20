@@ -22,7 +22,6 @@ INDEX VERSION 1.131+D:\Capston_Design\.metadata\.plugins\org.eclipse.jdt.core
 1642937305.index
 2330918217.index
 1894255814.index
-2842669704.index
 1129208967.index
 2307274451.index
 2461348046.index

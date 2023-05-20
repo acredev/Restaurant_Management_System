@@ -32,6 +32,7 @@
         <link rel="icon" href="./img/favicon1.png">
     </head>
     <body>
+    <form name="index" method="post">
         <header>
             <img src="img/MainLogo.png" class="Logoimg" onclick="detail_click()">
             <%
@@ -39,7 +40,7 @@
             	if (login)
             	{%>
             		<img src="img/logout.png" class="logout" onclick ="location.href='./jsp/certification/sessionLogout.jsp'">
-            		<img src="img/myimg.png" class="myimg" onclick ="mypage_click()">
+            		<img src="img/myimg.png" class="myimg" onclick ="mypage_click(user_id)">
             		<img src="img/find.png" class="find" onclick="alert('잠시 후 시도해주세요.')">
             		<input type="hidden" id="user_id" name="user_id" value="<%=user_id %>">
             	<%
@@ -96,6 +97,7 @@
         %>	
             </div>
         </div>
+    </form>
     </body>
     <script src="./js/index.js"></script>
 </html>
