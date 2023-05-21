@@ -11,6 +11,7 @@
     <head>
         <meta charset="utf-8">
         <title>LEEKANGJO - 회원가입</title>
+        <link href="../../css/LoginMain.css" rel="stylesheet">
         <link href="../../css/signup_second.css" rel="stylesheet">
         <link href="../../css/buttonST.css" rel="stylesheet">
         <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
@@ -41,12 +42,12 @@
 	
 		if (id == null || id.isEmpty())
 		{%>
-		<div id="box">
-			<div class="boxtitle">
-				<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
-				<h1>비정상적인 접근입니다.</h1>
-        	</div>
-        </div>
+			<div class="outBox">
+				<div class="boxtitle">
+					<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+					<h2>잘못된 접근입니다.</h2>
+				</div>
+			</div>
 		<%
 		}	
 		else if (stdnum == null || stdnum.isEmpty())

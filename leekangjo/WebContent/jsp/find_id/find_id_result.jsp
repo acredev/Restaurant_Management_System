@@ -46,7 +46,8 @@
 			// 쿼리문을 전송해 받아온 정보를 result 객체에 저장
 			ResultSet result = psmt.executeQuery();
 			
-			while (result.next())
+			// DB에서 받아온 정보가 있다면...
+			if (result.next() == true)
 			{%>
 			<form name="find_id_result" action="find_id_result.jsp" method="post">
 				<div class="outBox">
@@ -63,10 +64,33 @@
 			</form>
 			<%
 			}
+			// DB에서 받아온 정보가 없다면...
+			else
+			{%>
+				<form name="find_id_result" action="find_id_result.jsp" method="post">
+					<div class="outBox">
+		    			<div class="boxtitle">
+    	    				<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+        					<h2>잘못된 접근입니다.</h2>
+    					</div>
+					</div>
+				</form>
+			<%
+			}
 		}
+		// DB연결 오류가 발생했다면...
 		catch (Exception ex)
-		{
-			out.print("오류가 발생했습니다. 오류 메시지 : " + ex.getMessage());
+		{%>
+			<form name="find_id_result" action="find_id_result.jsp" method="post">
+				<div class="outBox">
+	    			<div class="boxtitle">
+        				<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+        				<h2>오류가 발생했습니다.</h2>
+        				<h3>오류 메시지 : <%=ex.getMessage() %></h3>
+    				</div>
+				</div>
+			</form>
+		<%
 		}
 		%>
 	</body>

@@ -9,6 +9,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
 	<title>LEEKANGJO - 이메일 본인 인증</title>
+	<link href="../../css/LoginMain.css" rel="stylesheet">
 	<link href="../../css/Header.css" rel="stylesheet" type="text/css">
     <link href="../../css/signup_style.css" rel="stylesheet" type="text/css">
     <link href="../../css/signup_first.css" rel="stylesheet">
@@ -23,47 +24,62 @@
 	// 파라미터를 통해 받아온 값을 변수에 저장
 	String email = request.getParameter("email");
 	
-	// 클래스에 지정한 함수를 사용하기 위한 객체 선언
-	signup_mail signup_mailchk = new signup_mail();
+	if (email == null || email.isEmpty())
+	{%>
+		<form name="form_emailchk">
+			<div class="outBox">
+				<div class="boxtitle">
+					<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+					<h2>잘못된 접근입니다.</h2>
+				</div>
+			</div>
+		</form>
+	<%
+	}
+	else
+	{
+		// 클래스에 지정한 함수를 사용하기 위한 객체 선언
+		signup_mail signup_mailchk = new signup_mail();
 	
-	// 클래스에 지정한 함수를 실행시킨 결과값을 변수에 저장
-	int chknum = signup_mailchk.mailSend(email);
-	%>
-	<script type="text/javascript">
-		function signup_first_emailchk_result()
-		{
-			if (document.form_emailchk.emailchk.value == "" || document.form_emailchk.length < 0)
+		// 클래스에 지정한 함수를 실행시킨 결과값을 변수에 저장
+		int chknum = signup_mailchk.mailSend(email);
+		%>
+		<script type="text/javascript">
+			function signup_first_emailchk_result()
 			{
-				alert("인증번호를 입력 후 다시 시도해 주세요.");
-				document.form_emailchk.email.focus();
-			}
-			else
-			{
-				if(<%=chknum%> == document.form_emailchk.emailchk.value)
+				if (document.form_emailchk.emailchk.value == "" || document.form_emailchk.length < 0)
 				{
-					alert("이메일 본인인증이 완료되었습니다.");
-					opener.document.signup_first.emailchk.value = "email_chkyes";
-					opener.document.signup_first.email.readOnly = true;
-					opener.document.signup_first.email.style.color = "blue";
-					opener.document.signup_first.email.style.onfocus = "this.blur();";
-					window.close();
+					alert("인증번호를 입력 후 다시 시도해 주세요.");
+					document.form_emailchk.email.focus();
 				}
 				else
 				{
-					alert("이메일 본인인증이 실패했습니다. 다시 시도해 주세요.");
+					if(<%=chknum%> == document.form_emailchk.emailchk.value)
+					{
+						alert("이메일 본인인증이 완료되었습니다.");
+						opener.document.signup_first.emailchk.value = "email_chkyes";
+						opener.document.signup_first.email.readOnly = true;
+						opener.document.signup_first.email.style.color = "blue";
+						opener.document.signup_first.email.style.onfocus = "this.blur();";
+						window.close();
+					}
+					else
+					{
+						alert("이메일 본인인증이 실패했습니다. 다시 시도해 주세요.");
+					}
 				}
 			}
-		}
-	</script>
-    <div id="box">
-	<fieldset>
-            <img src="../../img/Logo4.png" alt="" class="loginImg">
-            <h2>이메일 인증</h2>
-		<form action="signup_emailchk.jsp" method="post" name="form_emailchk" class="formD">
-			<input type="text" class="emailchk" name="emailchk" maxlength="5" placeholder="* 인증번호" >
-            <button type="button" class="tagbarBT" onclick="signup_first_emailchk_result()">본인인증</button>
-		</form>
-	</fieldset>
-    </div>
-</body>
+		</script>
+    	<div id="box">
+			<fieldset>
+	            <img src="../../img/Logo4.png" alt="" class="loginImg">
+            	<h2>이메일 인증</h2>
+				<form name="form_emailchk" action="signup_emailchk.jsp" method="post" class="formD">
+					<input type="text" class="emailchk" name="emailchk" maxlength="5" placeholder="* 인증번호" >
+            		<button type="button" class="tagbarBT" onclick="signup_first_emailchk_result()">본인인증</button>
+				</form>
+			</fieldset>
+    	</div>
+    <%}%>
+	</body>
 </html>

@@ -18,52 +18,69 @@
 	    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
 	</head>
 	<body>
-	<%
-	request.setCharacterEncoding("UTF-8");
-	
-	String user_id = request.getParameter("id");
-	String user_tel = request.getParameter("tel");
-	%>
-		<form name="find_pw_second" action="find_pw_result.jsp" method="post">
-			<div class="outBox">
-		    	<div class="boxtitle">
-	    		    <img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
-		        	<h1>인증번호</h1>
-    			</div>
-	    		<div class="inputBox">
-		        	<input type="number" id="verify" name="telchk" oninput="maxLengthCheck(this)" maxlength="5" placeholder="인증번호" value="">
-		        	<input type="hidden" id="id" name="id" value=<%=user_id %>>
-		        	<input type="hidden" id="tel" name="tel" value=<%=user_tel %>>
-    			</div>
-    			<button type="submit" class="tagbarBT" onclick="result();">확인</button>
-			</div>
-		</form>
 		<%
-		signup signup_telchk = new signup();
-        				
-        int chknum = signup_telchk.telchk(user_tel);
+		request.setCharacterEncoding("UTF-8");
+		
+		String user_id = request.getParameter("id");
+		String user_tel = request.getParameter("tel");
+	
+		if (user_id == null || user_id.isEmpty())
+		{%>
+			<form name="find_pw_second">
+				<div class="outBox">
+					<div class="boxtitle">
+	       				<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+       					<h2>잘못된 접근입니다.</h2>
+    				</div>
+				</div>
+			</form>
+		<%
+		}
+		else
+		{
 		%>
-		<script type="text/javascript">
-			function result()
-			{
-				if (document.find_pw_second.telchk.value == "" || document.find_pw_second.telchk.length < 0)
+			<form name="find_pw_second" action="find_pw_result.jsp" method="post">
+				<div class="outBox">
+			    	<div class="boxtitle">
+	    		    	<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+		        		<h1>인증번호</h1>
+    				</div>
+	    			<div class="inputBox">
+			        	<input type="number" id="verify" name="telchk" oninput="maxLengthCheck(this)" maxlength="5" placeholder="인증번호" value="">
+		        		<input type="hidden" id="id" name="id" value=<%=user_id %>>
+		        		<input type="hidden" id="tel" name="tel" value=<%=user_tel %>>
+    				</div>
+    				<button type="submit" class="tagbarBT" onclick="result();">확인</button>
+				</div>
+			</form>
+			<%
+			signup signup_telchk = new signup();
+        					
+        	int chknum = signup_telchk.telchk(user_tel);
+			%>
+			<script type="text/javascript">
+				function result()
 				{
-					alert ("인증번호가 입력되지 않았습니다. 처음부터 다시 시도해 주세요.");
-					setTimeout(function() { window.location.href="login_first.jsp"}, 100);
-				}
-				else
-				{
-					if (<%=chknum%> == document.find_pw_second.telchk.value)
+					if (document.find_pw_second.telchk.value == "" || document.find_pw_second.telchk.length < 0)
 					{
-						alert("전화번호 본인인증이 완료되었습니다.");
+						alert ("인증번호가 입력되지 않았습니다. 처음부터 다시 시도해 주세요.");
+						setTimeout(function() { window.location.href="login_first.jsp"}, 100);
 					}
 					else
 					{
-						alert("전화번호 본인인증이 실패했습니다. 처음부터 다시 시도해 주세요.");
-						setTimeout(function() { window.location.href="../login/login_first.jsp"}, 100);
+						if (<%=chknum%> == document.find_pw_second.telchk.value)
+						{
+							alert("전화번호 본인인증이 완료되었습니다.");
+						}
+						else
+						{
+							alert("전화번호 본인인증이 실패했습니다. 처음부터 다시 시도해 주세요.");
+							setTimeout(function() { window.location.href="../login/login_first.jsp"}, 100);
+						}
 					}
-				}
-			}
-		</script>
+				}	
+			</script>
+		<%
+		}%>
 	</body>
 </html>

@@ -43,8 +43,10 @@
 		// 앞서 문자열 쿼리문을 선언했던 VALUES의 ? 값에 하나씩 삽입하여 전송
 		psmt.setString(1, user_tel);
 		
+		// 쿼리문을 전송해 받아온 정보를 result 객체에 저장
 		ResultSet result = psmt.executeQuery();
 		
+		// DB에서 받아온 정보가 있다면...
 		if (result.next() == true)
 		{
 		%>
@@ -61,13 +63,16 @@
     			<button type="button" class="tagbarBT" onclick="result()">확인</button>
 			</div>
 			<%
+			// 문자를 보내기 위한 메서드 생성
 			signup signup_telchk = new signup();
         	
+			// 난수값은 user_tel 값을 넘긴 후 return 된 값
         	int chknum = signup_telchk.telchk(user_tel);
 			%>
 			<script type="text/javascript">
 				function result()
 				{
+					// 만약... 사용자가 입력한 값과 발생한 난수값이 같지 않다면
 					if (document.find_id_second.telchk.value == "" || document.find_id_second.telchk.length < 0)
 					{
 						alert ("인증번호 입력 후 다시 시도해 주세요.");
@@ -75,11 +80,13 @@
 					}
 					else
 					{
+						// 만약... 사용자가 입력한 값과 발생한 난수값이 같다면
 						if (<%=chknum%> == document.find_id_second.telchk.value)
 						{
 							alert("전화번호 본인인증이 완료되었습니다.");
 							document.find_id_second.submit();
 						}
+						// 그 외 기타 에러라면...
 						else
 						{
 							alert("전화번호 본인인증이 실패했습니다. 처음부터 다시 시도해 주세요.");
@@ -91,6 +98,7 @@
 		</form>
 		<%
 		}
+		// DB에서 받아온 정보가 없다면...
 		else
 		{%>
 			<script type="text/javascript">
@@ -100,9 +108,19 @@
 		<%
 		}
 	}
+	// DB연결 오류가 발생했다면...
 	catch (Exception ex)
-	{
-		out.println("오류가 발생했습니다. 오류 메시지 : " + ex.getMessage());
+	{%>
+		<form name="find_id_second">
+			<div class="outBox">
+	    		<div class="boxtitle">
+        			<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+        			<h2>오류가 발생했습니다.</h2>
+        			<h3>오류 메시지 : <%=ex.getMessage() %></h3>
+    			</div>
+			</div>
+		</form>
+	<%
 	}
 	%>
 	</body>

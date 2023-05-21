@@ -13,6 +13,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
 		<title>LEEKANGJO - 학번 중복확인</title>
+		<link href="../../css/LoginMain.css" rel="stylesheet">
 		<link href="../../css/Header.css" rel="stylesheet" type="text/css">
         <link href="../../css/signup_style.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
@@ -30,10 +31,17 @@
 			
 			if (stdnum == null || stdnum.isEmpty())
 			{%>
-			<script type="text/javascript">
-				document.getElementById("stdnumchk_result").value = "stdnum_chkno";
-				document.getElementById("result_txt").innerText = ""
-			</script>
+				<script type="text/javascript">
+					document.getElementById("stdnumchk_result").value = "stdnum_chkno";
+					document.getElementById("result_txt").innerText = ""
+				</script>
+				<div class="outBox">
+					<div class="boxtitle">
+						<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+						<h2>잘못된 접근입니다.</h2>
+					</div>
+				</div>
+			
 			<%
 			}
 			else

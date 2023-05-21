@@ -54,7 +54,7 @@
         	<input type="hidden" id="isPwdSame" name="isPwdSame" value="no">
     		<%
     	}
-    	else
+    	else if (telchk == null || telchk.isEmpty())
     	{%>
     		<div id="box">
     			<div class="boxtitle">

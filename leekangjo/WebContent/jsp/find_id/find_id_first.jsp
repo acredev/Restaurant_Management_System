@@ -11,7 +11,6 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
 		<title>LEEKANGJO - 아이디 찾기</title>
-		<!-- 페이지 디자인을 위한 CSS 선언 -->
 		<script src="../../js/FindJS.js"></script>
 		<link href="../../css/LoginMain.css" rel="stylesheet" type="text/css">
 		<link href="../../css/buttonST.css" rel="stylesheet" type="text/css">

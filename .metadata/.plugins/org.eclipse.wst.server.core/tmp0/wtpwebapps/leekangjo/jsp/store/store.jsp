@@ -12,11 +12,6 @@
         <link rel="icon" href="./img/favicon1.png">
     </head>
     <body>
-        <header>
-            <img src="../../img/MainLogo.png" class="Logoimg" onclick ="location.href='../../index.jsp'">
-            <h1 onclick ="location.href='../login/login_first.jsp'">Login</h1>
-        </header>
-        <div id="container">
 		<%
 		try
 		{
@@ -32,48 +27,84 @@
 			
 			String store_num = request.getParameter("store_num");
             
-			String insertQuery = "SELECT * FROM kyungmin_store.store_info WHERE store_num=?;";
-            
-			PreparedStatement psmt = connection.prepareStatement(insertQuery);
-			
-			psmt.setString(1, store_num);
-            
-			ResultSet result = psmt.executeQuery();
-            
-			if (result.next() == true)
-            {%>
-            	<!-- 나중에 이미지DB 작업하면 아래 image들을 db에서 불러온 정보들로 대체하도록 -->
-            	<h1>test</h1>
-            	<div class="imgAlbum">
-    	      		<div class="images">
-          				<div id="image"></div>
-                 		<div id="image"></div>
-                  		<div id="image"></div>
-	                  	<div id="image"></div>
-            	   	</div>
-       			</div>
-				<button class="tagbarBT" id="prev">&lt;</button>
-				<button class="tagbarBT" id="next">&gt;</button>
-			</div>
-        	<div id="iframCon">
-        		<input type="hidden" id="store_num" name="store_num" value="<%=store_num%>">
-	            <button class="tagbarBT" id="iframConBt1" onclick="ChnInfo()">정보</button>
-            	<button class="tagbarBT" id="iframConBt2" onclick="ChnMenu()">메뉴</button>
-            	<button class="tagbarBT" id="iframConBt3" onclick="ChnSeat()">좌석</button>
-            	<iframe id="iframeSec" scrolling=no></iframe>
-	        </div>
-        	<%
-            }
-			else
+			if (store_num == null || store_num.isEmpty())
 			{%>
-				<h1>잘못된 접근입니다.</h1>
+				<form name="store">
+					<div class="outBox">
+						<div class="boxtitle">
+							<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+							<h2>잘못된 접근입니다.</h2>
+						</div>
+					</div>
+				</form>
 			<%
 			}
-        }
-        catch (Exception ex)
-        {
-        	out.print(ex);	
-        }
+			else
+			{
+				String insertQuery = "SELECT * FROM kyungmin_store.store_info WHERE store_num=?;";
+	            
+				PreparedStatement psmt = connection.prepareStatement(insertQuery);
+				
+				psmt.setString(1, store_num);
+	            
+				ResultSet result = psmt.executeQuery();
+	            
+				if (result.next() == true)
+	            {%>
+	            	<!-- 나중에 이미지DB 작업하면 아래 image들을 db에서 불러온 정보들로 대체하도록 -->
+	            	<header>
+						<img src="../../img/MainLogo.png" class="Logoimg" onclick ="location.href='../../index.jsp'">
+            			<h1 onclick ="location.href='../login/login_first.jsp'">Login</h1>
+        			</header>
+        			<div id="container">
+	            		<h1>test</h1>
+		            	<div class="imgAlbum">
+    			      		<div class="images">
+          						<div id="image"></div>
+                 				<div id="image"></div>
+                  				<div id="image"></div>
+	                  			<div id="image"></div>
+            	   			</div>
+       					</div>
+						<button class="tagbarBT" id="prev">&lt;</button>
+						<button class="tagbarBT" id="next">&gt;</button>
+					</div>
+        			<div id="iframCon">
+        				<input type="hidden" id="store_num" name="store_num" value="<%=store_num%>">
+	            		<button class="tagbarBT" id="iframConBt1" onclick="ChnInfo()">정보</button>
+            			<button class="tagbarBT" id="iframConBt2" onclick="ChnMenu()">메뉴</button>
+            			<button class="tagbarBT" id="iframConBt3" onclick="ChnSeat()">좌석</button>
+            			<iframe id="iframeSec" scrolling=no></iframe>
+		        	</div>
+	        	<%
+	            }
+				else
+				{%>
+					<form name="store">
+						<div class="outBox">
+							<div class="boxtitle">
+								<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+								<h2>잘못된 접근입니다.</h2>
+							</div>
+						</div>
+					</form>
+				<%
+				}
+			}
+		}
+		catch (Exception ex)
+	    {%>
+	       	<form name="store">
+				<div class="outBox">
+					<div class="boxtitle">
+						<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+						<h2>오류가 발생했습니다.</h2>
+						<h3>오류 메시지 : <%=ex.getMessage() %></h3>
+					</div>
+				</div>
+			</form>
+	    <%	
+	    }
         %>	
         <script src="../../js/slide.js"></script>
         <script src="../../js/store.js"></script>

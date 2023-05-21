@@ -9,6 +9,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
 	<title>LEEKANGJO - 휴대폰 번호 본인 인증</title>
+	<link href="../../css/LoginMain.css" rel="stylesheet">
 	<link href="../../css/Header.css" rel="stylesheet" type="text/css">
     <link href="../../css/signup_style.css" rel="stylesheet" type="text/css">
     <link href="../../css/signup_first.css" rel="stylesheet">
@@ -23,6 +24,18 @@
 	// 파라미터를 통해 받아온 값을 변수에 저장
 	String tel = request.getParameter("tel");
 	
+	if (tel == null || tel.isEmpty())
+	{%>
+		<form name="form_telchk">
+			<div class="outBox">
+				<div class="boxtitle">
+					<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+					<h2>잘못된 접근입니다.</h2>
+				</div>
+			</div>
+		</form>
+	<%
+	}
 	// 클래스에 지정한 함수를 사용하기 위한 객체 선언
 	signup signup_telchk = new signup();
 	

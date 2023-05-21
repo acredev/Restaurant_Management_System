@@ -4524,3 +4524,6 @@
 5월 21, 2023 14:32:58.37 [40500:39072:0521/143258.032:ERROR:CONSOLE(1)] "Request Emulation.setEmulatedMedia failed. {"code":-32601,"message":"'Emulation.setEmulatedMedia' wasn't found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
 5월 21, 2023 14:32:58.38 [40500:39072:0521/143258.032:ERROR:CONSOLE(1)] "Request Emulation.setEmulatedVisionDeficiency failed. {"code":-32601,"message":"'Emulation.setEmulatedVisionDeficiency' wasn't found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
 5월 21, 2023 14:32:58.38 [40500:39072:0521/143258.032:ERROR:CONSOLE(1)] "Request Network.clearAcceptedEncodingsOverride failed. {"code":-32601,"message":"'Network.clearAcceptedEncodingsOverride' wasn't found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+
+5월 22, 2023 24:46:08.682 NEW SESSION
+5월 22, 2023 24:46:08.682 [40708:21580:0522/004608.679:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
