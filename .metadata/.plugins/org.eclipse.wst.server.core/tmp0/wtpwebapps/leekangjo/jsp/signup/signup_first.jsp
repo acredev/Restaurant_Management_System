@@ -1,3 +1,7 @@
+<!-- 
+회원가입 첫번째 화면입니다.
+ -->
+
 <%@page import="leekangjo.signup" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
