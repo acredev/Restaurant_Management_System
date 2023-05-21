@@ -1,4 +1,8 @@
- <%@page import="leekangjo.signup_mail" %>
+<!-- 
+회원가입 > 이메일 본인인증 화면입니다.
+ -->
+
+<%@page import="leekangjo.signup_mail" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>

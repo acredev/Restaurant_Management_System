@@ -1,3 +1,7 @@
+<!-- 
+로그인 정보를 전송 후 검증하는 화면입니다.
+ -->
+
 <%@page import="java.sql.*" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"

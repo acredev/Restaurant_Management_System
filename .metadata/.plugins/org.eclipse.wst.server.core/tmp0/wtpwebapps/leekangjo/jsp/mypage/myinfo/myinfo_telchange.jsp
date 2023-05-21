@@ -1,3 +1,7 @@
+<!-- 
+마이페이지 > 나의 정보 > 휴대폰 번호 변경 화면입니다.
+ -->
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     

@@ -1,3 +1,7 @@
+<!-- 
+마이페이지 > 나의 정보에 진입하기 위한 비밀번호 검증 과정 화면입니다.
+ -->
+
 <%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>

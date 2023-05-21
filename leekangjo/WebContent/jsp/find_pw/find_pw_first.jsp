@@ -65,7 +65,7 @@
 				</form>
 			<%
 			}
-			// DB에서 ㅂㄷ아온 정보가 없다면...
+			// DB에서 받아온 정보가 없다면...
 			else
 			{%>
 				<form name="find_pw_first">

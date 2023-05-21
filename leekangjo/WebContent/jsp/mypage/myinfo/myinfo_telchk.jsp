@@ -1,4 +1,8 @@
- <%@page import="leekangjo.signup" %>
+<!-- 
+마이페이지 > 나의 정보 > 휴대폰 번호 변경 > 휴대폰 번호 본인인증 화면입니다.
+ -->
+
+<%@page import="leekangjo.signup" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>

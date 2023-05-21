@@ -1,3 +1,7 @@
+<!-- 
+마이페이지 > 나의 정보 > 정보 변경을 전송하기 위한 화면입니다.
+ -->
+
 <%@page import="java.sql.*" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"

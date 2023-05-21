@@ -1,4 +1,8 @@
- <%@page import="leekangjo.signup" %>
+<!-- 
+회원가입 > 휴대폰 번호 본인인증을 위한 화면입니다.
+ -->
+
+<%@page import="leekangjo.signup" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
