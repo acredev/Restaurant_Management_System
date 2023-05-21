@@ -61,13 +61,14 @@
 	                        <a>학번</a>
                         	<input type="number" id="user_stdid" name="user_stdid" value="<%=result.getString("stdid") %>" readonly >
                         	<a>이메일</a>
-                        	<input type="text" id="user_email" name="user_email" value="<%=result.getString("email") %>" maxlength="30" >
-                        	<input type="hidden" id="emailchk" name="emailchk" value="email_chknp">
-                        	<button type="button" id="email_change" class="tagbarBT" onclick="myinfo_emailchk()">이메일 변경 (이메일 인증)</button>
+                        	<input type="text" id="user_email" name="user_email" value="<%=result.getString("email") %>" readonly >
+                        	<input type="hidden" id="emailchk" name="emailchk" value="email_chkno">
+                        	<button type="button" id="email_change" class="tagbarBT" onclick="myinfo_emailchange()">이메일 변경 (이메일 인증)</button>
 	                        <a>전화번호</a>
-                        	<input type="number" id="user_tel" name="user_tel" value="<%=result.getString("tel") %>" >
+                        	<input type="number" id="user_tel" name="user_tel" value="<%=result.getString("tel") %>" readonly >
                         	<input type="hidden" id="telchk" name="telchk" value="tel_chkno">
-                        	<button type="button" id="telnum_change" class="tagbarBT " onclick="myinfo_telchk()">전화번호 변경 (SMS 인증)</button>
+                        	<button type="button" id="telnum_change" class="tagbarBT " onclick="myinfo_telchange()">전화번호 변경 (SMS 인증)</button>
+                        	<button type="button" id="pw_change" class="tagbarBT " onclick="alert('민혁선배. 잠깐만 이리 와주세요.')">비밀번호 변경</button>
                         	<hr>
     	    			</div>
                     <div class="btnbox">

@@ -13,6 +13,15 @@ function myinfo_pwdchk()
 	document.myinfo_pwdchk.submit();
 }
 
+function myinfo_telchange()
+{
+	popupWindow = window.open("myinfo_telchange.jsp", "_blank","resizeable","toolbar=no");
+	popupWindow.resizeTo(500,600);
+	popupWindow.onresize=(_=>{
+	popupWindow.resizeTo(500,600);
+	})	
+}
+
 function myinfo_telchk()
 {
 	var user_tel = document.getElementById("user_tel");
@@ -29,15 +38,11 @@ function myinfo_telchk()
 	}
 	else
 	{
-		popupWindow = window.open("myinfo_telchk.jsp?user_tel=" + user_tel.value, "_blank","resizeable","toolbar=no");
-		popupWindow.resizeTo(500,600);
-		popupWindow.onresize=(_=>{
-			popupWindow.resizeTo(500,600);
-		})	
+		document.form_telchange.submit();
 	}
 }
 
-function myinfo_emailchk()
+function myinfo_emailchange()
 {
 	var user_email = document.getElementById("user_email");
 	var email_chk = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
@@ -53,7 +58,7 @@ function myinfo_emailchk()
 	}
 	else
 	{
-		popupWindow = window.open("myinfo_emailchk.jsp?user_email=" + user_email.value, "_blank","resizeable","toolbar=no");
+		popupWindow = window.open("myinfo_emailchange.jsp", "_blank","resizeable","toolbar=no");
 		popupWindow.resizeTo(500,600);
 		popupWindow.onresize=(_=>{
 			popupWindow.resizeTo(500,600);

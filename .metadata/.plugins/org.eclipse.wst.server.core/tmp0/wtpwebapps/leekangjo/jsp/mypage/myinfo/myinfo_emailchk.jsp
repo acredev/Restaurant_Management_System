@@ -43,6 +43,7 @@
 				{
 					alert("이메일 본인인증이 완료되었습니다.");
 					opener.document.myinfo.emailchk.value = "email_chkyes";
+					opener.document.myinfo.user_email.value = "<%=email%>";
 					opener.document.myinfo.user_email.readOnly = true;
 					opener.document.myinfo.user_email.style.color = "blue";
 					opener.document.myinfo.user_email.style.onfocus = "this.blur();";
@@ -59,7 +60,7 @@
 	<fieldset>
             <img src="../../../img/Logo4.png" alt="" class="loginImg">
             <h2>이메일 인증</h2>
-		<form action="mypage_emailchk.jsp" method="post" name="form_emailchk" class="formD">
+		<form name="form_emailchk" method="post" class="formD">
 			<input type="text" class="emailchk" name="emailchk" maxlength="5" placeholder="* 인증번호" >
             <button type="button" class="tagbarBT" onclick="mypage_emailchk()">본인인증</button>
 		</form>

@@ -43,6 +43,7 @@
 				{
 					alert("휴대폰 본인인증이 완료되었습니다.");
 					opener.document.myinfo.telchk.value = "tel_chkyes";
+					opener.document.myinfo.user_tel.value = "<%=tel %>";
 					opener.document.myinfo.user_tel.readOnly = true;
 					opener.document.myinfo.user_tel.style.color = "blue";
 					opener.document.myinfo.user_tel.style.onfocus = "this.blur();";
@@ -59,7 +60,7 @@
 	<fieldset>
             <img src="../../../img/Logo4.png" alt="" class="loginImg">
             <h2>SMS인증</h2>
-		<form action="mypage_telchk.jsp" method="post" name="form_telchk" class="formD">
+		<form name="form_telchk" class="formD">
 			<input type="text" class="telchk" name="telchk" maxlength="5" placeholder="* 인증번호" >
             <button type="button" class="tagbarBT" onclick="mypage_telchk()">본인인증</button>
 		</form>

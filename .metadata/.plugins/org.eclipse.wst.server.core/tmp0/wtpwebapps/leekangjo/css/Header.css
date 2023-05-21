@@ -1,8 +1,11 @@
+/* 프로젝트 웹페이지의 header 스타일 파일입니다. */
+
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower');
 
 *{
     margin: 0;
 }
+
 header {
     background-color: #fff;
     height: 75px;
@@ -16,9 +19,11 @@ header {
     float: left;  
     z-index: 1;
 }
+
 .Logoimg{
     height: 75px;
 }
+
 .Logoimg:hover{
     cursor: pointer;
 }
@@ -36,29 +41,35 @@ h1{
 h1:hover{
     cursor: pointer;
 }
+
 #tagbar{
     width: 100%;
     text-align: center;
     padding-top: 120px;
 }
+
 .myimg{
     float: right;
     margin-top: 18px;
     height: 35px;
     margin-right: 15px;
 }
+
 .myimg:hover{
     cursor: pointer;
 }
+
 .logout{
     float: right;
     margin-top: 14px;
     height: 43px;
     margin-right: 15px;
 }
+
 .logout:hover{
     cursor: pointer;
 }
+
 .find{
     float: right;
     height: 43px;

@@ -1,3 +1,5 @@
+/* 프로젝트 내부의 메인 페이지 (index.jsp) 스타일 css 파일입니다. */
+
 #wrapper{width: 100%;max-width: 1100px;min-width: 760px;margin: 50px auto;background-color: #F2F2F2; border-radius: 5px;}
 
 #columns{column-count: 1;column-gap: 15px;display: grid;}

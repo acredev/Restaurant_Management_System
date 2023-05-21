@@ -26,6 +26,7 @@ h1{
 img:hover{
 	cursor: pointer;
 }
+
 h2{
     text-align: left;
     margin-left: 3%;
@@ -37,23 +38,28 @@ h2{
     font-size: 20px;
     font-weight: bold;
 }
+
 hr{
     margin-bottom: 5%;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 a{
     font-weight: bold;
 }
+
 .form-item {
     flex-direction: row-reverse;
     width: 100%;
     align-items: center;
     margin-bottom: 23%;
 }
+
 .form-item input {
     width: 92%;
     padding: 12px;
@@ -67,32 +73,38 @@ a{
 #usertel:focus{
     border-color:#0982f0;
 }
+
 .form-item input:focus {
-    
     outline: none;
 }
+
 #email_change{
     width:100%;
     float:right;
     margin-bottom:10%;
 }
+
 #telnum_change{
     width: 100%;
     float: right;
     margin-bottom: 15%;
 }
+
 #pw_change{
     width:100%;
     float:right;
     margin-bottom:17%;
 }
+
 #myinfo_cancle{
     background-color: #DDDDDD;
 }
+
 #goto_myinfo{
     width: 100%;
     margin-bottom: 5%
 }
+
 .my_pwd{
      width: 92%;
     padding: 12px;
@@ -103,9 +115,11 @@ a{
 
     margin-bottom: 5%;
 }
+
 .my_pwd:focus{
     outline: none;
 }
+
 .tagbarBT{
     width: 49%;
 }
@@ -114,10 +128,14 @@ a{
     margin-top: -18%;
     margin-bottom: 5%;
 }
-.form-item input:nth-child(-n+7){
+
+.form-item input{
     background-color: #EFEFEF
 }
 
+.form-item input:hover{
+	cursor: not-allowed;
+}
 
 .veri_form-item{
     margin-bottom: %;
