@@ -41,9 +41,9 @@
 		{%>
 			<div id="box">
 				<div class="boxtitle">
-					<img src="../../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
-					<h1>비정상적인 접근입니다.</h1>
-    	    	</div>
+    	    		<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
+        			<h1>잘못된 접근입니다.</h1>
+    			</div>
 	        </div>
 		<%	
 		}
@@ -76,9 +76,19 @@
 			}
 		}
 	}
+	// DB연결 오류가 발생했다면...
 	catch (Exception ex)
-	{
-		
+	{%>
+		<form name="find_id_result" action="find_id_result.jsp" method="post">
+			<div class="outBox">
+	   			<div class="boxtitle">
+	   				<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+	   				<h2>오류가 발생했습니다.</h2>
+	   				<h3>오류 메시지 : <%=ex.getMessage() %></h3>
+				</div>
+			</div>
+		</form>
+	<%
 	}
 	%>
 	</body>
