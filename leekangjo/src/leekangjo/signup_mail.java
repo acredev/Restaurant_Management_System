@@ -19,8 +19,8 @@ public class signup_mail
 {
 	public int mailSend (String email)
 	{
-        String google_id = "praticecoding.h@gmail.com";
-        String google_pwd = "onoefhmstmibfcuj";
+        String google_id = ".h@gmail.com";
+        String google_pwd = "";
 
         // SMTP 서버 정보
         Properties prop = new Properties();

@@ -86,7 +86,7 @@
                         	<input type="hidden" id="isEmailChange" name="isEmailChange" value="no">
                         	<input type="hidden" id="isTelChange" name="isTelChange" value="no">
                         	<!-- 변경 내용을 파악하는 input hidden, 비밀번호 변경 시 비밀번호 한정으로 value값이 변경한 비밀번호 값으로 들어감 -->
-                        	<input type="text" id="isPwdChange" name="isPwdChange" value="no">
+                        	<input type="hidden" id="isPwdChange" name="isPwdChange" value="no">
                         	<hr>
     	    			</div>
                     <div class="btnbox">

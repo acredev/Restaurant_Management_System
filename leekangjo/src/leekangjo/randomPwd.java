@@ -46,8 +46,8 @@ public class randomPwd
 		String randomPwd_create = randomPwd.randomStr(8);
 		
 		// coolSMS 연결 API키
-		String api_key = "NCSCFCGJZL8E3HD8";
-		String api_secret = "9LVSKG4B6YFGCSMPDCLUIEFWSALZ8CMP";
+		String api_key = "";
+		String api_secret = "";
 		Message coolsms = new Message(api_key, api_secret);
 		
 		// 문자 보낼 내용 결정
