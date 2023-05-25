@@ -45,12 +45,17 @@
 			{
 				if(<%=chknum%> == document.form_telchk.telchk.value)
 				{
-					alert("휴대폰 본인인증이 완료되었습니다.");
+					alert("휴대폰 번호 변경사항이 발생했습니다. '나의 정보 → 저장' 버튼을 눌러 변경사항을 저장해 주세요. '저장' 버튼을 누르지 않을 경우 저장되지 않습니다.");
 					opener.document.myinfo.telchk.value = "tel_chkyes";
+					opener.document.myinfo.isTelChange.value = "yes";
 					opener.document.myinfo.user_tel.value = "<%=tel %>";
 					opener.document.myinfo.user_tel.readOnly = true;
 					opener.document.myinfo.user_tel.style.color = "blue";
 					opener.document.myinfo.user_tel.style.onfocus = "this.blur();";
+					opener.document.myinfo.tel_change.disabled = "disabled";
+					opener.document.myinfo.tel_change.style.backgroundColor = "#DDDDDD";
+					opener.document.myinfo.tel_change.innerText = "휴대폰 번호 변경완료";
+					opener.document.myinfo.tel_change.style.color = "blue";
 					window.close();
 				}
 				else

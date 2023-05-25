@@ -7,9 +7,14 @@
     pageEncoding="UTF-8"%>
 
 <%
+	//파라미터를 통해 받아온 아이디 값을 변수에 저장
 	String user_id = request.getParameter("user_id");
+	//세션에 MEMBERID 객체를 저장 (user_id 정보를 가져옴)
 	session.setAttribute("MEMBERID", user_id);
+	//MEMBERID 객체의 값을 memberId 문자열 변수에 저장
 	String memberId = (String)session.getAttribute("MEMBERID");
+	//만약, memberId 값이 null 이면 false(비로그인 상태)
+	//memberId 값이 무언가 있다면 true(로그인 상태)
 	boolean login = memberId == null ? false : true;
 %>
 
@@ -91,7 +96,7 @@
      		<div class="outBox">
 		    	<div class="boxtitle">
     	    		<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
-        			<h1>잘못된 접근입니다.</h1>
+        			<h1>비로그인 상태입니다.</h1>
     			</div>
 			</div>
     	</form>

@@ -1,0 +1,121 @@
+<%@page import="java.sql.*" %>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%
+	//파라미터를 통해 받아온 아이디 값을 변수에 저장
+	String user_id = request.getParameter("user_id");
+	//세션에 MEMBERID 객체를 저장 (user_id 정보를 가져옴)
+	session.setAttribute("MEMBERID", user_id);
+	//MEMBERID 객체의 값을 memberId 문자열 변수에 저장
+	String memberId = (String)session.getAttribute("MEMBERID");
+	//만약, memberId 값이 null 이면 false(비로그인 상태)
+	//memberId 값이 무언가 있다면 true(로그인 상태)
+	boolean login = memberId == null ? false : true;
+%>
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LEEKANGJO - 비밀번호 변경</title>
+        <link href="../../../css/LoginMain.css" rel="stylesheet">
+        <link href="../../../css/signup_second.css" rel="stylesheet">
+        <link href="../../../css/buttonST.css" rel="stylesheet">
+        <link rel="icon" href="../../../img/favicon1.png" type="image/x-icon" sizes="16x16">
+        <script src="../../../js/signup.js"></script>
+        <script src="../../../js/pwE.js"></script>
+    </head>	
+    <body>
+	<%
+	try
+	{
+		//JDBC 드라이버 연결
+		Class.forName("com.mysql.jdbc.Driver");
+		String db_address = "jdbc:mysql://127.0.0.1:3306/kyungmin_store";
+		String db_username = "root";
+		String db_pwd = "root";
+		Connection connection = DriverManager.getConnection(db_address, db_username, db_pwd);
+	
+		// 문자열의 인코딩 방실 설정
+		request.setCharacterEncoding("UTF-8");
+	
+		// 파라미터를 통해 넘어온 비밀번호 변경값 수령하여 문자열 변수에 저장
+		String user_pwd = request.getParameter("pwd");
+	
+		String insertQuery = "SELECT * FROM kyungmin_store.member WHERE id=?";
+	
+		// SQL 쿼리문을 실행 (MySQL로 전송)하기 위한 객체 선언
+		PreparedStatement psmt = connection.prepareStatement(insertQuery);
+	
+		// 앞서 문자열 쿼리문을 선언헀던 VALUES의 ? 값에 하나씩 삽입하여 전송
+		psmt.setString (1, user_id);
+	
+		// SELECT하여 반영된 레코드의 건수결과를 반환
+		ResultSet result = psmt.executeQuery();
+	
+		// 받아온 정보가 있을 때
+		if (result.next() == true)
+		{
+			// MySQL로 전송하기 위한 쿼리문인 문자열 insertQuery 변수 선언
+			insertQuery = "UPDATE kyungmin_store.member set pwd=? WHERE id=?";
+		
+			// SQL 쿼리문을, 새로운 내용을 토대로 재실행
+			psmt = connection.prepareStatement(insertQuery);
+		
+			// VALUES의 ? 값에 하나씩 삽입하여 전송
+			psmt.setString(1, user_pwd);
+			psmt.setString(2, user_id);
+			
+			// UPDATE하여 반영된 레코드의 건수결과를 반환
+			psmt.executeUpdate();
+			
+			// 모두 완료되면, 창 닫기
+			%>
+			<script type="text/javascript">
+				(function()
+				{
+					alert("비밀번호 변경사항이 발생했습니다. '나의 정보 → 저장' 버튼을 눌러 변경사항을 저장해 주세요.");
+					opener.document.myinfo.isPwdChange.value = "<%=user_pwd%>";
+					opener.document.myinfo.pwd_change.disabled = "disabled";
+					opener.document.myinfo.pwd_change.style.background-color = "#DDDDDD";
+					close();
+				})();
+			</script>
+			<%
+		}
+		else if (user_pwd == null || user_pwd.isEmpty())
+		{%>
+			<div class="outBox">
+				<div class="boxtitle">
+					<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
+					<h2>잘못된 접근입니다.</h2>
+				</div>
+			</div>
+		<%
+		}
+		else
+		{%>
+			<div class="outBox">
+				<div class="boxtitle">
+					<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
+					<h2>회원정보가 없습니다.</h2>
+				</div>
+			</div>
+		<%
+		}
+	}
+	// DB연결 오류가 발생했다면...
+	catch (Exception ex)
+	{%>
+		<div id="box">
+    		<div class="boxtitle">
+    			<img src="../../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
+    			<h1><%=ex.getMessage() %></h1>
+            </div>
+        </div>
+	<%
+	}%>
+	</body>
+</html>

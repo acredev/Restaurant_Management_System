@@ -7,6 +7,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+<%
+	//파라미터를 통해 받아온 아이디 값을 변수에 저장
+	String user_id = request.getParameter("user_id");
+	//세션에 MEMBERID 객체를 저장 (user_id 정보를 가져옴)
+	session.setAttribute("MEMBERID", user_id);
+	//MEMBERID 객체의 값을 memberId 문자열 변수에 저장
+	String memberId = (String)session.getAttribute("MEMBERID");
+	//만약, memberId 값이 null 이면 false(비로그인 상태)
+	//memberId 값이 무언가 있다면 true(로그인 상태)
+	boolean login = memberId == null ? false : true;
+%>
+
 <!doctype html>
 <html>
     <head>
@@ -33,11 +45,11 @@
 		request.setCharacterEncoding("UTF-8");
 	
 		// 파라미터를 통해 넘어온 회원가입 회원정보값 수령하여 문자열 변수에 저장
-		String id = request.getParameter("user_name");
-		String email = request.getParameter("user_email");
-		String tel = request.getParameter("user_tel");
+		String user_tel = request.getParameter("user_tel");
+		String user_email = request.getParameter("user_email");
+		String user_pwd = request.getParameter("isPwdChange");
 	
-		if (id == null || id.isEmpty())
+		if (user_id == null || user_id.isEmpty())
 		{%>
 			<div id="box">
 				<div class="boxtitle">
@@ -56,23 +68,50 @@
 			PreparedStatement psmt = connection.prepareStatement(insertQuery);
 			
 			// 앞서 문자열 쿼리문을 선언했던 VALUES의 ? 값에 하나씩 삽입하여 전송
-			psmt.setString(1, id);
+			psmt.setString(1, user_id);
 			
-			// INSERT하여 반영된 레코드의 건수결과를 반환
+			// SELECT하여 반영된 레코드의 건수결과를 반환
 			ResultSet result = psmt.executeQuery();
 			
 			// 받아온 정보가 있을 때
 			if (result.next() == true)
 			{
 				// MySQL로 전송하기 위한 쿼리문인 문자열 insertQuery 변수 선언 (사용자가 myinfo.jsp 폼에서 수정한 정보를 전송)
-				insertQuery = "UPDATE kyungmin_store.member set tel=?, email=? WHERE=" + id;
+				insertQuery = "UPDATE kyungmin_store.member set pwd=?, tel=?, email=? WHERE id=?";
 				
 				// SQL 쿼리문을, 새로운 내용을 토대로 재실행
 				psmt = connection.prepareStatement(insertQuery);
 				
 				// VALUES의 ? 값에 하나씩 삽입하여 전송
-				psmt.setString(1, tel);
-				psmt.setString(2, email);
+				psmt.setString(1, user_pwd);
+				psmt.setString(2, user_tel);
+				psmt.setString(3, user_email);
+				psmt.setString(4, user_id);
+				
+				psmt.executeUpdate();
+				
+				%>
+				<form name="myinfo_update_send" action="mypage.jsp" method="post">
+					<input type="hidden" name="user_id" id="user_id" value="<%=user_id%>">
+					<script type="text/javascript">
+						(function (){
+							close();
+						})()
+					</script>
+				</form>
+				<%
+			}
+			else
+			{%>
+				<form name="find_id_result" action="find_id_result.jsp" method="post">
+					<div class="outBox">
+	   					<div class="boxtitle">
+	   						<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+	   						<h2>잘못된 접근입니다.</h2>
+						</div>
+					</div>
+				</form>
+			<%	
 			}
 		}
 	}
@@ -82,7 +121,7 @@
 		<form name="find_id_result" action="find_id_result.jsp" method="post">
 			<div class="outBox">
 	   			<div class="boxtitle">
-	   				<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+	   				<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
 	   				<h2>오류가 발생했습니다.</h2>
 	   				<h3>오류 메시지 : <%=ex.getMessage() %></h3>
 				</div>

@@ -197,8 +197,8 @@ function signup_second_pwdchk()
 	
 	if (!pwd_chk.test(pwd))
 	{
-		window.alert("비밀번호는 6글자 이상, 16글자 이하로만 사용 가능합니다.")
-		pwd.focus();
+		window.alert("비밀번호는 6글자 이상, 16글자 이하로만 사용 가능합니다.");
+		document.signup_second.pwd.focus();
 	}
 	else
 	{
@@ -206,13 +206,13 @@ function signup_second_pwdchk()
 		{
 			if (pwd == pwdsame)
 			{
-				document.getElementById("pwdsame_result").innerHTML = "비밀번호가 일치합니다.";
+				document.getElementById("pwdsame_result").value = "비밀번호가 일치합니다.";
 				document.getElementById("pwdsame_result").style.color = "blue";
 				document.getElementById("isPwdSame").value = "yes";
 			}
 			else
 			{
-				document.getElementById("pwdsame_result").innerHTML = "비밀번호가 일치하지 않습니다.";
+				document.getElementById("pwdsame_result").value = "비밀번호가 일치하지 않습니다.";
 				document.getElementById("pwdsame_result").style.color = "red";
 				document.getElementById("isPwdSame").value = "no";
 			}

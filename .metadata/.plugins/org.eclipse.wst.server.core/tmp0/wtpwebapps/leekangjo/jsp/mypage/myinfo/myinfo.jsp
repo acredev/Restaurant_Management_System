@@ -21,7 +21,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-	    <title>LEEKANGJO - 마이페이지</title>
+	    <title>LEEKANGJO - 나의 정보</title>
 	    <link href="../../../css/mypage.css" rel="stylesheet">
 	    <link href="../../../css/buttonST.css" rel="stylesheet">
 	    <link rel="icon" href="../../../img/favicon1.png" type="image/x-icon" sizes="16x16">
@@ -66,18 +66,26 @@
                         	<input type="number" id="user_stdid" name="user_stdid" value="<%=result.getString("stdid") %>" readonly >
                         	<a>이메일</a>
                         	<input type="text" id="user_email" name="user_email" value="<%=result.getString("email") %>" readonly >
-                        	<input type="hidden" id="emailchk" name="emailchk" value="email_chkno">
-                        	<button type="button" id="email_change" class="tagbarBT" onclick="myinfo_emailchange()">이메일 변경 (이메일 인증)</button>
+                        	<button type="button" id="email_change" name="email_change" class="tagbarBT" onclick="myinfo_emailchange()">이메일 변경 (이메일 인증)</button>
 	                        <a>전화번호</a>
                         	<input type="number" id="user_tel" name="user_tel" value="<%=result.getString("tel") %>" readonly >
+                        	<button type="button" id="telnum_change" name="tel_change" class="tagbarBT " onclick="myinfo_telchange()">전화번호 변경 (SMS 인증)</button>
+							<button type="button" id="pwd_change" name="pwd_change" class="tagbarBT " onclick="myinfo_pwdchange()">비밀번호 변경</button>
+							
+							<!-- 인증 내용을 파악하는 input hidden -->
                         	<input type="hidden" id="telchk" name="telchk" value="tel_chkno">
-                        	<button type="button" id="telnum_change" class="tagbarBT " onclick="myinfo_telchange()">전화번호 변경 (SMS 인증)</button>
-                        	<button type="button" id="pw_change" class="tagbarBT " onclick="alert('민혁선배. 잠깐만 이리 와주세요.')">비밀번호 변경</button>
+                        	<input type="hidden" id="emailchk" name="emailchk" value="email_chkno">
+                        	
+                        	<!-- 변경 내용을 파악하는 input hidden -->
+                        	<input type="hidden" id="isEmailChange" name="isEmailChange" value="no">
+                        	<input type="hidden" id="isTelChange" name="isTelChange" value="no">
+                        	<!-- 변경 내용을 파악하는 input hidden, 비밀번호 변경 시 비밀번호 한정으로 value값이 변경한 비밀번호 값으로 들어감 -->
+                        	<input type="text" id="isPwdChange" name="isPwdChange" value="no">
                         	<hr>
     	    			</div>
                     <div class="btnbox">
         			<button type="button" id="myinfo_cancle" onclick="location.href='../mypage.jsp'" class="tagbarBT">취소</button>
-        			<button type="submit" id="myinfo_save" onclick="alert('민혁선배. 잠깐만 이리 와주세요.')" class="tagbarBT">저장</button>
+        			<button type="button" id="myinfo_save" onclick="myinfo_saveBtn()" class="tagbarBT">저장</button>
                     </div>
     			</div>
                 </div>
@@ -98,8 +106,16 @@
             }
 		}
 		catch (Exception ex)
-		{
-			out.print(ex);
+		{%>
+			<form name="myinfo" class="myinfo" method="post">
+    	    	<div class="outBox">
+		    		<div class="boxtitle">
+        				<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
+        				<h1><%=ex.getMessage() %></h1>
+    				</div>
+				</div>
+    		</form>
+		<%
 		}
 	}
 	else

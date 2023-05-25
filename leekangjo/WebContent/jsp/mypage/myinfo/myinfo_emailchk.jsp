@@ -45,12 +45,17 @@
 			{
 				if(<%=chknum%> == document.form_emailchk.emailchk.value)
 				{
-					alert("이메일 본인인증이 완료되었습니다.");
+					alert("이메일 주소 변경사항이 발생했습니다. '나의 정보 → 저장' 버튼을 눌러 변경사항을 저장해 주세요. '저장' 버튼을 누르지 않을 경우 저장되지 않습니다.");
 					opener.document.myinfo.emailchk.value = "email_chkyes";
+					opener.document.myinfo.isEmailChange.value = "yes";
 					opener.document.myinfo.user_email.value = "<%=email%>";
 					opener.document.myinfo.user_email.readOnly = true;
 					opener.document.myinfo.user_email.style.color = "blue";
 					opener.document.myinfo.user_email.style.onfocus = "this.blur();";
+					opener.document.myinfo.email_change.disabled = "disabled";
+					opener.document.myinfo.email_change.style.backgroundColor = "#DDDDDD";
+					opener.document.myinfo.email_change.innerText = "이메일 변경완료";
+					opener.document.myinfo.email_change.style.color = "blue";
 					window.close();
 				}
 				else

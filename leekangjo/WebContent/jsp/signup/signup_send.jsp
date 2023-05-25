@@ -90,7 +90,7 @@
 		<div id="box">
     		<div class="boxtitle">
     			<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
-    			<h1>잘못된 접근입니다.</h1>
+    			<h1><%=ex.getMessage() %></h1>
             </div>
         </div>
 	<%

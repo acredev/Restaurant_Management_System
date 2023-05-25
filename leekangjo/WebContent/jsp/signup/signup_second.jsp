@@ -49,6 +49,7 @@
                		<i class="fa-solid fa-eye"></i>
             	</div>
             	<div class="block">
+            		<input type="text" id="pwdsame_result" value="" style="border:0 solid black" readonly>
 					<button type="button" class="tagbarBT" id="nextBT" onclick="signup_second_sendBT();">다음</button>
             	</div>
         	</div>
