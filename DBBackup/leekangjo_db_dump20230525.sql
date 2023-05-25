@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `kyungmin_store` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `kyungmin_store`;
 -- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: kyungmin_store
@@ -40,9 +42,45 @@ CREATE TABLE `member` (
 
 LOCK TABLES `member` WRITE;
 /*!40000 ALTER TABLE `member` DISABLE KEYS */;
-INSERT INTO `member` VALUES ('','','','test','','','예약 가능'),('19831041','테스트2','test2','','test2','','예약 가능'),('19831049','이민혁','test','test','01025876302','m_file@naver.com','예약 가능'),('k','k','k','k','k','k','예약 가능'),('min','min','min','min','min','min','예약 가능'),('num','num','num','num','num','num','예약 가능'),('test','test','test','test','test','test','예약 가능'),('누','누','누','sn','누','누','예약 가능'),('안','안','안','dks','안ㅇ','안','예약 가능');
+INSERT INTO `member` VALUES ('11111111','관리자','admin','admin','01025876302','m_file@naver.com','예약 가능');
 /*!40000 ALTER TABLE `member` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `store_info`
+--
+
+DROP TABLE IF EXISTS `store_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `store_info` (
+  `store_num` varchar(12) NOT NULL,
+  `name` varchar(15) NOT NULL,
+  `tel` varchar(11) NOT NULL,
+  `business_hour` varchar(21) NOT NULL,
+  `address` varchar(45) NOT NULL,
+  `notice` text,
+  PRIMARY KEY (`store_num`,`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `store_info`
+--
+
+LOCK TABLES `store_info` WRITE;
+/*!40000 ALTER TABLE `store_info` DISABLE KEYS */;
+INSERT INTO `store_info` VALUES ('230518111451','시실리','0318425295','11:00~21:00','경기도 양주시 부흥로 1398번길 26-13 (유양동)','이민혁 큰아빠 가게');
+/*!40000 ALTER TABLE `store_info` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping events for database 'kyungmin_store'
+--
+
+--
+-- Dumping routines for database 'kyungmin_store'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -53,4 +91,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-21 17:27:25
+-- Dump completed on 2023-05-25 12:25:04
