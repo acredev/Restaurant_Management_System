@@ -1,0 +1,13 @@
+package leekangjo;
+
+public class setTextProducer implements TextProducer {
+	private final String _getAnswer;
+	public setTextProducer(String getAnswer) {
+		_getAnswer = getAnswer;
+	}
+	
+	@Override
+	public String getText() {
+		return _getAnswer;
+	}
+}

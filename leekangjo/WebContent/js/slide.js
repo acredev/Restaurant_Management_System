@@ -38,3 +38,15 @@ function init(){
 }
 
 init();
+
+function ChnMenu(){
+    document.getElementById("iframeSec").src = "menu.html";
+}
+
+function ChnInfo(){
+    document.getElementById("iframeSec").src = "info.html";
+}
+
+function ChnSeat(){
+    document.getElementById("iframeSec").src = "seat.html";
+}

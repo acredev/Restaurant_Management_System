@@ -16,7 +16,7 @@ import org.json.simple.JSONObject;
 import net.nurigo.java_sdk.api.Message;
 import net.nurigo.java_sdk.exceptions.CoolsmsException;
 
-public class randomPwd
+public class RandomPwd
 {
 	public String randomStr(int size)
 	{
@@ -42,7 +42,7 @@ public class randomPwd
 	public String sendSMS (String tel)
 	{
 		// 랜덤 문자열 생성, 8자리
-		randomPwd randomPwd = new randomPwd();
+		RandomPwd randomPwd = new RandomPwd();
 		String randomPwd_create = randomPwd.randomStr(8);
 		
 		// coolSMS 연결 API키

@@ -2,7 +2,7 @@
 회원가입 > 이메일 본인인증 화면입니다.
  -->
 
-<%@page import="leekangjo.signup_mail" %>
+<%@page import="leekangjo.SignUp_mail" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -31,7 +31,8 @@
 	
 	// 파라미터를 통해 넘어온 이메일값이 존재하지 않는다면...
 	if (email == null || email.isEmpty())
-	{%>
+	{
+%>
 		<form name="form_emailchk">
 			<div class="outBox">
 				<div class="boxtitle">
@@ -41,16 +42,16 @@
 			</div>
 		</form>
 	<%
-	}
-	// 파라미터를 통해 넘어온 이메일값이 존재한다면...
-	else
-	{
+		}
+			// 파라미터를 통해 넘어온 이메일값이 존재한다면...
+			else
+			{
 		// 클래스에 지정한 함수를 사용하기 위한 객체 선언
-		signup_mail signup_mailchk = new signup_mail();
-	
+		SignUp_mail signup_mailchk = new SignUp_mail();
+			
 		// 클래스에 지정한 함수를 실행시킨 결과값을 변수에 저장
 		int chknum = signup_mailchk.mailSend(email);
-		%>
+	%>
 		<script type="text/javascript">
 			function signup_first_emailchk_result()
 			{

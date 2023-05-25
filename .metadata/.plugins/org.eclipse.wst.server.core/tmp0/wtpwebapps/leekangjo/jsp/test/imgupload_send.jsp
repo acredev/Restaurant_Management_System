@@ -1,8 +1,7 @@
-<%@page import="leekangjo.fileDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<%@ page import="leekangjo.fileDAO" %>
+<%@ page import="leekangjo.FileDAOtest" %>
 <%@ page import="java.io.File" %>
 
 <%@ page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy" %>
@@ -35,7 +34,7 @@
 	String fileRealName = multipartRequest.getFilesystemName("file");
 	
 	// DB에 업로드 메소드
-	new fileDAO().upload(fileName, fileRealName);
+	new FileDAOtest().upload(fileName, fileRealName);
 	out.write("파일명 : " + fileName + "<BR>");
 	out.write("실제 파일명 : " + fileRealName + "<BR>");
 %>

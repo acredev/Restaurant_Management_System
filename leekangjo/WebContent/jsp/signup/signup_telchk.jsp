@@ -2,7 +2,7 @@
 회원가입 > 휴대폰 번호 본인인증을 위한 화면입니다.
  -->
 
-<%@page import="leekangjo.signup" %>
+<%@page import="leekangjo.SignUp" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -30,7 +30,8 @@
 	
 	// 파라미터를 통해 받아온 휴대폰 번호값이 존재하지 않는다면...
 	if (tel == null || tel.isEmpty())
-	{%>
+	{
+%>
 		<form name="form_telchk">
 			<div class="outBox">
 				<div class="boxtitle">
@@ -40,12 +41,12 @@
 			</div>
 		</form>
 	<%
-	}
-	// 클래스에 지정한 함수를 사용하기 위한 객체 선언
-	signup signup_telchk = new signup();
-	
-	// 클래스에 지정한 함수를 실행시킨 결과값을 변수에 저장
-	int chknum = signup_telchk.telchk(tel);
+		}
+		// 클래스에 지정한 함수를 사용하기 위한 객체 선언
+		SignUp signup_telchk = new SignUp();
+		
+		// 클래스에 지정한 함수를 실행시킨 결과값을 변수에 저장
+		int chknum = signup_telchk.telchk(tel);
 	%>
 	<script type="text/javascript">
 		function signup_first_telchk_result()

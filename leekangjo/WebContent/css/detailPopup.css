@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+hr{
+    margin-top: 5%;
+}
+.ConHead{
+    margin-bottom: 5%;
+}
+.ConHead input{
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ConBox{
+    margin:50px auto; padding:20px; max-width:350px; border:1px solid #999; border-radius:6px;
+    border: 1px solid #999999;
+}
+.ConBody{
+    width: 100%;
+    margin-bottom: 5%;
+    border: 1px solid #000;
+}
+.ConBody img{
+    border-right: 1px solid #000;
+    width: 25%;
+    float: left;
+}
+.ConBody .ConIn{
+    border: none;
+    float: left;
+    width: 50%;
+    height: 31px;
+}
+.ConBody .ConIn:nth-child(2){
+    font-weight: bold;
+}
+#ConIn2ID{
+    width: 19%;
+    border: none;
+}
+.ConIn2{
+    background-color: white;
+    border: none;
+    width: 20%;
+}
+.ConIn2:hover{
+    cursor: pointer;
+}
+.tagbarBT{
+    width: 100%;
+    margin-bottom: 5%;
+}

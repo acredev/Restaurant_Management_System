@@ -2,7 +2,7 @@
 학번 중복확인을 위한 페이지입니다.
  -->
 
-<%@page import="leekangjo.signup" %>
+<%@page import="leekangjo.SignUp" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -24,14 +24,15 @@
 			<input type="hidden" id="stdnumchk_result" name="stdnumchk_result" value="stdnum_chkno">
 			<a id="result_txt"></a>
 			<%
-			// 받아올 문자열의 인코딩방식 설정
-			request.setCharacterEncoding("UTF-8");
-			// 파라미터를 통해 받아온 정보값을 변수에 저장
-			String stdnum = request.getParameter("stdnum");
-			
-			// 받아온 학번값이 존재하지 않는다면...
-			if (stdnum == null || stdnum.isEmpty())
-			{%>
+				// 받아올 문자열의 인코딩방식 설정
+				request.setCharacterEncoding("UTF-8");
+				// 파라미터를 통해 받아온 정보값을 변수에 저장
+				String stdnum = request.getParameter("stdnum");
+				
+				// 받아온 학번값이 존재하지 않는다면...
+				if (stdnum == null || stdnum.isEmpty())
+				{
+			%>
 				<script type="text/javascript">
 					document.getElementById("stdnumchk_result").value = "stdnum_chkno";
 					document.getElementById("result_txt").innerText = ""
@@ -43,17 +44,18 @@
 					</div>
 				</div>
 			<%
-			}
-			// 받아온 학번값이 존재한다면...
-			else
-			{
-				// 클래스에 지정한 함수를 사용하기 위한 객체 선언
-				signup signup_stdnumchk = new signup();
-	
-				// 클래스에서 지정한 함수를 실행시킨 값을 불러오기 위한 변수 선언
-				int result = signup_stdnumchk.stdnumchk(stdnum);
-				if (result == 1)
-				{%>
+				}
+				// 받아온 학번값이 존재한다면...
+				else
+				{
+					// 클래스에 지정한 함수를 사용하기 위한 객체 선언
+					SignUp signup_stdnumchk = new SignUp();
+				
+					// 클래스에서 지정한 함수를 실행시킨 값을 불러오기 위한 변수 선언
+					int result = signup_stdnumchk.stdnumchk(stdnum);
+					if (result == 1)
+					{
+			%>
 					<script type="text/javascript">
 						document.getElementById("stdnumchk_result").value = "stdnum_chkyes";
 						document.getElementById("result_txt").innerText = "사용 가능한 학번입니다."

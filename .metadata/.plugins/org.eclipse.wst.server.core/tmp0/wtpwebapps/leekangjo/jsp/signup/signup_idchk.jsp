@@ -2,7 +2,7 @@
 아이디 중복확인을 위한 페이지입니다.
  -->
 
-<%@page import="leekangjo.signup" %>
+<%@page import="leekangjo.SignUp" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -24,15 +24,16 @@
 			<input type="hidden" id="idchk_result" name="idchk_result" value="id_chkno">
 			<a id="result_txt"></a>
 			<%
-			// 받아올 문자열의 인코딩방식 설정
-			request.setCharacterEncoding("UTF-8");
-			
-			// 파라미터를 통해 받아온 정보값을 변수에 저장
-			String id = request.getParameter("id");
-			
-			// 파라미터를 통해 받아온 아이디값이 존재하지 않는다면...
-			if (id == null || id.isEmpty())
-			{%>
+				// 받아올 문자열의 인코딩방식 설정
+				request.setCharacterEncoding("UTF-8");
+				
+				// 파라미터를 통해 받아온 정보값을 변수에 저장
+				String id = request.getParameter("id");
+				
+				// 파라미터를 통해 받아온 아이디값이 존재하지 않는다면...
+				if (id == null || id.isEmpty())
+				{
+			%>
 			<script type="text/javascript">
 				document.getElementById("idchk_result").value = "id_chkno";
 				document.getElementById("result_txt").innerText = ""
@@ -44,19 +45,20 @@
 				</div>
 			</div>
 			<%
-			}
-			// 파라미터를 통해 받아온 아이디값이 존재한다면...
-			else
-			{
-				// 클래스에 지정한 함수를 사용하기 위한 객체 선언
-				signup signup_idchk = new signup();
-	
-				// 클래스에서 지정한 함수를 실행시킨 값을 실행하고, 결과값을 정수형 변수에 저장
-				int result = signup_idchk.idchk(id);
+				}
+				// 파라미터를 통해 받아온 아이디값이 존재한다면...
+				else
+				{
+					// 클래스에 지정한 함수를 사용하기 위한 객체 선언
+					SignUp signup_idchk = new SignUp();
 				
-				// 결과값이 유효하다면... (사용이 가능한 아이디라면)
-				if (result == 1)
-				{%>
+					// 클래스에서 지정한 함수를 실행시킨 값을 실행하고, 결과값을 정수형 변수에 저장
+					int result = signup_idchk.idchk(id);
+					
+					// 결과값이 유효하다면... (사용이 가능한 아이디라면)
+					if (result == 1)
+					{
+			%>
 					<script type="text/javascript">
 						document.getElementById("idchk_result").value = "id_chkyes";
 						document.getElementById("result_txt").innerText = "사용이 가능한 아이디입니다."

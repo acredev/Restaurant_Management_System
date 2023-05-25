@@ -1,6 +1,6 @@
 <%@page import="java.sql.*" %>
-<%@page import="leekangjo.signup" %>
-<%@page import="leekangjo.randomPwd" %>
+<%@page import="leekangjo.SignUp" %>
+<%@page import="leekangjo.RandomPwd" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -16,8 +16,8 @@
 	</head>
 	<body>
 		<%
-		try
-		{
+			try
+				{
 			//JDBC 드라이버 연결
 			Class.forName("com.mysql.jdbc.Driver");
 			String db_address = "jdbc:mysql://127.0.0.1:3306/kyungmin_store";
@@ -32,7 +32,7 @@
 			String user_id = request.getParameter("id");
 			String user_tel = request.getParameter("tel");
 
-			randomPwd randomPwd = new randomPwd();
+			RandomPwd randomPwd = new RandomPwd();
 			
 			String randomPwd_create = randomPwd.sendSMS(user_tel);
 			
@@ -46,11 +46,11 @@
 			int result = psmt.executeUpdate(insertQuery);
 			
 			System.out.print(result);
-		}
-		catch (Exception ex)
-		{
+				}
+				catch (Exception ex)
+				{
 			out.print("오류가 발생했습니다. 오류 메시지 : " + ex.getMessage());
-		}
+				}
 		%>
 	</body>
 </html>

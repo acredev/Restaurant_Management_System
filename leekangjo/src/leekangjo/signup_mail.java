@@ -15,7 +15,7 @@ import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-public class signup_mail
+public class SignUp_mail
 {
 	public int mailSend (String email)
 	{

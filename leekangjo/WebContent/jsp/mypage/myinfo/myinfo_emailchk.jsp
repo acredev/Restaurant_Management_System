@@ -2,7 +2,7 @@
 마이페이지 > 나의 정보 > 이메일 본인인증 화면입니다.
  -->
 
-<%@page import="leekangjo.signup_mail" %>
+<%@page import="leekangjo.SignUp_mail" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -28,11 +28,11 @@
 	String email = request.getParameter("user_email");
 	
 	// 클래스에 지정한 함수를 사용하기 위한 객체 선언
-	signup_mail signup_mailchk = new signup_mail();
+	SignUp_mail signup_mailchk = new SignUp_mail();
 	
 	// 클래스에 지정한 함수를 실행시킨 결과값을 변수에 저장
 	int chknum = signup_mailchk.mailSend(email);
-	%>
+%>
 	<script type="text/javascript">
 		function mypage_emailchk()
 		{

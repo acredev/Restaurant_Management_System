@@ -79,9 +79,11 @@
             ResultSet result = psmt.executeQuery();
             
             while (result.next())
-            {%>
+            {
+            System.out.println(result.getString("img_route"));
+            %>
             	<div class="card" onclick="detail_click()">
-          	  		<img src="img/MainLogo.png">
+          	  		<img src="<%=result.getString("img_route") %>" alt="로딩오류">
          	   		<p><%=result.getString("name") %></p>
          	   		<input type="hidden" type="text" id="store_num" name="store_num" value="<%=result.getString("store_num") %>">
          	   		<a>예약 가능 | 포장 가능 | 소요시간 10~15분</a>

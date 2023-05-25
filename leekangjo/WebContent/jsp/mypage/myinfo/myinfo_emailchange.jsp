@@ -2,7 +2,7 @@
 마이페이지 > 나의 정보 > 이메일 변경 화면입니다.
  -->
 
-<%@page import="leekangjo.signup_mail" %>
+<%@page import="leekangjo.SignUp_mail" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>

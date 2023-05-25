@@ -3,8 +3,8 @@
  -->
 
 <%@page import="java.sql.*" %>
-<%@page import="leekangjo.signup" %>
-<%@page import="leekangjo.randomPwd" %>
+<%@page import="leekangjo.SignUp" %>
+<%@page import="leekangjo.RandomPwd" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -21,8 +21,8 @@
 	</head>
 	<body>
 		<%
-		try
-		{
+			try
+				{
 			//JDBC 드라이버 연결
 			Class.forName("com.mysql.jdbc.Driver");
 			String db_address = "jdbc:mysql://127.0.0.1:3306/kyungmin_store";
@@ -39,7 +39,8 @@
 
 			// 파라미터를 통해 받아온 값들이 없다면...
 			if (user_id == null || user_id.isEmpty())
-			{%>
+			{
+		%>
 				<form name="find_pw_result">
 					<div class="outBox">
 	    				<div class="boxtitle">
@@ -49,28 +50,29 @@
 					</div>
 				</form>
 			<%
-			}
-			// 파라미터를 통해 받아온 값들이 있다면...
-			else
-			{
-				// 랜덤 문자열 비밀번호 생성을 위한 메서드 생성
-				randomPwd randomPwd = new randomPwd();
-			
-				// user_tel 값을 넘기고 return된  랜덤 문자열 비밀번호 값을 저장
-				String randomPwd_create = randomPwd.sendSMS(user_tel);
-			
-				// MySQL로 전송하기 위한 문자열 insertQuery 변수 선언
-				String insertQuery = "UPDATE kyungmin_store.member SET pwd='" + randomPwd_create + "' WHERE id = '" + user_id + "';";
-			
-				// SQL 쿼리문을 실행 (MySQL로 전송)하기 위한 객체 선언
-				PreparedStatement psmt = connection.prepareStatement(insertQuery);
+				}
+				// 파라미터를 통해 받아온 값들이 있다면...
+				else
+				{
+					// 랜덤 문자열 비밀번호 생성을 위한 메서드 생성
+					RandomPwd randomPwd = new RandomPwd();
 				
-				// 쿼리문을 전송해 받아온 정보를 정수형 result 변수에 저장
-				int result = psmt.executeUpdate(insertQuery);
-			
-				// 쿼리문을 통해 정상적으로 비밀번호 정보가 업데이트 되었다면...
-				if (result == 1)
-				{%>
+					// user_tel 값을 넘기고 return된  랜덤 문자열 비밀번호 값을 저장
+					String randomPwd_create = randomPwd.sendSMS(user_tel);
+				
+					// MySQL로 전송하기 위한 문자열 insertQuery 변수 선언
+					String insertQuery = "UPDATE kyungmin_store.member SET pwd='" + randomPwd_create + "' WHERE id = '" + user_id + "';";
+				
+					// SQL 쿼리문을 실행 (MySQL로 전송)하기 위한 객체 선언
+					PreparedStatement psmt = connection.prepareStatement(insertQuery);
+					
+					// 쿼리문을 전송해 받아온 정보를 정수형 result 변수에 저장
+					int result = psmt.executeUpdate(insertQuery);
+				
+					// 쿼리문을 통해 정상적으로 비밀번호 정보가 업데이트 되었다면...
+					if (result == 1)
+					{
+			%>
 					<form name="find_pw_result" action="find_pw_result.jsp" method="post">
 						<div class="outBox">
 	    					<div class="boxtitle">

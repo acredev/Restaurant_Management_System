@@ -1,0 +1,16 @@
+package leekangjo;
+
+import java.sql.*;
+
+public class imgDAO
+{
+	try
+	{
+		//JDBC 드라이버 연결
+		Class.forName("com.mysql.jdbc.Driver");
+		String db_address = "jdbc:mysql://127.0.0.1:3306/kyungmin_store";
+		String db_username = "root";
+		String db_pwd = "root";
+		connection = DriverManager.getConnection(db_address, db_username, db_pwd);
+	}
+}

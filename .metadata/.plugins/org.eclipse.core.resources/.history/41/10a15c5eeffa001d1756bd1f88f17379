@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="form-group">
+	<label for="captcha" style="display:block;">자동 로그인 방지</label>
+		<div class="captcha">
+			<div class="form-group">
+				<img id="captchaImg" title="캡차 이미지" src="captchaImg.do" alt="캡차 이미지" />
+				<div id="captchaAudio" style="display:none;"></div>
+			</div>
+			<div class="form-group">
+				<a onclick="javascript:refreshBtn()" class="refreshBtn">
+					<input type="button" value="새로고침" />
+				</a>
+				<a onclick="javascript:audio()" class="refreshBtn">
+					<input type="button" value="음성듣기" />
+				</a>
+			</div>
+			<div class="form-group">
+				<input type="text" name="answer" id="answer"  class="form-control" />
+			</div>   
+		</div>
+</div>
+</body>
+</html>

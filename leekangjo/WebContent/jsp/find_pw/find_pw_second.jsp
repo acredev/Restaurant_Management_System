@@ -3,7 +3,7 @@
  -->
 
 <%@page import="java.sql.*"%>
-<%@page import="leekangjo.signup" %>
+<%@page import="leekangjo.SignUp" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -19,16 +19,17 @@
 	</head>
 	<body>
 		<%
-		// 문자열의 인코딩 방식 설정
-		request.setCharacterEncoding("UTF-8");
-		
-		// 파라미터를 통해 받아온 값을 변수에 저장
-		String user_id = request.getParameter("id");
-		String user_tel = request.getParameter("tel");
-	
-		// 파라미터를 통해 받아온 값들이 없다면...
-		if (user_id == null || user_id.isEmpty())
-		{%>
+			// 문자열의 인코딩 방식 설정
+				request.setCharacterEncoding("UTF-8");
+				
+				// 파라미터를 통해 받아온 값을 변수에 저장
+				String user_id = request.getParameter("id");
+				String user_tel = request.getParameter("tel");
+			
+				// 파라미터를 통해 받아온 값들이 없다면...
+				if (user_id == null || user_id.isEmpty())
+				{
+		%>
 			<form name="find_pw_second">
 				<div class="outBox">
 					<div class="boxtitle">
@@ -38,10 +39,10 @@
 				</div>
 			</form>
 		<%
-		}
-		// 파라미터를 통해 받아온 값들이 있다면...
-		else
-		{
+			}
+				// 파라미터를 통해 받아온 값들이 있다면...
+				else
+				{
 		%>
 			<form name="find_pw_second" action="find_pw_result.jsp" method="post">
 				<div class="outBox">
@@ -53,18 +54,18 @@
 			        	<input type="number" id="verify" name="telchk" oninput="maxLengthCheck(this)" maxlength="5" placeholder="인증번호" value="">
 			        	
 			        	<!-- submit을 통해 POST 방식으로 파라미터 값을 넘기기 위한 input hidden -->
-		        		<input type="hidden" id="id" name="id" value=<%=user_id %>>
-		        		<input type="hidden" id="tel" name="tel" value=<%=user_tel %>>
+		        		<input type="hidden" id="id" name="id" value=<%=user_id%>>
+		        		<input type="hidden" id="tel" name="tel" value=<%=user_tel%>>
     				</div>
     				<button type="submit" class="tagbarBT" onclick="result();">확인</button>
 				</div>
 			</form>
 			<%
-			// 문자를 보내기 위한 메서드 생성
-			signup signup_telchk = new signup();
-        					
-			// user_tel 값을 넘기고 return된  랜덤 정수형 인증번호 값을 저장
-        	int chknum = signup_telchk.telchk(user_tel);
+				// 문자를 보내기 위한 메서드 생성
+				SignUp signup_telchk = new SignUp();
+			        					
+				// user_tel 값을 넘기고 return된  랜덤 정수형 인증번호 값을 저장
+			        	int chknum = signup_telchk.telchk(user_tel);
 			%>
 			<script type="text/javascript">
 				function result()

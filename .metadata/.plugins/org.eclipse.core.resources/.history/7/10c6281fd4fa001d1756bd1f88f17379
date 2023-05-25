@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="menu_add_send.jsp" method="post" enctype="multipart/form-data">
+		가게고유번호 : <input type="text" name="store_num"><br>
+		메뉴이름 : <input type="text" name="menu_name"><br>
+		메뉴가격 : <input type="text" name="menu_price"><br>
+		메뉴이미지 : <input type="file" name="menu_img"><br>
+	</form>
+</body>
+</html>

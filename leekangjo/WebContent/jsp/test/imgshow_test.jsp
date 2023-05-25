@@ -33,8 +33,6 @@
 			out.print(img);
 			%>
 			<img src="<%=request.getContextPath() + img%>">
-			<img src="../../img/upload_img/test2.jpg">
-			<img src="../../img/Logo4.png">
 			<%
 		}
 	}

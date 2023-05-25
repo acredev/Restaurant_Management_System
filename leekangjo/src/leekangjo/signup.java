@@ -21,7 +21,7 @@ import org.json.simple.JSONObject;
 import net.nurigo.java_sdk.api.Message;
 import net.nurigo.java_sdk.exceptions.CoolsmsException;
 
-public class signup
+public class SignUp
 {	
 	public int idchk (String id)
 	{

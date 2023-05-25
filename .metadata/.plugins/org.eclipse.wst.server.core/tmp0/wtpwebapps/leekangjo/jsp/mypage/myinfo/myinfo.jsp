@@ -89,11 +89,14 @@
                         	<input type="hidden" id="isPwdChange" name="isPwdChange" value="no">
                         	<hr>
     	    			</div>
-                    <div class="btnbox">
-        			<button type="button" id="myinfo_cancle" onclick="location.href='../mypage.jsp'" class="tagbarBT">취소</button>
-        			<button type="button" id="myinfo_save" onclick="myinfo_saveBtn()" class="tagbarBT">저장</button>
-                    </div>
-    			</div>
+                    	<div class="btnbox">
+        					<button type="button" id="myinfo_cancle" onclick="location.href='../mypage.jsp'" class="tagbarBT">취소</button>
+        					<button type="button" id="myinfo_save" onclick="myinfo_saveBtn()" class="tagbarBT">저장</button>
+                    	</div>
+                    	<div class="IPSBOX">
+	                   		<a class="bye"  onclick="location.href='byebye.html'">회원 탈퇴</a>
+    	                </div>
+    				</div>
                 </div>
     		</form>
     		<%

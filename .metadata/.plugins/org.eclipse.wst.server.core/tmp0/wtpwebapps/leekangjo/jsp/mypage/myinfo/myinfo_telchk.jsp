@@ -2,7 +2,7 @@
 마이페이지 > 나의 정보 > 휴대폰 번호 변경 > 휴대폰 번호 본인인증 화면입니다.
  -->
 
-<%@page import="leekangjo.signup" %>
+<%@page import="leekangjo.SignUp" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -28,11 +28,11 @@
 	String tel = request.getParameter("user_tel");
 	
 	// 클래스에 지정한 함수를 사용하기 위한 객체 선언
-	signup signup_telchk = new signup();
+	SignUp signup_telchk = new SignUp();
 	
 	// 클래스에 지정한 함수를 실행시킨 결과값을 변수에 저장
 	int chknum = signup_telchk.telchk(tel);
-	%>
+%>
 	<script type="text/javascript">
 		function mypage_telchk()
 		{
