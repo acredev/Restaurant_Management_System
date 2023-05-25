@@ -21,8 +21,10 @@
     <body>
     	<form name="signup_second" action="signup_send.jsp" method="post">
     	<%
+    	//문자열의 인코딩 방식 설정
     	request.setCharacterEncoding("UTF-8");
     	
+    	// 파라미터를 통해 받아온 값을 변수에 저장
     	String id = request.getParameter("id");
     	String stdnum = request.getParameter("stdnum");
     	String tel = request.getParameter("tel");
@@ -30,6 +32,7 @@
     	String email = request.getParameter("email");
     	String emailchk = request.getParameter("emailchk");
     	
+    	// 휴대폰 번호 인증과 이메일 주소 인증이 정상적으로 완료된 상태라면...
     	if (telchk.equals("tel_chkyes") && emailchk.equals("email_chkyes"))
     	{%>
     		<div id="box">
@@ -59,7 +62,19 @@
         	<input type="hidden" id="isPwdSame" name="isPwdSame" value="no">
     		<%
     	}
-    	else if (telchk == null || telchk.isEmpty())
+    	// 정상적인 인증과정을 거치지 않았다면...
+    	else if (telchk.equals("tel_chkno") && emailchk.equals("email_chkno"))
+    	{%>
+    		<div id="box">
+    			<div class="boxtitle">
+    				<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+    				<h1>잘못된 접근입니다.</h1>
+            	</div>
+            </div>
+    	<%
+    	}
+    	// 그것도 아니라면...
+    	else
     	{%>
     		<div id="box">
     			<div class="boxtitle">

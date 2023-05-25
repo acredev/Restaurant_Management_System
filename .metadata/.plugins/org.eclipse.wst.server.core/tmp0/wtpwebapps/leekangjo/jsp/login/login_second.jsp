@@ -47,9 +47,11 @@
         			
         // 앞서 문자열 쿼리문을 선언했던 VALUES의 ? 값에 하나씩 삽입하여 전송
         psmt.setString(1, user_id);
-        			
+       	
+        // 쿼리문을 전송해 받아온 정보를 result 객체에 저장
         ResultSet result = psmt.executeQuery();
-        			
+       	
+        // 쿼리문을 통해 받아온 정보가 있다면...
 		if (result.next() == true)
 		{%>
 			<form name="login_second" action="login_send.jsp" method="post">
@@ -71,6 +73,8 @@
 		</form>
 		<%
 		}
+        
+        // 쿼리문을 통해 받아온 정보가 없다면...
 		else
 		{%>
 			<script>
@@ -80,9 +84,19 @@
 		<%
         }
 	}
+	// DB연결 오류가 발생했다면...
 	catch (Exception ex)
-    {
-		out.println("오류가 발생했습니다. 오류 메시지 : " + ex.getMessage());
+    {%>
+		<form name="login_second">
+			<div class="outBox">
+	    		<div class="boxtitle">
+        			<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+        			<h2>오류가 발생했습니다.</h2>
+        			<h3>오류 메시지 : <%=ex.getMessage() %></h3>
+    			</div>
+			</div>
+		</form>
+	<%
     }%>
 	</body>
 </html>

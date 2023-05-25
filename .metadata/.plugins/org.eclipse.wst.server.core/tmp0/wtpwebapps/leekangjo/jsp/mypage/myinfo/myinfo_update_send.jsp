@@ -48,7 +48,8 @@
 		String user_tel = request.getParameter("user_tel");
 		String user_email = request.getParameter("user_email");
 		String user_pwd = request.getParameter("isPwdChange");
-	
+		
+		// 로그인 상태가 아니거나 아이디 값 정보가 존재하지 않는다면...
 		if (user_id == null || user_id.isEmpty())
 		{%>
 			<div id="box">
@@ -59,6 +60,7 @@
 	        </div>
 		<%	
 		}
+		// 로그인 상태라면...
 		else
 		{
 			// MySQL로 전송하기 위한 쿼리문인 문자열 insertQuery 변수 선언
@@ -73,7 +75,7 @@
 			// SELECT하여 반영된 레코드의 건수결과를 반환
 			ResultSet result = psmt.executeQuery();
 			
-			// 받아온 정보가 있을 때
+			// 받아온 정보가 있다면...
 			if (result.next() == true)
 			{
 				// MySQL로 전송하기 위한 쿼리문인 문자열 insertQuery 변수 선언 (사용자가 myinfo.jsp 폼에서 수정한 정보를 전송)
@@ -88,6 +90,7 @@
 				psmt.setString(3, user_email);
 				psmt.setString(4, user_id);
 				
+				// DB에 해당정보를 업데이트
 				psmt.executeUpdate();
 				
 				%>
@@ -101,9 +104,10 @@
 				</form>
 				<%
 			}
+			// 받아온 정보가 없다면...
 			else
 			{%>
-				<form name="find_id_result" action="find_id_result.jsp" method="post">
+				<form name="myinfo_update_send">
 					<div class="outBox">
 	   					<div class="boxtitle">
 	   						<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
@@ -118,7 +122,7 @@
 	// DB연결 오류가 발생했다면...
 	catch (Exception ex)
 	{%>
-		<form name="find_id_result" action="find_id_result.jsp" method="post">
+		<form name="myinfo_update_send">
 			<div class="outBox">
 	   			<div class="boxtitle">
 	   				<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
@@ -128,7 +132,6 @@
 			</div>
 		</form>
 	<%
-	}
-	%>
+	}%>
 	</body>
 </html>

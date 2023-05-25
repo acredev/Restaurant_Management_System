@@ -66,14 +66,14 @@
 		}
 	</script>
     <div id="box">
-	<fieldset>
+		<fieldset>
             <img src="../../../img/Logo4.png" alt="" class="loginImg">
             <h2>이메일 인증</h2>
-		<form name="form_emailchk" method="post" class="formD">
-			<input type="text" class="emailchk" name="emailchk" maxlength="5" placeholder="* 인증번호" >
-            <button type="button" class="tagbarBT" onclick="mypage_emailchk()">본인인증</button>
-		</form>
-	</fieldset>
+			<form name="form_emailchk" method="post" class="formD">
+				<input type="text" class="emailchk" name="emailchk" maxlength="5" placeholder="* 인증번호" >
+	            <button type="button" class="tagbarBT" onclick="mypage_emailchk()">본인인증</button>
+			</form>
+		</fieldset>
     </div>
 </body>
 </html>

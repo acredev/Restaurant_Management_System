@@ -65,14 +65,8 @@
 				// SQL 쿼리문을 실행 (MySQL로 전송)하기 위한 객체 선언
 				PreparedStatement psmt = connection.prepareStatement(insertQuery);
 				
-				// 쿼리문을 전송해 받아온 정보를 result 객체에 저장
+				// 쿼리문을 전송해 받아온 정보를 정수형 result 변수에 저장
 				int result = psmt.executeUpdate(insertQuery);
-			
-				System.out.println("=============================");
-				System.out.println("회원아이디 : " + user_id);
-				System.out.println("회원전번 : " + user_tel);
-				System.out.println("임시비번 : " + randomPwd_create);
-				System.out.println("결과값 : " + result);
 			
 				// 쿼리문을 통해 정상적으로 비밀번호 정보가 업데이트 되었다면...
 				if (result == 1)

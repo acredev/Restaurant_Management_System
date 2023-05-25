@@ -28,6 +28,7 @@
 	</head>
 	<body>
 	<%
+	// 로그인 상태라면...
 	if (login)
 	{
 		try
@@ -42,14 +43,19 @@
             // 문자열의 인코딩 방식 설정
             request.setCharacterEncoding("UTF-8");
             
+            // MySQL로 전송하기 위한 insertQuery 변수 선언
             String insertQuery = "SELECT * FROM kyungmin_store.member WHERE id=?";
             
+            // SQL 쿼리문을 실행 (MySQL로 전송)하기 위한 객체 선언
             PreparedStatement psmt = connection.prepareStatement(insertQuery);
             
+            // 앞서 선언했던 insertQuery 변수의 ? 값에 하나씩 삽입하여 전송
             psmt.setString(1, user_id);
             
+            // 쿼리문을 전송해 받아온 값을 result 객체에 저장
             ResultSet result = psmt.executeQuery();
             
+            // 받아온 정보가 있다면...
             if (result.next() == true)
             {%>
             	<form name="myinfo" class="myinfo" action="myinfo_update_send.jsp" method="post">
@@ -92,9 +98,10 @@
     		</form>
     		<%
             }
+            // 받아온 정보가 없다면...
             else
             {%>
-            	<form name="myinfo" class="myinfo" method="post">
+            	<form name="myinfo">
     	    		<div class="outBox">
 		    			<div class="boxtitle">
         					<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
@@ -105,22 +112,25 @@
             <%
             }
 		}
+		// DB연결 오류가 발생했다면...
 		catch (Exception ex)
 		{%>
 			<form name="myinfo" class="myinfo" method="post">
     	    	<div class="outBox">
 		    		<div class="boxtitle">
         				<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
-        				<h1><%=ex.getMessage() %></h1>
+        				<h1>오류가 발생했습니다.</h1>
+        				<h3><%=ex.getMessage() %></h1>
     				</div>
 				</div>
     		</form>
 		<%
 		}
 	}
+	// 로그인 상태가 아니라면...
 	else
 	{%>
-		<form name="myinfo" class="myinfo" method="post">
+		<form name="myinfo">
 			<div class="outBox">
 				<div class="boxtitle">
         			<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
@@ -129,8 +139,7 @@
 			</div>
 		</form>
 	<%
-	}
-	%>
+	}%>
 	</body>
 	<script src="../../../js/mypage.js"></script>
 </html>

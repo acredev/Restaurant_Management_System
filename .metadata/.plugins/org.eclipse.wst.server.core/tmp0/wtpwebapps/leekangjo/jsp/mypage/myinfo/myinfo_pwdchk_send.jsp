@@ -29,22 +29,32 @@ try
 	String db_pwd = "root";
 	Connection connection = DriverManager.getConnection(db_address, db_username, db_pwd);
 	
+	//문자열의 인코딩 방식 설정
 	request.setCharacterEncoding("UTF-8");
+	
+	// 파라미터를 통해 받아온 값을 변수에 저장
 	String user_pwd = request.getParameter("pwd");
 	
+	// MySQL로 전송하기 위한 문자열 insertQuery 변수 선언
 	String insertQuery = "SELECT id, pwd FROM kyungmin_store.member WHERE id=?";
 	
+	// SQL 쿼리문을 실행 (MySQL로 전송)하기 위한 객체 선언
 	PreparedStatement psmt = connection.prepareStatement(insertQuery);
 	
+	// 앞서 선언했던 쿼리문의 ? 부분에 하나씩 삽입하여 전송
 	psmt.setString (1, user_id);
 	
+	// 쿼리문을 전송해 받아온 정보를 result 객체에 저장
 	ResultSet result = psmt.executeQuery();
 	
+	// 받아온 정보가 있다면...
 	if (result.next() == true)
 	{
+		// DB에 저장된 회원정보를 변수에 저장
 		String db_user_id = result.getString("id");
 		String db_user_pwd = result.getString("pwd");
 		
+		// DB에 저장된 회원정보와 사용자가 입력한 회원정보가 같다면...
 		if (user_id.equals(db_user_id) && user_pwd.equals(db_user_pwd))
 		{%>
 			<!DOCTYPE html>
@@ -67,6 +77,7 @@ try
 			</html>
 		<%
 		}
+		// DB에 저장된 회원정보와 사용자가 입력한 회원정보가 같지 않다면...
 		else
 		{%>
 			<script type="text/javascript">
@@ -78,6 +89,7 @@ try
 		<%
 		}
 	}
+	// DB에서 받아온 정보가 없다면...
 	else
 	{%>
 		<script type="text/javascript">
@@ -89,8 +101,17 @@ try
 	<%
 	}
 }
+// DB연결 오류가 발생했다면...
 catch (Exception ex)
-{
-	out.print(ex);
-}
-%>
+{%>
+	<form name="myinfo_pwdchk_send">
+	<div class="outBox">
+		<div class="boxtitle">
+			<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+			<h2>오류가 발생했습니다.</h2>
+			<h3>오류 메시지 : <%=ex.getMessage() %></h3>
+		</div>
+	</div>
+</form>
+<%
+}%>

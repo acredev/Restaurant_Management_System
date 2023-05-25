@@ -26,9 +26,11 @@
 			<%
 			// 받아올 문자열의 인코딩방식 설정
 			request.setCharacterEncoding("UTF-8");
+			
 			// 파라미터를 통해 받아온 정보값을 변수에 저장
 			String id = request.getParameter("id");
 			
+			// 파라미터를 통해 받아온 아이디값이 존재하지 않는다면...
 			if (id == null || id.isEmpty())
 			{%>
 			<script type="text/javascript">
@@ -43,13 +45,16 @@
 			</div>
 			<%
 			}
+			// 파라미터를 통해 받아온 아이디값이 존재한다면...
 			else
 			{
 				// 클래스에 지정한 함수를 사용하기 위한 객체 선언
 				signup signup_idchk = new signup();
 	
-				// 클래스에서 지정한 함수를 실행시킨 값을 불러오기 위한 변수 선언
+				// 클래스에서 지정한 함수를 실행시킨 값을 실행하고, 결과값을 정수형 변수에 저장
 				int result = signup_idchk.idchk(id);
+				
+				// 결과값이 유효하다면... (사용이 가능한 아이디라면)
 				if (result == 1)
 				{%>
 					<script type="text/javascript">
@@ -59,6 +64,7 @@
 					</script>
 				<%
 				}
+				// 결과값이 유효하지 않다면... (사용이 불능한 아이디라면)
 				else if (result == 0)
 				{%>
 					<script type="text/javascript">
@@ -68,9 +74,16 @@
 					</script>
 				<%
 				}
+				// 이유를 알 수 없는 오류가 발생했다면...
 				else
-				{
-					out.print("오류가 발생했습니다. (-1)");
+				{%>
+					<div class="outBox">
+	    				<div class="boxtitle">
+        					<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+        					<h2>오류가 발생했습니다. (오류 메시지 : -1)</h2>
+	    				</div>
+					</div>
+				<%
 				}
 			}
 			%>

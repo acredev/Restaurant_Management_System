@@ -40,6 +40,7 @@
 		String tel = request.getParameter("tel");
 		String email = request.getParameter("email");
 	
+		// 받아온 아이디값이 존재하지 않는다면...
 		if (id == null || id.isEmpty())
 		{%>
 			<div class="outBox">
@@ -50,6 +51,7 @@
 			</div>
 		<%
 		}	
+		// 받아온 학번값이 존재하지 않는다면...
 		else if (stdnum == null || stdnum.isEmpty())
 		{%>
 			<div id="box">
@@ -60,6 +62,7 @@
 	        </div>
 		<%
 		}
+		// 받아온 값들이 정상적으로 존재한다면...
 		else
 		{
 			// MySQL로 전송하기 위한 쿼리문인 문자열 insertQuery 변수 선언
@@ -85,6 +88,7 @@
 			response.sendRedirect("../login/login_first.jsp");
 		}
 	}
+	// DB연결 오류가 발생했다면...
 	catch (Exception ex)
 	{%>
 		<div id="box">

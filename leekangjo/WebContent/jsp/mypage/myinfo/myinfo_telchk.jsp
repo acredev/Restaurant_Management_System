@@ -69,11 +69,11 @@
 	<fieldset>
             <img src="../../../img/Logo4.png" alt="" class="loginImg">
             <h2>SMS인증</h2>
-		<form name="form_telchk" class="formD">
-			<input type="text" class="telchk" name="telchk" maxlength="5" placeholder="* 인증번호" >
-            <button type="button" class="tagbarBT" onclick="mypage_telchk()">본인인증</button>
-		</form>
-	</fieldset>
+			<form name="form_telchk" class="formD">
+				<input type="text" class="telchk" name="telchk" maxlength="5" placeholder="* 인증번호" >
+            	<button type="button" class="tagbarBT" onclick="mypage_telchk()">본인인증</button>
+			</form>
+		</fieldset>
     </div>
 </body>
 </html>

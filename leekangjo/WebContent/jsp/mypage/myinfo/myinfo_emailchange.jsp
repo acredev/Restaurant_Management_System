@@ -22,14 +22,14 @@
 </head>
 <body style="overflow-x:hidden;overflow-y:hidden">
     <div id="box">
-	<fieldset>
-            <img src="../../../img/Logo4.png" alt="" class="loginImg">
-            <h2>이메일 변경</h2>
-		<form action="myinfo_emailchk.jsp" method="post" name="form_emailchange" class="formD">
-			<input type="text" class="emailchk" name="user_email" maxlength="30" placeholder="* 변경할 이메일을 입력해주세요." >
-            <button type="submit" class="tagbarBT">본인인증</button>
-		</form>
-	</fieldset>
+		<fieldset>
+    		<img src="../../../img/Logo4.png" alt="" class="loginImg">
+        	<h2>이메일 변경</h2>
+			<form action="myinfo_emailchk.jsp" method="post" name="form_emailchange" class="formD">
+				<input type="text" class="emailchk" name="user_email" maxlength="30" placeholder="* 변경할 이메일을 입력해주세요." >
+           		<button type="submit" class="tagbarBT">본인인증</button>
+			</form>
+		</fieldset>
     </div>
 </body>
 </html>

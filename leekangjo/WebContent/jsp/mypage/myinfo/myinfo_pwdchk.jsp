@@ -60,10 +60,19 @@
 		</form>
 	    <%
 	}
+	//DB연결 오루가 발생했다면...
 	catch (Exception ex)
-	{
-		out.print(ex);	
-	}
-	%>
+	{%>
+		<form name="myinfo_pwdchk">
+		<div class="outBox">
+			<div class="boxtitle">
+				<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+				<h2>오류가 발생했습니다.</h2>
+				<h3>오류 메시지 : <%=ex.getMessage() %></h3>
+			</div>
+		</div>
+	</form>
+	<%
+	}%>
 	</body>
 </html>

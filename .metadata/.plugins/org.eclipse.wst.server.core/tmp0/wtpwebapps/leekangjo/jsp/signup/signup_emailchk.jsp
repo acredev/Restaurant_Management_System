@@ -25,9 +25,11 @@
 <%
 	// 문자열의 인코딩 방식 설정
 	request.setCharacterEncoding("UTF-8");
+
 	// 파라미터를 통해 받아온 값을 변수에 저장
 	String email = request.getParameter("email");
 	
+	// 파라미터를 통해 넘어온 이메일값이 존재하지 않는다면...
 	if (email == null || email.isEmpty())
 	{%>
 		<form name="form_emailchk">
@@ -40,6 +42,7 @@
 		</form>
 	<%
 	}
+	// 파라미터를 통해 넘어온 이메일값이 존재한다면...
 	else
 	{
 		// 클래스에 지정한 함수를 사용하기 위한 객체 선언

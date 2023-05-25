@@ -136,9 +136,6 @@ function myinfo_saveBtn()
 	var user_email = document.getElementById("user_email");
 	var user_tel = document.getElementById("user_tel");
 	
-	var telchk = document.getElementById("telchk");
-	var emailchk = document.getElementById("emailchk");
-	
 	var isEmailChange = document.getElementById("isEmailChange");
 	var isTelChange = document.getElementById("isTelChange");
 	var isPwdChange = document.getElementById("isPwdChange");
@@ -152,12 +149,12 @@ function myinfo_saveBtn()
 	{
 		if (isEmailChange.value == "yes" && isTelChange.value == "no" && isPwdChange.value == "no")
 		{
-			alert(user_name.value + " 회원님의 이메일 주소가 변경되었습니다.[변경내용]이메일 주소 : " + user_email.value);
+			alert(user_name.value + " 회원님의 이메일 주소가 변경되었습니다.\n[변경내용]이메일 주소 : " + user_email.value);
 			document.myinfo.submit();
 		}
 		else if (isEmailChange.value == "no" && isTelChange.value == "yes" && isPwdChange.value == "no")
 		{
-			alert(user_name.value + " 회원님의 휴대폰 번호가 변경되었습니다.[변경내용]휴대폰 번호 : " + user_tel.value);
+			alert(user_name.value + " 회원님의 휴대폰 번호가 변경되었습니다.\n[변경내용]휴대폰 번호 : " + user_tel.value);
 			document.myinfo.submit();
 		}
 		else if (isEmailChange.value == "no" && isTelChange.value == "no" && isPwdChange.value != "no")
@@ -167,17 +164,17 @@ function myinfo_saveBtn()
 		}
 		else if (isEmailChange.value == "yes" && isTelChange.value == "yes" && isPwdChange.value == "no")
 		{
-			alert(user_name.value + " 회원님의 이메일 주소와 휴대폰 번호가 변경되었습니다.[변경내용]휴대폰 번호 : " + user_tel.value + "\n이메일 주소 : " + user_email.value);
+			alert(user_name.value + " 회원님의 이메일 주소와 휴대폰 번호가 변경되었습니다.\n[변경내용]휴대폰 번호 : " + user_tel.value + "\n이메일 주소 : " + user_email.value);
 			document.myinfo.submit();
 		}
 		else if (isEmailChange.value == "yes" && isTelChange.value == "no" && isPwdChange.value != "no")
 		{
-			alert(user_name.value + " 회원님의 이메일 주소와 비밀번호가 변경되었습니다.[변경내용]이메일 주소 : " + user_email.value);
+			alert(user_name.value + " 회원님의 이메일 주소와 비밀번호가 변경되었습니다.\n[변경내용]이메일 주소 : " + user_email.value);
 			document.myinfo.submit();
 		}
 		else if (isEmailChange.value == "no" && isTelChange.value == "yes" && isPwdChange.value != "no")
 		{
-			alert(user_name.value + " 회원님의 휴대폰 번호와 비밀번호가 변경되었습니다.[변경내용]휴대폰 번호 : " + user_tel.value);
+			alert(user_name.value + " 회원님의 휴대폰 번호와 비밀번호가 변경되었습니다.\n[변경내용]휴대폰 번호 : " + user_tel.value);
 			document.myinfo.submit();
 		}
 		else

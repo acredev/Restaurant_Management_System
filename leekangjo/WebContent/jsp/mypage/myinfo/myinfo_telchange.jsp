@@ -20,14 +20,14 @@
 </head>
 <body style="overflow-x:hidden;overflow-y:hidden">
     <div id="box">
-	<fieldset>
+		<fieldset>
             <img src="../../../img/Logo4.png" alt="" class="loginImg">
             <h2>휴대폰 번호 변경</h2>
-		<form action="myinfo_telchk.jsp" method="post" name="form_telchange" class="formD">
-			<input type="number" class="emailchk" id="user_tel" name="user_tel" maxlength="11" placeholder="* 변경할 휴대폰 번호를 입력해주세요." >
-            <button type="button" class="tagbarBT" onclick="myinfo_telchk()">본인인증</button>
-		</form>
-	</fieldset>
+			<form action="myinfo_telchk.jsp" method="post" name="form_telchange" class="formD">
+				<input type="number" class="emailchk" id="user_tel" name="user_tel" maxlength="11" placeholder="* 변경할 휴대폰 번호를 입력해주세요." >
+            	<button type="button" class="tagbarBT" onclick="myinfo_telchk()">본인인증</button>
+			</form>
+		</fieldset>
     </div>
 </body>
 </html>

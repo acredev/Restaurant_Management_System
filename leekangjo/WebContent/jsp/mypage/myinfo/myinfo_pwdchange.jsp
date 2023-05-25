@@ -52,6 +52,7 @@
 					<button type="button" class="tagbarBT" id="change_pw" onclick="myinfo_pwdchange_finish()">비밀번호 변경</button>
             	</div>
         	</div>
+        	<!-- 다음 페이지로 파라미터값을 넘기기 위한 input hidden -->
         	<input type="hidden" id="user_id" name="user_id" value="<%=user_id %>">
         	<input type="hidden" id="isPwdSame" name="isPwdSame" value="no">
     	</form>

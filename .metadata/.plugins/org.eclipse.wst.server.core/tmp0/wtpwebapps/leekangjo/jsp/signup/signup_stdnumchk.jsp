@@ -29,6 +29,7 @@
 			// 파라미터를 통해 받아온 정보값을 변수에 저장
 			String stdnum = request.getParameter("stdnum");
 			
+			// 받아온 학번값이 존재하지 않는다면...
 			if (stdnum == null || stdnum.isEmpty())
 			{%>
 				<script type="text/javascript">
@@ -41,9 +42,9 @@
 						<h2>잘못된 접근입니다.</h2>
 					</div>
 				</div>
-			
 			<%
 			}
+			// 받아온 학번값이 존재한다면...
 			else
 			{
 				// 클래스에 지정한 함수를 사용하기 위한 객체 선언
@@ -69,9 +70,16 @@
 					</script>
 				<%
 				}
+				// 이유를 알 수 없는 오류가 발생했다면...
 				else
-				{
-					out.print("오류가 발생했습니다. (-1)");
+				{%>
+					<div class="outBox">
+	    				<div class="boxtitle">
+        					<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+        					<h2>오류가 발생했습니다. (오류 메시지 : -1)</h2>
+	    				</div>
+					</div>
+				<%
 				}
 			}
 			%>

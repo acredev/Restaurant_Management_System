@@ -51,6 +51,8 @@
     				</div>
 	    			<div class="inputBox">
 			        	<input type="number" id="verify" name="telchk" oninput="maxLengthCheck(this)" maxlength="5" placeholder="인증번호" value="">
+			        	
+			        	<!-- submit을 통해 POST 방식으로 파라미터 값을 넘기기 위한 input hidden -->
 		        		<input type="hidden" id="id" name="id" value=<%=user_id %>>
 		        		<input type="hidden" id="tel" name="tel" value=<%=user_tel %>>
     				</div>

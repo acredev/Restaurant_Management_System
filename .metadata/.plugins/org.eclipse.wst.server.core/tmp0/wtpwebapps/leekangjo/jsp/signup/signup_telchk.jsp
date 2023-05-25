@@ -28,6 +28,7 @@
 	// 파라미터를 통해 받아온 값을 변수에 저장
 	String tel = request.getParameter("tel");
 	
+	// 파라미터를 통해 받아온 휴대폰 번호값이 존재하지 않는다면...
 	if (tel == null || tel.isEmpty())
 	{%>
 		<form name="form_telchk">
