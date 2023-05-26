@@ -182,9 +182,20 @@ function myinfo_saveBtn()
 			alert("오류가 발생했습니다. 처음부터 다시 시도 바랍니다.");
 			close();
 		}
-	}
-	
+	}	
 }
 
+function myinfo_remove()
+{
+	var user_id = document.getElementById("user_id");
+	popupWindow = window.open("./myinfo_remove.jsp?user_id=" + user_id.value, "_blank","resizeable","toolbar=no");
+		popupWindow.resizeTo(500,600);
+		popupWindow.onresize=(_=>{
+			popupWindow.resizeTo(500,600);
+		})	
+}
 
-
+function myinfo_remove_chk()
+{
+	document.myinfo_remove.submit();
+}

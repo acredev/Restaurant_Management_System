@@ -34,12 +34,12 @@
 			
 			while (result.next())
 			{%>
-				<a>전화번호 : <input type="text" value="<%=result.getString("tel") %>" style="border: none;background: transparent"></a><br>
-   				<a>영업시간 : <input type="text" value="<%=result.getString("business_hour") %>" style="border: none;background: transparent"></a><br>
-        		<a>주소 : <input type="text" value="<%=result.getString("address") %>" style="border: none;background: transparent"></a><br>
+				<a>전화번호 : <input type="text" value="<%=result.getString("tel") %>" style="border: none;background: transparent" readonly></a><br>
+   				<a>영업시간 : <input type="text" value="<%=result.getString("business_hour") %>" style="border: none;background: transparent" readonly></a><br>
+        		<a>주소 : <input type="text" value="<%=result.getString("address") %>" style="border: none;background: transparent" readonly></a><br>
         
         		<h2>공지사항</h2>
-        		<input type="text" value="<%=result.getString("notice") %>" style="border: 1px solid #000;width: 99%;height: 150px;">
+        		<input type="text" value="<%=result.getString("notice") %>" style="border: 1px solid #000;width: 99%;height: 150px;" readonly>
 			<%
 			}
     	}

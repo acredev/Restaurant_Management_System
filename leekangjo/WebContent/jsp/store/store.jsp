@@ -13,7 +13,7 @@
         <link href="../../css/Header.css" rel="stylesheet" type="text/css">
         <link href="../../css/buttonST.css" rel="stylesheet" type="text/css">
         <link href="../../css/slide.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="./img/favicon1.png">
+        <link rel="icon" href="../../img/favicon1.png">
     </head>
     <body>
 		<%
@@ -64,7 +64,9 @@
 	            		<h1>test</h1>
 		            	<div class="imgAlbum">
     			      		<div class="images">
-          						<div id="image"></div>
+          						<div id="image">
+          							<img src="../../img/Logo4.png">
+          						</div>
                  				<div id="image"></div>
                   				<div id="image"></div>
 	                  			<div id="image"></div>

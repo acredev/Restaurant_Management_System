@@ -1,5 +1,0 @@
-function detail_click()
-{
-	window.open("./jsp/detail/store.jsp?store_num" + store_num.value);
-	alert(store_num.value);;
-}

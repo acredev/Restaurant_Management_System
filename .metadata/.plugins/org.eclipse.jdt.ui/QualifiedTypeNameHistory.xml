@@ -21,4 +21,12 @@
 <fullyQualifiedTypeName name="javax.mail.Transport"/>
 <fullyQualifiedTypeName name="javax.mail.internet.AddressException"/>
 <fullyQualifiedTypeName name="javax.mail.MessagingException"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="nl.captcha.text.producer.NumbersAnswerProducer"/>
+<fullyQualifiedTypeName name="nl.captcha.backgrounds.GradiatedBackgroundProducer"/>
+<fullyQualifiedTypeName name="nl.captcha.servlet.CaptchaServletUtil"/>
+<fullyQualifiedTypeName name="nl.captcha.Captcha"/>
+<fullyQualifiedTypeName name="nl.captcha.audio.AudioCaptcha"/>
+<fullyQualifiedTypeName name="nl.captcha.text.producer.TextProducer"/>
 </qualifiedTypeNameHistroy>

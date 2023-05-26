@@ -94,7 +94,7 @@
         					<button type="button" id="myinfo_save" onclick="myinfo_saveBtn()" class="tagbarBT">저장</button>
                     	</div>
                     	<div class="IPSBOX">
-	                   		<a class="bye"  onclick="location.href='byebye.html'">회원 탈퇴</a>
+	                   		<a class="bye"  onclick="myinfo_remove()">회원 탈퇴</a>
     	                </div>
     				</div>
                 </div>

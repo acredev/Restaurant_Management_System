@@ -140,6 +140,9 @@ textarea{
 button:disabled{
     background-color: lightgray;
 }
+button:disabled:hover{
+	cursor: not-allowed;
+}
 #byebtn{
     margin-top: 8%;
     margin-bottom: 5%;

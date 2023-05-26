@@ -60,6 +60,7 @@
         	<input type="hidden" id="stdnum" name="stdnum" value="<%=stdnum %>">
         	<input type="hidden" id="tel" name="tel" value="<%=tel %>">
         	<input type="hidden" id="isPwdSame" name="isPwdSame" value="no">
+        	<input type="hidden" id="email" name="email" value="<%=email%>">
     		<%
     	}
     	// 정상적인 인증과정을 거치지 않았다면...

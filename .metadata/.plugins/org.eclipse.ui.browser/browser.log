@@ -4855,3 +4855,23 @@
 5월 26, 2023 01:21:18.19 [22244:12932:0526/012118.018:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -7
 5월 26, 2023 01:21:18.24 [22244:11592:0526/012118.023:ERROR:device_event_log_impl.cc(222)] [01:21:17.976] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
 5월 26, 2023 01:21:23.724 [22244:12932:0526/012123.723:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 26, 2023 01:56:35.353 [22244:11592:0526/015635.353:ERROR:extension_registrar.cc(533)] Failed to unregister service worker for extension efaidnbmnnnibpcajpcglclefindmkaj
+
+5월 26, 2023 11:51:39.993 NEW SESSION
+5월 26, 2023 11:51:39.993 [34784:13376:0526/115139.988:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 26, 2023 11:51:42.83 [34784:13376:0526/115142.083:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 26, 2023 11:51:42.688 [34784:13376:0526/115142.687:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 26, 2023 12:03:48.136 [34784:4328:0526/120348.135:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+5월 26, 2023 12:03:48.137     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
+5월 26, 2023 12:21:11.934 [34784:4328:0526/122111.933:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 26, 2023 12:21:11.935 [34784:4328:0526/122111.933:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 26, 2023 12:21:11.935 [34784:4328:0526/122111.933:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 26, 2023 12:21:11.936 [34784:4328:0526/122111.933:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 26, 2023 12:21:11.937 [34784:4328:0526/122111.933:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+5월 26, 2023 12:27:13.876 [34784:13376:0526/122713.875:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 26, 2023 12:27:13.879 [34784:13376:0526/122713.879:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+5월 26, 2023 21:36:46.467 [34784:13376:0526/213646.466:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -109
+5월 26, 2023 21:36:46.862 [34784:13376:0526/213646.861:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+5월 26, 2023 21:36:46.962 [34784:4328:0526/213646.961:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Invalid credentials (credentials rejected by server).
+5월 27, 2023 24:28:01.637 [34784:4328:0527/002801.637:ERROR:device_event_log_impl.cc(222)] [00:28:01.637] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 27, 2023 24:28:02.224 [34784:2584:0527/002802.224:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
