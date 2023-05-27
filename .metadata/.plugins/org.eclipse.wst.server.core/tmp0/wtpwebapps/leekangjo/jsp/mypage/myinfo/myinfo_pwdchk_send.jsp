@@ -107,7 +107,7 @@ catch (Exception ex)
 	<form name="myinfo_pwdchk_send">
 	<div class="outBox">
 		<div class="boxtitle">
-			<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+			<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
 			<h2>오류가 발생했습니다.</h2>
 			<h3>오류 메시지 : <%=ex.getMessage() %></h3>
 		</div>

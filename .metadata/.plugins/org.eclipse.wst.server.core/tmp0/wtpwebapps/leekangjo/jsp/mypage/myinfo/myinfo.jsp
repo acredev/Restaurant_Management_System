@@ -22,9 +22,9 @@
 	<head>
 		<meta charset="utf-8">
 	    <title>LEEKANGJO - 나의 정보</title>
-	    <link href="../../../css/mypage.css" rel="stylesheet">
-	    <link href="../../../css/buttonST.css" rel="stylesheet">
-	    <link rel="icon" href="../../../img/favicon1.png" type="image/x-icon" sizes="16x16">
+	    <link href="/leekangjo/css/mypage.css" rel="stylesheet">
+	    <link href="/leekangjo/css/buttonST.css" rel="stylesheet">
+	    <link rel="icon" href="/leekangjo/img/favicon1.png" type="image/x-icon" sizes="16x16">
 	</head>
 	<body>
 	<%
@@ -90,7 +90,7 @@
                         	<hr>
     	    			</div>
                     	<div class="btnbox">
-        					<button type="button" id="myinfo_cancle" onclick="location.href='../mypage.jsp'" class="tagbarBT">취소</button>
+        					<button type="button" id="myinfo_cancle" onclick="location.href='/leekangjo/jsp/mypage/mypage.jsp'" class="tagbarBT">취소</button>
         					<button type="button" id="myinfo_save" onclick="myinfo_saveBtn()" class="tagbarBT">저장</button>
                     	</div>
                     	<div class="IPSBOX">
@@ -107,7 +107,7 @@
             	<form name="myinfo">
     	    		<div class="outBox">
 		    			<div class="boxtitle">
-        					<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
+        					<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
         					<h1>회원정보가 없습니다.</h1>
     					</div>
 					</div>
@@ -121,7 +121,7 @@
 			<form name="myinfo" class="myinfo" method="post">
     	    	<div class="outBox">
 		    		<div class="boxtitle">
-        				<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
+        				<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
         				<h1>오류가 발생했습니다.</h1>
         				<h3><%=ex.getMessage() %></h1>
     				</div>
@@ -136,7 +136,7 @@
 		<form name="myinfo">
 			<div class="outBox">
 				<div class="boxtitle">
-        			<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
+        			<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
         			<h1>비로그인 상태입니다.</h1>
     			</div>
 			</div>
@@ -144,5 +144,5 @@
 	<%
 	}%>
 	</body>
-	<script src="../../../js/mypage.js"></script>
+	<script src="/leekangjo/js/mypage.js"></script>
 </html>

@@ -13,10 +13,10 @@
 	<head>
 	    <meta charset="utf-8">
 	    <title>LEEKANGJO - 비밀번호 재설정</title>
-	    <link href="../../css/LoginMain.css" rel="stylesheet">
-	    <link href="../../css/buttonST.css" rel="stylesheet">
-	    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
-	    <script src="../../js/LoginJS.js"></script>
+	    <link href="/leekangjo/css/LoginMain.css" rel="stylesheet">
+	    <link href="/leekangjo/css/buttonST.css" rel="stylesheet">
+	    <link rel="icon" href="/leekangjo/img/favicon1.png" type="image/x-icon" sizes="16x16">
+	    <script src="/leekangjo/js/LoginJS.js"></script>
 	</head>
 	<body>
 		<%
@@ -53,7 +53,7 @@
 				<form name="find_pw_first" action="find_pw_second.jsp" method="post">
 					<div class="outBox">
 		    			<div class="boxtitle">
-	    	    			<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+	    	    			<img src="/leekangjo/img/Logo4.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
         					<h1>비밀번호 재설정</h1>
 	    				</div>
     	    			<div class="inputBox">
@@ -71,7 +71,7 @@
 				<form name="find_pw_first">
 					<div class="outBox">
 		    			<div class="boxtitle">
-        					<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+        					<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
         					<h2>잘못된 접근입니다.</h2>
     					</div>
 					</div>
@@ -85,7 +85,7 @@
 			<form name="find_pw_first">
 				<div class="outBox">
 	    			<div class="boxtitle">
-        				<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+        				<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
         				<h2>오류가 발생했습니다.</h2>
         				<h3>오류 메시지 : <%=ex.getMessage() %></h3>
     				</div>

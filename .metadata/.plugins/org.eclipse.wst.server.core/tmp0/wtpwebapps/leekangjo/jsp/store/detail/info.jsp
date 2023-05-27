@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <title>info</title>
-        <link rel="icon" href="./img/favicon1.png">
+        <link rel="icon" href="/leekangjo/img/favicon1.png">
     </head>
     <body>
     	<%

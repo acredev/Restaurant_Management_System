@@ -11,16 +11,16 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
 		<title>LEEKANGJO - 아이디 찾기</title>
-		<script src="../../js/FindJS.js"></script>
-		<link href="../../css/LoginMain.css" rel="stylesheet" type="text/css">
-		<link href="../../css/buttonST.css" rel="stylesheet" type="text/css">
-		<link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
+		<script src="/leekangjo/js/FindJS.js"></script>
+		<link href="/leekangjo/css/LoginMain.css" rel="stylesheet" type="text/css">
+		<link href="/leekangjo/css/buttonST.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="/leekangjo/img/favicon1.png" type="image/x-icon" sizes="16x16">
 	</head>
 	<body>
 		<form name="find_id_first" action="find_id_second.jsp" method="post">
 			<div class="outBox">
     			<div class="boxtitle">
-        			<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+        			<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
         			<h1>ID 찾기</h1>
     			</div>
         		<div class="inputBox">

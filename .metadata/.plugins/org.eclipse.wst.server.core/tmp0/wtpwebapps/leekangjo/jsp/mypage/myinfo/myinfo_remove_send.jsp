@@ -19,13 +19,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
 		<title>LEEKANGJO - 휴대폰 번호 본인 인증</title>
-		<link href="../../../css/Header.css" rel="stylesheet" type="text/css">
-    	<link href="../../../css/signup_style.css" rel="stylesheet" type="text/css">
-    	<link href="../../../css/signup_first.css" rel="stylesheet">
-    	<link href="../../../css/buttonST.css" rel="stylesheet">
-    	<link href="../../../css/LoginMain.css" rel="stylesheet">
-    	<link rel="icon" href="../../../img/favicon1.png" type="image/x-icon" sizes="16x16">
-    	<script src="../../../js/signup.js"></script>
+		<link href="/leekangjo/css/Header.css" rel="stylesheet" type="text/css">
+    	<link href="/leekangjo/css/signup_style.css" rel="stylesheet" type="text/css">
+    	<link href="/leekangjo/css/signup_first.css" rel="stylesheet">
+    	<link href="/leekangjo/css/buttonST.css" rel="stylesheet">
+    	<link href="/leekangjo/css/LoginMain.css" rel="stylesheet">
+    	<link rel="icon" href="/leekangjo/img/favicon1.png" type="image/x-icon" sizes="16x16">
+    	<script src="/leekangjo/js/signup.js"></script>
 	</head>
 	<body>
 	<form name="myinfo_remoe_send">
@@ -71,7 +71,7 @@
 	        	<div id="box">
             		<div class="outBox">
 						<div class="boxtitle">
-        					<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
+        					<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
 		       				<h2>오류가 발생했습니다.</a>
 		       				<h3><%=ex.getMessage() %></h3>
     					</div>
@@ -85,7 +85,7 @@
 			<div id="box">
             	<div class="outBox">
 					<div class="boxtitle">
-        				<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
+        				<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
 		       			<h2>잘못된 접근입니다.</h2>
     				</div>
 				</div>

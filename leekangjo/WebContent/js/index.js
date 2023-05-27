@@ -1,15 +1,14 @@
 function detail_click()
 {
 	var store_num = document.getElementById("store_num");
-	window.open("./jsp/store/store.jsp?store_num=" + store_num.value, "_self");
-	alert(store_num.value);;
+	window.open("/leekangjo/jsp/store/store.jsp?store_num=" + store_num.value, "_self");
 }
 
 function mypage_click(user_id)
 {
 	var index_form = document.index;
 	var user_id = document.getElementById("user_id");
-	var mypage = "./jsp/mypage/mypage.jsp";
+	var mypage = "/leekangjo/jsp/mypage/mypage.jsp";
 	
 	window.open("", "_self");
 	

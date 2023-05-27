@@ -11,12 +11,12 @@
     <head>
         <meta charset="utf-8">
         <title>LEEKANGJO - 회원가입</title>
-        <link href="../../css/LoginMain.css" rel="stylesheet">
-        <link href="../../css/signup_second.css" rel="stylesheet">
-        <link href="../../css/buttonST.css" rel="stylesheet">
-        <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
-        <script src="../../js/signup.js"></script>
-        <script src="../../js/pwE.js"></script>
+        <link href="/leekangjo/css/LoginMain.css" rel="stylesheet">
+        <link href="/leekangjo/css/signup_second.css" rel="stylesheet">
+        <link href="/leekangjo/css/buttonST.css" rel="stylesheet">
+        <link rel="icon" href="/leekangjo/img/favicon1.png" type="image/x-icon" sizes="16x16">
+        <script src="/leekangjo/js/signup.js"></script>
+        <script src="/leekangjo/js/pwE.js"></script>
     </head>	
     <body>
 	<%
@@ -45,7 +45,7 @@
 		{%>
 			<div class="outBox">
 				<div class="boxtitle">
-					<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+					<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
 					<h2>잘못된 접근입니다.</h2>
 				</div>
 			</div>
@@ -56,7 +56,7 @@
 		{%>
 			<div id="box">
 				<div class="boxtitle">
-					<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+					<img src="/leekangjo/img/Logo4.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
 					<h1>비정상적인 접근입니다.</h1>
     	    	</div>
 	        </div>
@@ -85,7 +85,7 @@
 			psmt.executeUpdate();
 			
 			// 모두 완료되면, login.jsp 페이지로 리다이렉트
-			response.sendRedirect("../login/login_first.jsp");
+			response.sendRedirect("/leekangjo/jsp/login/login_first.jsp");
 		}
 	}
 	// DB연결 오류가 발생했다면...
@@ -93,7 +93,7 @@
 	{%>
 		<div id="box">
     		<div class="boxtitle">
-    			<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+    			<img src="/leekangjo/img/Logo4.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
     			<h1><%=ex.getMessage() %></h1>
             </div>
         </div>

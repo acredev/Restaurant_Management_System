@@ -10,10 +10,10 @@
     <head>
         <meta charset="utf-8">
         <title>LEEKANGJO - 경민대 밥집</title>
-        <link href="../../css/Header.css" rel="stylesheet" type="text/css">
-        <link href="../../css/buttonST.css" rel="stylesheet" type="text/css">
-        <link href="../../css/slide.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="../../img/favicon1.png">
+        <link href="/leekangjo/css/Header.css" rel="stylesheet" type="text/css">
+        <link href="/leekangjo/css/buttonST.css" rel="stylesheet" type="text/css">
+        <link href="/leekangjo/css/slide.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="/leekangjo/img/favicon1.png">
     </head>
     <body>
 		<%
@@ -36,7 +36,7 @@
 				<form name="store">
 					<div class="outBox">
 						<div class="boxtitle">
-							<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+							<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
 							<h2>잘못된 접근입니다.</h2>
 						</div>
 					</div>
@@ -58,8 +58,8 @@
 	            	%>
 	            	<!-- 나중에 이미지DB 작업하면 아래 image들을 db에서 불러온 정보들로 대체하도록 -->
 	            	<header>
-						<img src="../../img/MainLogo.png" class="Logoimg" onclick ="location.href='../../index.jsp'">
-            			<h1 onclick ="location.href='../login/login_first.jsp'">Login</h1>
+						<img src="/leekangjo/img/MainLogo.png" class="Logoimg" onclick ="location.href='/leekangjo/index.jsp'">
+            			<h1 onclick ="location.href='/leekangjo/jsp/login/login_first.jsp'">Login</h1>
         			</header>
         			<div id="container">
 	            		<h1>test</h1>
@@ -90,7 +90,7 @@
 					<form name="store">
 						<div class="outBox">
 							<div class="boxtitle">
-								<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+								<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
 								<h2>잘못된 접근입니다.</h2>
 							</div>
 						</div>
@@ -104,7 +104,7 @@
 	       	<form name="store">
 				<div class="outBox">
 					<div class="boxtitle">
-						<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+						<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
 						<h2>오류가 발생했습니다.</h2>
 						<h3>오류 메시지 : <%=ex.getMessage() %></h3>
 					</div>
@@ -113,7 +113,7 @@
 	    <%	
 	    }
         %>	
-        <script src="../../js/slide.js"></script>
-        <script src="../../js/store.js"></script>
+        <script src=/leekangjo/js/slide.js"></script>
+        <script src="/leekangjo/js/store.js"></script>
     </body>
 </html>

@@ -13,11 +13,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
 		<title>LEEKANGJO - 아이디 중복확인</title>
-		<link href="../../css/LoginMain.css" rel="stylesheet">
-		<link href="../../css/Header.css" rel="stylesheet" type="text/css">
-        <link href="../../css/signup_style.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
-        <script src="../../js/signup.js"></script>
+		<link href="/leekangjo/css/LoginMain.css" rel="stylesheet">
+		<link href="/leekangjo/css/Header.css" rel="stylesheet" type="text/css">
+        <link href="/leekangjo/css/signup_style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="/leekangjo/img/favicon1.png" type="image/x-icon" sizes="16x16">
+        <script src="/leekangjo/js/signup.js"></script>
 	</head>
 	<body>
 		<form name="signup_idchk">
@@ -40,7 +40,7 @@
 			</script>
 			<div class="outBox">
 				<div class="boxtitle">
-					<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+					<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
 					<h2>잘못된 접근입니다.</h2>
 				</div>
 			</div>
@@ -81,7 +81,7 @@
 				{%>
 					<div class="outBox">
 	    				<div class="boxtitle">
-        					<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+        					<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
         					<h2>오류가 발생했습니다. (오류 메시지 : -1)</h2>
 	    				</div>
 					</div>

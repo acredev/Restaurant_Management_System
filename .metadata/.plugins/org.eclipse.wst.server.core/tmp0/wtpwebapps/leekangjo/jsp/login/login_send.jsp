@@ -52,7 +52,7 @@ try
 					<meta charset="utf-8">
 				</head>
 				<body>
-					<form name="login_send" action="../../index.jsp" method="post">
+					<form name="login_send" action="/leekangjo/index.jsp" method="post">
 						<input type="hidden" name="id" value="<%=user_id %>">;
 						<script type="text/javascript">
 							document.login_send.submit();
@@ -77,7 +77,7 @@ try
 	{%>
 		<script type="text/javascript">
 			alert("회원정보가 존재하지 않습니다. 회원가입 후 이용 바랍니다.");
-			location.href = "../signup/signup_first.jsp";
+			location.href = "/leekangjo/jsp/signup/signup_first.jsp";
 		</script>
 	<%
 	}
@@ -88,7 +88,7 @@ catch (Exception ex)
 	<form name="login_send">
 		<div class="outBox">
 			<div class="boxtitle">
-    			<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+    			<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
     			<h2>오류가 발생했습니다.</h2>
     			<h3>오류 메시지 : <%=ex.getMessage() %></h3>
     		</div>

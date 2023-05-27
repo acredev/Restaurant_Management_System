@@ -1,7 +1,7 @@
 function myinfo_click()
 {
 	var user_id = document.getElementById("user_id");
-	popupWindow = window.open("./myinfo/myinfo_pwdchk.jsp?user_id=" + user_id.value, "_blank","resizeable","toolbar=no");
+	popupWindow = window.open("/leekangjo/myinfo/myinfo_pwdchk.jsp?user_id=" + user_id.value, "_blank","resizeable","toolbar=no");
 		popupWindow.resizeTo(500,600);
 		popupWindow.onresize=(_=>{
 			popupWindow.resizeTo(500,600);
@@ -188,7 +188,7 @@ function myinfo_saveBtn()
 function myinfo_remove()
 {
 	var user_id = document.getElementById("user_id");
-	popupWindow = window.open("./myinfo_remove.jsp?user_id=" + user_id.value, "_blank","resizeable","toolbar=no");
+	popupWindow = window.open("/leekangjo/myinfo_remove.jsp?user_id=" + user_id.value, "_blank","resizeable","toolbar=no");
 		popupWindow.resizeTo(500,600);
 		popupWindow.onresize=(_=>{
 			popupWindow.resizeTo(500,600);

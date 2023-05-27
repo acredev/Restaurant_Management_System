@@ -23,9 +23,9 @@
 	<head>
 		<meta charset="utf-8">
 	    <title>LEEKANGJO - 마이페이지</title>
-	    <link href="../../css/mypage.css" rel="stylesheet">
-	    <link href="../../css/buttonST.css" rel="stylesheet">
-	    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
+	    <link href="/leekangjo/css/mypage.css" rel="stylesheet">
+	    <link href="/leekangjo/css/buttonST.css" rel="stylesheet">
+	    <link rel="icon" href="/leekangjo/img/favicon1.png" type="image/x-icon" sizes="16x16">
 	</head>
 	<body>
 	<%	
@@ -65,15 +65,15 @@
             	<form name="mypage" class="mypage" method="post">
 	    			<div class="outBox">
 		    			<div class="boxtitle">
-		        			<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+		        			<img src="/leekangjo/img/Logo4.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
     	    				<h1>마이페이지</h1>
                    			<h2>안녕하세요! <input type="text" value="<%=user_name%>"></h2>
                    			
                    			<!-- 다음 페이지로 파라미터값을 넘기기 위한 input hidden 선언 -->
                    			<input type="hidden" name="user_id" id="user_id" value="<%=user_id %>">
 	    				</div>
-    					<button type="button" onclick="myinfo_click()" class="tagbarBT" id="btn_id"> <img src="../../img/myimg.png" class="testimg">나의정보 </button>
-                		<button type="button" onclick="alert('잠시 후 시도해주세요.')" class="tagbarBT" id="btn_id"> <img src="../../img/purchase.png" class="testimg">주문내역 </button>
+    					<button type="button" onclick="myinfo_click()" class="tagbarBT" id="btn_id"> <img src="/leekangjo/img/myimg.png" class="testimg">나의정보 </button>
+                		<button type="button" onclick="alert('잠시 후 시도해주세요.')" class="tagbarBT" id="btn_id"> <img src="/leekangjo/img/purchase.png" class="testimg">주문내역 </button>
                 		<button type="button" onclick="alert('잠시 후 시도해주세요.')" class="tagbarBT" id="btn_id"> <img src="../../img/review.png" class="testimg">리뷰관리 </button>
                 		<hr>
 					</div>

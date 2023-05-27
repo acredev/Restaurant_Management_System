@@ -13,15 +13,15 @@
     <head>
         <meta charset="utf-8">
         <title>info</title>
-        <link rel="icon" href="../../../img/favicon1.png">
-        <link href="../../../css/buttonST.css" rel="stylesheet" type="text/css">
-        <link href="../../../css/detailPopup.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="/leekangjo/img/favicon1.png">
+        <link href="/leekangjo/css/buttonST.css" rel="stylesheet" type="text/css">
+        <link href="/leekangjo/css/detailPopup.css" rel="stylesheet" type="text/css">
     </head>
     <body>
     <form>
     	<div class="ConBox">
         	<div class="ConHead">
-            	<img src="../../../img/MainLogo.png">
+            	<img src="/leekangjo/img/MainLogo.png">
                 <input type="text" value="<%=seat %>번 좌석 예약">
                 <hr>
             </div>

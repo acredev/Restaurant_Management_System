@@ -15,9 +15,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
 		<title>LEEKANGJO - 비밀번호 재설정</title>
-		<link href="../../css/LoginMain.css" rel="stylesheet">
-	    <link href="../../css/buttonST.css" rel="stylesheet">
-	    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
+		<link href="/leekangjo/css/LoginMain.css" rel="stylesheet">
+	    <link href="/leekangjo/css/buttonST.css" rel="stylesheet">
+	    <link rel="icon" href="/leekangjo/img/favicon1.png" type="image/x-icon" sizes="16x16">
 	</head>
 	<body>
 		<%
@@ -44,7 +44,7 @@
 				<form name="find_pw_result">
 					<div class="outBox">
 	    				<div class="boxtitle">
-        				<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+        				<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
         				<h2>잘못된 접근입니다.</h2>
     				</div>
 					</div>
@@ -76,13 +76,13 @@
 					<form name="find_pw_result" action="find_pw_result.jsp" method="post">
 						<div class="outBox">
 	    					<div class="boxtitle">
-	        					<img src="../../img/Logo4.png" alt="" class="loginImg" onclick="location.href='../../index.html'">
+	        					<img src="/leekangjo/img/Logo4.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.html'">
         						<h1>비밀번호 재설정 결과</h1>
     						</div>
 							<div id="prBox" class="inputBox">
 								<h3>임시 비밀번호 발급이 완료되어 문자 메시지로 발송이 완료되었습니다.</h3>
         						<h4>임시 비밀번호로 로그인 후, 마이 페이지에서 비밀번호 변경 바랍니다.</h4>
-        						<h5 onclick ="location.href='../login/login_first.jsp'">- 로그인페이지로 -</h5>
+        						<h5 onclick ="location.href='/leekangjo/jsp/login/login_first.jsp'">- 로그인페이지로 -</h5>
 		    				</div>
 						</div>
 					</form>
@@ -95,7 +95,7 @@
 						function()
 						{
 							alert("오류가 발생했습니다. 처음부터 다시 시도해 주세요.");
-							setTimeout(function() { window.loaction.href="../login/login_first.jsp"}, 100)();
+							setTimeout(function() { window.loaction.href="/leekangjo/jsp/login/login_first.jsp"}, 100)();
 						}
 					</script>
 				<%
@@ -108,7 +108,7 @@
 			<form name="find_pw_result">
 				<div class="outBox">
 	    			<div class="boxtitle">
-        				<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+        				<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
         				<h2>오류가 발생했습니다.</h2>
         				<h3>오류 메시지 : <%=ex.getMessage() %></h3>
     				</div>

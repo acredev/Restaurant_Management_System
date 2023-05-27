@@ -18,9 +18,9 @@
 	<head>
 	    <meta charset="utf-8">
 	    <title>마이페이지 - 회원탈퇴</title>
-	    <link href="../../../css/mypage.css" rel="stylesheet">
-	    <link href="../../../css/buttonST.css" rel="stylesheet">
-	    <link rel="icon" href="../../../img/favicon1.png" type="image/x-icon" sizes="16x16">
+	    <link href="/leekangjo/css/mypage.css" rel="stylesheet">
+	    <link href="/leekangjo/css/buttonST.css" rel="stylesheet">
+	    <link rel="icon" href="/leekangjo/img/favicon1.png" type="image/x-icon" sizes="16x16">
         <script type="text/javascript">
 			function agreeCheck(frm)
 			{
@@ -61,7 +61,7 @@
 		<form name="myinfo_remove">
 			<div class="outBox">
 				<div class="boxtitle">
-					<img src="../../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../../index.jsp'">
+					<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
         			<h1>비로그인 상태입니다.</h1>
 				</div>
 			</div>
@@ -69,5 +69,5 @@
 	<%
 	}%>
 	</body>
-	<script src="../../../js/mypage.js"></script>
+	<script src="/leekangjo/js/mypage.js"></script>
 </html>

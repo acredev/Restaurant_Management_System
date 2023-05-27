@@ -5,8 +5,8 @@
     <head>
         <meta charset="utf-8">
         <title>info</title>
-        <link rel="icon" href="../../../img/favicon1.png">
-        <link href="../../../css/seatCSS.css" rel="stylesheet">
+        <link rel="icon" href="/leekangjo/img/favicon1.png">
+        <link href="/leekangjo/css/seatCSS.css" rel="stylesheet">
     </head>
     <body>
     <%
@@ -16,7 +16,7 @@
     %>
         <h1>좌석 예약</h1>
         <input type="hidden" name="store_num" id="store_num" value="<%=store_num %>">
-        <img src="../../../img/seatimg.png">
+        <img src="/leekangjo/img/seatimg.png">
         <div>
             <button name="1" type="button" class="seatbtn" id="seat1" onclick="showPopup();" ></button>
             <button name="2" type="button" class="seatbtn" id="seat2" onclick="alert('Btn_2_Click!!');" ></button>
@@ -34,7 +34,6 @@
             <button name="14" type="button" class="seatbtn" id="seat14" onclick="alert('Btn_14_Click!!');" ></button>
         </div>
         
-        <script src="../../../js/detailSeatPopup.js"></script>
-        </form>
+        <script src="/leekangjo/js/detailSeatPopup.js"></script>
     </body>
 </html>

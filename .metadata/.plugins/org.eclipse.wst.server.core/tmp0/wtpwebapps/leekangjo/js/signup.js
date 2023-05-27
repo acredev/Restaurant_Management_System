@@ -64,7 +64,7 @@ function signup_first_stdnumchk()
 	}
 	else
 	{
-		hiddenframe2.location.href="../signup/signup_stdnumchk.jsp?stdnum=" + document.signup_first.stdnum.value;
+		hiddenframe2.location.href="/leekangjo/jsp/signup/signup_stdnumchk.jsp?stdnum=" + document.signup_first.stdnum.value;
 	}
 }
 

@@ -12,15 +12,15 @@
     <head>
         <meta charset="utf-8">
         <title>LEEKANGJO - 회원가입</title>
-        <link href="../../css/signup_first.css" rel="stylesheet">
-        <link href="../../css/buttonST.css" rel="stylesheet">
-        <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
+        <link href="/leekangjo/css/signup_first.css" rel="stylesheet">
+        <link href="/leekangjo/css/buttonST.css" rel="stylesheet">
+        <link rel="icon" href="/leekangjo/img/favicon1.png" type="image/x-icon" sizes="16x16">
     </head>
     <body>
     	<form name="signup_first" action="signup_second.jsp" method="post">
         	<div id="box">
     	        <div class="boxtitle">
-	                <img src="../../img/Logo4.png" alt="" class="loginImg" onclick="../../location.href='index.jsp'">
+	                <img src="../../img/Logo4.png" alt="" class="loginImg" onclick="/leekangjo/location.href='index.jsp'">
                 	<h1>회원가입</h1>
 	            </div>
             	<div class="form-item">
@@ -47,5 +47,5 @@
         	</div>
         </form>
     </body>
-    <script src="../../js/signup.js"></script>
+    <script src="/leekangjo/js/signup.js"></script>
 </html>

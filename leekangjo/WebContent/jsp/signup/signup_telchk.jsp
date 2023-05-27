@@ -13,13 +13,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
 	<title>LEEKANGJO - 휴대폰 번호 본인 인증</title>
-	<link href="../../css/LoginMain.css" rel="stylesheet">
-	<link href="../../css/Header.css" rel="stylesheet" type="text/css">
-    <link href="../../css/signup_style.css" rel="stylesheet" type="text/css">
-    <link href="../../css/signup_first.css" rel="stylesheet">
-    <link href="../../css/buttonST.css" rel="stylesheet">
-    <link rel="icon" href="../../img/favicon1.png" type="image/x-icon" sizes="16x16">
-    <script src="../../js/signup.js"></script>
+	<link href="/leekangjo/css/LoginMain.css" rel="stylesheet">
+	<link href="/leekangjo/css/Header.css" rel="stylesheet" type="text/css">
+    <link href="/leekangjo/css/signup_style.css" rel="stylesheet" type="text/css">
+    <link href="/leekangjo/css/signup_first.css" rel="stylesheet">
+    <link href="/leekangjo/css/buttonST.css" rel="stylesheet">
+    <link rel="icon" href="/leekangjo/img/favicon1.png" type="image/x-icon" sizes="16x16">
+    <script src="/leekangjo/js/signup.js"></script>
 </head>
 <body style="overflow-x:hidden;overflow-y:hidden">
 <%
@@ -35,7 +35,7 @@
 		<form name="form_telchk">
 			<div class="outBox">
 				<div class="boxtitle">
-					<img src="../../img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='../../index.jsp'">
+					<img src="/leekangjo/img/Logo4_warning.png" alt="" class="loginImg" onclick="location.href='/leekangjo/index.jsp'">
 					<h2>잘못된 접근입니다.</h2>
 				</div>
 			</div>
@@ -76,7 +76,7 @@
 	</script>
     <div id="box">
 	<fieldset>
-            <img src="../../img/Logo4.png" alt="" class="loginImg">
+            <img src="/leekangjo/img/Logo4.png" alt="" class="loginImg">
             <h2>SMS인증</h2>
 		<form action="signup_telchk.jsp" method="post" name="form_telchk" class="formD">
 			<input type="text" class="telchk" name="telchk" maxlength="5" placeholder="* 인증번호" >

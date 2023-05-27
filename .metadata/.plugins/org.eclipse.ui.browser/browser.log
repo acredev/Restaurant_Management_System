@@ -6338,3 +6338,7 @@
 5월 28, 2023 01:54:01.71 [34784:4328:0528/015401.071:ERROR:device_event_log_impl.cc(222)] [01:54:01.070] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
 5월 28, 2023 01:54:01.107 [34784:4328:0528/015401.106:ERROR:device_event_log_impl.cc(222)] [01:54:01.106] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
 5월 28, 2023 01:54:01.763 [34784:4328:0528/015401.763:ERROR:device_event_log_impl.cc(222)] [01:54:01.762] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+5월 28, 2023 02:25:02.197 [34784:4328:0528/022502.196:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+5월 28, 2023 02:25:02.197     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)
+5월 28, 2023 02:36:43.975 [34784:4328:0528/023643.974:ERROR:CONSOLE(0)] "Error handling response: TypeError: Cannot read properties of undefined (reading 'always')
+5월 28, 2023 02:36:43.975     at chrome-extension://cnfngpgfjllafbghaimjcmailafcdhod/releaseDrag.js:90:49", source: https://ogs.google.com/u/0/widget/app?origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=ko&dm= (0)

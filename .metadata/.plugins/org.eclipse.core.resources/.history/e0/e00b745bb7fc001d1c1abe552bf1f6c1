@@ -1,0 +1,104 @@
+<!-- 
+메인 화면입니다.
+ -->
+
+<%@page import="java.sql.*"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%
+	//login_second.jsp 에서 겨처왔을 경우,
+	//파라미터를 통해 받아온 아이디 값을 변수에 저장
+	String user_id = request.getParameter("id");
+	//세션에 MEMBERID 객체를 저장 (user_id 정보를 가져옴)
+	session.setAttribute("MEMBERID", user_id);
+	//MEMBERID 객체의 값을 memberId 문자열 변수에 저장
+	String memberId = (String)session.getAttribute("MEMBERID");
+	//만약, memberId 값이 null 이면 false(비로그인 상태)
+	//memberId 값이 무언가 있다면 true(로그인 상태)
+	boolean login = memberId == null ? false : true;
+%>
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
+        <title>LEEKANGJO - 경민대 밥집</title>
+        <!-- 페이지 디자인을 위한 CSS 선언 -->
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <link href="css/Header.css" rel="stylesheet" type="text/css">
+        <link href="css/buttonST.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="./img/favicon1.png">
+    </head>
+    <body>
+    <form name="index" method="post">
+        <header>
+            <img src="img/MainLogo.png" class="Logoimg" onclick="location.href="index.jsp">
+            <%
+            	// 만약, 로그인 상태가 true라면
+            	if (login)
+            	{%>
+            		<img src="img/logout.png" class="logout" onclick ="location.href='./jsp/certification/sessionLogout.jsp'">
+            		<img src="img/myimg.png" class="myimg" onclick ="mypage_click(user_id)">
+            		<img src="img/find.png" class="find" onclick="alert('잠시 후 시도해주세요.')">
+            		<input type="hidden" id="user_id" name="user_id" value="<%=user_id %>">
+            	<%
+            	}
+            	// 로그인 상태가 false라면
+            	else
+            	{%>
+            		<h1 onclick ="location.href='jsp/login/login_first.jsp'">Login</h1>
+            	<%
+            	}
+            %>
+        </header>
+        <div id="tagbar">
+            <button class="tagbarBT">영업중</button>
+            <button class="tagbarBT">예약</button>
+        </div>
+        <div id="wrapper">
+     	   <div id="columns">
+        <%
+        try
+        {
+        	//JDBC 드라이버 연결
+    		Class.forName("com.mysql.jdbc.Driver");
+    		String db_address = "jdbc:mysql://127.0.0.1:3306/kyungmin_store";
+    		String db_username = "root";
+    		String db_pwd = "root";
+    		Connection connection = DriverManager.getConnection(db_address, db_username, db_pwd);
+            			
+            // 문자열의 인코딩 방식 설정
+            request.setCharacterEncoding("UTF-8");
+            
+            String insertQuery = "SELECT * FROM kyungmin_store.store_info";
+            
+            PreparedStatement psmt = connection.prepareStatement(insertQuery);
+            
+            ResultSet result = psmt.executeQuery();
+            
+            while (result.next())
+            {
+            %>
+            	<div class="card" onclick="location_href='store.jsp?store_num=<%=result.getString("store_num") %>">
+          	  		<img src="<%=result.getString("img_route") %>" alt="로딩오류">
+         	   		<p><%=result.getString("name") %></p>
+         	   		<input type="text" type="text" id="store_num" name="store_num" value="<%=result.getString("store_num") %>">
+         	   		<a>예약 가능 | 포장 가능 | 소요시간 10~15분</a>
+         	   		<span>대기상황 : 2</span>
+        		</div>
+        	<%
+            }
+        }
+        catch (Exception ex)
+        {
+        	out.print(ex);	
+        }
+        %>	
+            </div>
+        </div>
+    </form>
+    </body>
+    <script src="./js/index.js"></script>
+</html>

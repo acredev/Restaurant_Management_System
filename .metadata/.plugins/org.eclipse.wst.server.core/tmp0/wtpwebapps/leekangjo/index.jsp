@@ -26,20 +26,20 @@
         <meta name="viewport" content="width-device-width,initial-scale-1.0,user-scalable=no">
         <title>LEEKANGJO - 경민대 밥집</title>
         <!-- 페이지 디자인을 위한 CSS 선언 -->
-        <link href="css/index.css" rel="stylesheet" type="text/css">
-        <link href="css/Header.css" rel="stylesheet" type="text/css">
-        <link href="css/buttonST.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="./img/favicon1.png">
+        <link href="/leekangjo/css/index.css" rel="stylesheet" type="text/css">
+        <link href="/leekangjo/css/Header.css" rel="stylesheet" type="text/css">
+        <link href="/leekangjo/css/buttonST.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="/leekangjo/img/favicon1.png">
     </head>
     <body>
     <form name="index" method="post">
         <header>
-            <img src="img/MainLogo.png" class="Logoimg" onclick="detail_click()">
+            <img src="/leekangjo/img/MainLogo.png" class="Logoimg" onclick="location.href='/leekangjo/index.jsp'">
             <%
             	// 만약, 로그인 상태가 true라면
             	if (login)
             	{%>
-            		<img src="img/logout.png" class="logout" onclick ="location.href='./jsp/certification/sessionLogout.jsp'">
+            		<img src="img/logout.png" class="logout" onclick ="location.href='leekangjo/jsp/certification/sessionLogout.jsp'">
             		<img src="img/myimg.png" class="myimg" onclick ="mypage_click(user_id)">
             		<img src="img/find.png" class="find" onclick="alert('잠시 후 시도해주세요.')">
             		<input type="hidden" id="user_id" name="user_id" value="<%=user_id %>">
@@ -48,7 +48,7 @@
             	// 로그인 상태가 false라면
             	else
             	{%>
-            		<h1 onclick ="location.href='jsp/login/login_first.jsp'">Login</h1>
+            		<h1 onclick ="location.href='/leekangjo/jsp/login/login_first.jsp'">Login</h1>
             	<%
             	}
             %>
@@ -80,12 +80,10 @@
             
             while (result.next())
             {
-            System.out.println(result.getString("img_route"));
             %>
-            	<div class="card" onclick="detail_click()">
+            	<div class="card" onclick ="location.href='/leekangjo/jsp/store/store.jsp?store_num=<%=result.getString("store_num")%>'">
           	  		<img src="<%=result.getString("img_route") %>" alt="로딩오류">
          	   		<p><%=result.getString("name") %></p>
-         	   		<input type="hidden" type="text" id="store_num" name="store_num" value="<%=result.getString("store_num") %>">
          	   		<a>예약 가능 | 포장 가능 | 소요시간 10~15분</a>
          	   		<span>대기상황 : 2</span>
         		</div>
@@ -101,5 +99,5 @@
         </div>
     </form>
     </body>
-    <script src="./js/index.js"></script>
+    <script src="/leekangjo/js/index.js"></script>
 </html>
