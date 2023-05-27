@@ -14,5 +14,6 @@ function ChnMenu(){
 }
 
 function ChnSeat(){
-    document.getElementById("iframeSec").src = "./detail/seat.jsp?store_num" + store_num.value;
+	var store_num = document.getElementById("store_num");
+    document.getElementById("iframeSec").src = "./detail/seat.jsp?store_num=" + store_num.value;
 }

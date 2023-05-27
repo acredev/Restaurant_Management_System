@@ -9,5 +9,6 @@
     </head>
     <body>
         <h1>Menu TEST</h1>
+        <h2><%=request.getParameter("store_num") %></h2>
     </body>
 </html>

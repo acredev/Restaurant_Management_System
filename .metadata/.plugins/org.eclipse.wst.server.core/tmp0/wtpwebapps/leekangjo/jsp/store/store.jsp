@@ -54,7 +54,8 @@
 				ResultSet result = psmt.executeQuery();
 	            
 				if (result.next() == true)
-	            {%>
+	            {
+	            	%>
 	            	<!-- 나중에 이미지DB 작업하면 아래 image들을 db에서 불러온 정보들로 대체하도록 -->
 	            	<header>
 						<img src="../../img/MainLogo.png" class="Logoimg" onclick ="location.href='../../index.jsp'">
@@ -65,7 +66,7 @@
 		            	<div class="imgAlbum">
     			      		<div class="images">
           						<div id="image">
-          							<img src="../../img/Logo4.png">
+          							<img src="">
           						</div>
                  				<div id="image"></div>
                   				<div id="image"></div>
